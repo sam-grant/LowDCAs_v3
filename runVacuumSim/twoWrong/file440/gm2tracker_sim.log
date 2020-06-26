@@ -1,0 +1,58 @@
+18-Jun-2020 12:32:57 CDT  Initiating request to open input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551440_1567190852.1.root"
+18-Jun-2020 12:32:58 CDT  Opened input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551440_1567190852.1.root"
+Begin processing the 1st record. run: 1567190852 subRun: 1 event: 1 at 18-Jun-2020 12:35:05 CDT
+Begin processing the 101st record. run: 1567190852 subRun: 1 event: 101 at 18-Jun-2020 12:35:08 CDT
+Begin processing the 201st record. run: 1567190852 subRun: 1 event: 201 at 18-Jun-2020 12:35:15 CDT
+Begin processing the 301st record. run: 1567190852 subRun: 1 event: 301 at 18-Jun-2020 12:35:17 CDT
+Begin processing the 401st record. run: 1567190852 subRun: 1 event: 401 at 18-Jun-2020 12:35:22 CDT
+Begin processing the 501st record. run: 1567190852 subRun: 1 event: 501 at 18-Jun-2020 12:35:28 CDT
+Begin processing the 601st record. run: 1567190852 subRun: 1 event: 601 at 18-Jun-2020 12:35:31 CDT
+Begin processing the 701st record. run: 1567190852 subRun: 1 event: 701 at 18-Jun-2020 12:35:35 CDT
+Begin processing the 801st record. run: 1567190852 subRun: 1 event: 801 at 18-Jun-2020 12:35:38 CDT
+Begin processing the 901st record. run: 1567190852 subRun: 1 event: 901 at 18-Jun-2020 12:35:44 CDT
+Begin processing the 2000th record. run: 1567190852 subRun: 1 event: 2000 at 18-Jun-2020 12:36:22 CDT
+Begin processing the 3000th record. run: 1567190852 subRun: 1 event: 3000 at 18-Jun-2020 12:36:58 CDT
+Begin processing the 5000th record. run: 1567190852 subRun: 1 event: 5000 at 18-Jun-2020 12:38:11 CDT
+18-Jun-2020 12:38:11 CDT  Closed input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551440_1567190852.1.root"
+18-Jun-2020 12:38:11 CDT  Initiating request to open input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551441_1567190852.1.root"
+18-Jun-2020 12:38:11 CDT  Opened input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551441_1567190852.1.root"
+Begin processing the 9000th record. run: 1567190852 subRun: 1 event: 4000 at 18-Jun-2020 12:40:42 CDT
+18-Jun-2020 12:41:18 CDT  Closed input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551441_1567190852.1.root"
+18-Jun-2020 12:41:18 CDT  Initiating request to open input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551442_1567190852.1.root"
+18-Jun-2020 12:41:19 CDT  Opened input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551442_1567190852.1.root"
+18-Jun-2020 12:44:01 CDT  Closed input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551442_1567190852.1.root"
+18-Jun-2020 12:44:01 CDT  Initiating request to open input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551443_1567190852.1.root"
+18-Jun-2020 12:44:01 CDT  Opened input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551443_1567190852.1.root"
+Begin processing the 17000th record. run: 1567190852 subRun: 1 event: 2000 at 18-Jun-2020 12:45:26 CDT
+18-Jun-2020 12:47:16 CDT  Closed input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551443_1567190852.1.root"
+18-Jun-2020 12:47:16 CDT  Initiating request to open input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551444_1567190852.1.root"
+18-Jun-2020 12:47:16 CDT  Opened input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551444_1567190852.1.root"
+18-Jun-2020 12:50:35 CDT  Closed input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551444_1567190852.1.root"
+18-Jun-2020 12:50:35 CDT  Initiating request to open input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551445_1567190852.1.root"
+18-Jun-2020 12:50:35 CDT  Opened input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551445_1567190852.1.root"
+18-Jun-2020 12:54:01 CDT  Closed input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551445_1567190852.1.root"
+18-Jun-2020 12:54:01 CDT  Initiating request to open input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551446_1567190852.1.root"
+18-Jun-2020 12:54:01 CDT  Opened input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551446_1567190852.1.root"
+Begin processing the 33000th record. run: 1567190852 subRun: 1 event: 3000 at 18-Jun-2020 12:56:09 CDT
+18-Jun-2020 12:57:34 CDT  Closed input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551446_1567190852.1.root"
+18-Jun-2020 12:57:34 CDT  Initiating request to open input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551447_1567190852.1.root"
+18-Jun-2020 12:57:34 CDT  Opened input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551447_1567190852.1.root"
+18-Jun-2020 13:00:47 CDT  Closed input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551447_1567190852.1.root"
+18-Jun-2020 13:00:47 CDT  Initiating request to open input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551448_1567190852.1.root"
+18-Jun-2020 13:00:47 CDT  Opened input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551448_1567190852.1.root"
+18-Jun-2020 13:04:30 CDT  Closed input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551448_1567190852.1.root"
+18-Jun-2020 13:04:30 CDT  Initiating request to open input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551449_1567190852.1.root"
+18-Jun-2020 13:04:30 CDT  Opened input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551449_1567190852.1.root"
+18-Jun-2020 13:07:57 CDT  Closed input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551449_1567190852.1.root"
+18-Jun-2020 13:07:57 CDT  Initiating request to open input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551450_1567190852.1.root"
+18-Jun-2020 13:07:57 CDT  Opened input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551450_1567190852.1.root"
+18-Jun-2020 13:10:54 CDT  Closed input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551450_1567190852.1.root"
+18-Jun-2020 13:10:54 CDT  Initiating request to open input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551451_1567190852.1.root"
+18-Jun-2020 13:10:54 CDT  Opened input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551451_1567190852.1.root"
+18-Jun-2020 13:13:31 CDT  Closed input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551451_1567190852.1.root"
+18-Jun-2020 13:13:31 CDT  Initiating request to open input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551452_1567190852.1.root"
+18-Jun-2020 13:13:31 CDT  Opened input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551452_1567190852.1.root"
+Begin processing the 65000th record. run: 1567190852 subRun: 1 event: 5000 at 18-Jun-2020 13:17:01 CDT
+18-Jun-2020 13:17:01 CDT  Closed input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551452_1567190852.1.root"
+18-Jun-2020 13:17:01 CDT  Initiating request to open input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551453_1567190852.1.root"
+18-Jun-2020 13:17:01 CDT  Opened input file "/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551453_1567190852.1.root"

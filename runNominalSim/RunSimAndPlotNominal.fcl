@@ -1,0 +1,299 @@
+// Run sim without producing track files
+
+// Run different fit modes
+
+// Run LR flip
+
+#include "messageParams.fcl"
+#include "trackingConfig.fcl"
+#include "caloConfig.fcl"
+
+process_name : offline
+
+source :
+{
+  module_type : RootInput
+  maxEvents   : -1
+  firstRun : 1
+  firstSubRun : 1
+}
+
+
+services :
+{
+  FileCatalogMetadata : {
+      applicationFamily  : "tracker"
+      applicationVersion : "v9_45_00"
+      fileType           : "offline"
+  }
+
+  message : {
+    debugModules : []
+    suppressInfo : []
+
+    destinations : {
+      LogToConsole : {
+        type       : "cout"
+        threshold  : "INFO"
+        categories : @local::message_categories
+      }
+      LogToFile : {
+        type      : "file"
+        filename  : "gm2tracker_sim.log"
+        append    :  false
+        threshold : "INFO"
+        categories : @local::message_categories
+      }
+
+    }
+
+  } // end of message services
+
+  DetectorHolder    : {}
+  ActionHolder      : {}
+  CoordSystemsStore : {}
+  Gm2Constants      : {}
+  RandomNumberGenerator : {}
+
+  @table::trackingChain.reducedGeometry
+  @table::trackingChain.field
+
+  scheduler : { errorOnFailureToPut : false }
+  
+  TrackQuality : {}
+
+   TFileService: {
+      fileName: "simPlots.root"
+   }
+
+} // end of services block
+
+
+
+physics :
+
+{
+  producers : {
+
+     // digitization of simulation
+     digitizer : @local::digit_params
+
+     @table::trackingChain.producers
+
+     // Fit the tracks
+
+     // Different fit modes including LR flip, and get extrapolation
+     tracksFlipLR : @local::geanefit_params 
+     tracksTruthLR : @local::geanefit_params
+     tracksMainFit : @local::geanefit_params
+     tracksFullSeqFit : @local::geanefit_params
+     verticesFlipLR  : @local::vertex_params
+     verticesMainFit  : @local::vertex_params
+     verticesTruthLR  : @local::vertex_params
+     verticesFullSeqFit : @local::vertex_params
+
+
+  } // end of producer block
+
+
+
+ filters : {
+
+     // Put many muons into same fill
+     fillEvents : @local::fill_params
+
+  } // end of filter block
+
+
+  analyzers : {
+
+    trackPlotsFlipLR : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracksFlipLR"
+      TrackInstanceName : "straws"
+      nonePlusWrong : true
+      dirName : "trackPlotsFlipLR"
+      applyTrackQuality : true
+
+    }
+
+    extrapPlotsFlipLR : { 
+
+      module_type : TrackExtrapolationAna
+
+      TrackModuleLabel : "tracksFlipLR"
+      TrackInstanceName : "straws"
+      decayVertexModuleLabel : "verticesFlipLR"
+      decayVertexInstanceName : "backwards"
+      // nonePlusWrong : true
+      dirName : "extrapPlotsFlipLR"
+      doForwardsExtrap : false      
+      applyTrackQuality : true
+
+    }
+
+
+    trackPlotsMainFit : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracksMainFit"
+      TrackInstanceName : "straws"
+      nonePlusWrong : true
+      dirName : "trackPlotsMainFit"
+      applyTrackQuality : true
+
+    }
+
+    extrapPlotsMainFit : { 
+
+      module_type : TrackExtrapolationAna
+
+      TrackModuleLabel : "tracksMainFit"
+      TrackInstanceName : "straws"
+      decayVertexModuleLabel : "verticesMainFit"
+      decayVertexInstanceName : "backwards"
+      // nonePlusWrong : true
+      dirName : "extrapPlotsMainFit"
+      doForwardsExtrap : false      
+      applyTrackQuality : true
+
+    }
+
+    trackPlotsTruthLR : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracksTruthLR"
+      TrackInstanceName : "straws"
+      nonePlusWrong : true
+      dirName : "trackPlotsTruthLR"
+      applyTrackQuality : true
+
+    }
+
+    extrapPlotsTruthLR : { 
+
+      module_type : TrackExtrapolationAna
+
+      TrackModuleLabel : "tracksTruthLR"
+      TrackInstanceName : "straws"
+      decayVertexModuleLabel : "verticesTruthLR"
+      decayVertexInstanceName : "backwards"
+      // nonePlusWrong : true
+      dirName : "extrapPlotsTruthLR"
+      doForwardsExtrap : false
+      applyTrackQuality : true
+
+    }
+
+    trackPlotsFullSeqFit : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracksFullSeqFit"
+      TrackInstanceName : "straws"
+      nonePlusWrong : true
+      dirName : "trackPlotsFullSeqFit"
+      applyTrackQuality : true
+
+    }
+
+    extrapPlotsFullSeqFit : { 
+
+      module_type : TrackExtrapolationAna
+
+      TrackModuleLabel : "tracksFullSeqFit"
+      TrackInstanceName : "straws"
+      decayVertexModuleLabel : "verticesFullSeqFit"
+      decayVertexInstanceName : "backwards"
+      // nonePlusWrong : true
+      dirName : "extrapPlotsFullSeqFit"
+      applyTrackQuality : true
+      doForwardsExtrap : false
+
+    }
+
+  }
+
+
+  trackPath : [
+     artg4,
+     fillEvents,
+     digitizer,
+     removeFlash,
+     killStraws,
+     digitTimeSync,
+     deadTime,
+     timeIslands,
+     clustering,
+     seeds,
+     trackCandidates,
+     candidateCleaner,
+     t0Finder,
+     driftDistReco,
+     tracksFlipLR,
+     tracksTruthLR,
+     tracksMainFit,
+     tracksFullSeqFit,
+     verticesFlipLR,
+     verticesMainFit,
+     verticesTruthLR,
+     verticesFullSeqFit
+     ]
+  
+
+  plotPath      : [ trackPlotsFlipLR, extrapPlotsFlipLR, trackPlotsMainFit, extrapPlotsMainFit, trackPlotsTruthLR, extrapPlotsTruthLR, trackPlotsFullSeqFit, extrapPlotsFullSeqFit]
+  
+  trigger_paths : [ trackPath ]
+  end_paths     : [ plotPath ] // outputPath]
+} // end of physics block
+
+source.firstRun    : 1
+source.firstSubRun : 1
+
+// Make negative drift times possible
+physics.producers.digitizer.allowNegativeTimes : true
+
+physics.producers.tracksFlipLR.flipLR : true
+
+// Set different fit modes
+physics.producers.tracksFlipLR.fitMode : "mainFit"
+physics.producers.tracksTruthLR.fitMode : "truthLRFit"
+physics.producers.tracksMainFit.fitMode : "mainFit"
+physics.producers.tracksFullSeqFit.fitMode : "fullSeqFit"
+
+// Sort out vertices
+physics.producers.verticesFlipLR.trackModuleLabel : tracksFlipLR
+physics.producers.verticesMainFit.trackModuleLabel : tracksMainFit
+physics.producers.verticesTruthLR.trackModuleLabel : tracksTruthLR
+physics.producers.verticesFullSeqFit.trackModuleLabel : tracksFullSeqFit
+
+physics.producers.verticesFlipLR.doForwardsExtrap : false
+physics.producers.verticesMainFit.doForwardsExtrap : false
+physics.producers.verticesTruthLR.doForwardsExtrap : false
+physics.producers.verticesFullSeqFit.doForwardsExtrap : false
+
+// Drift time estimator patch
+physics.producers.digitizer.driftTimeModelName : "GaussianDriftModel"
+physics.producers.driftDistReco.calculatorName : "linearDriftDistanceEstimator"
+
+// t0 finder patches, don't need this since we're using truth t0
+// physics.producers.t0Finder.meanTimeOffset : 28.65 // garfield
+physics.producers.t0Finder.meanTimeOffset : 24.6 // gaussian
+
+physics.filters.fillEvents.KeepGhostDetHits    : true
+
+// If you have a track collection error, pick true or false at random and one of them will work
+physics.filters.fillEvents.KeepTrackingActions : false
+
+// Save detailed art records for everything (may be needed for truth plots)
+physics.producers.tracksFlipLR.keepTrackDetailArtRecord : true
+physics.producers.tracksTruthLR.keepTrackDetailArtRecord : true
+physics.producers.tracksMainFit.keepTrackDetailArtRecord : true
+physics.producers.tracksFullSeqFit.keepTrackDetailArtRecord : true
+
+
+

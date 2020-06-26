@@ -1,0 +1,172 @@
+// Simplied version of reconstruction plotting fcl - for debugging
+// Sam Grant - Dec 2019
+
+#include "messageParams.fcl"
+#include "geom/strawtracker.fcl"
+#include "conDBParams.fcl"
+
+process_name : plot
+
+source : {
+  module_type : RootInput
+  //fileNames : ["gm2tracker_reco.root"]
+  maxEvents   : -1
+}
+
+
+services : {
+
+  message : {
+    debugModules : []
+    suppressInfo : []
+
+    destinations : {
+      LogToConsole : {
+        type       : "cout"
+        threshold  : "INFO"
+        categories : @local::message_categories
+      }
+      LogToFile : {
+        type      : "file"
+        filename  : "recoPlots.log"
+//        filename  : "LowDCAsPlots.log"
+        append    :  false
+        threshold : "INFO"
+        categories : @local::message_categories
+      }
+    }
+  } // end of message services
+
+  DetectorHolder    : {}
+  ActionHolder      : {}
+  CoordSystemsStore : {}
+  Gm2Constants      : {}
+  RandomNumberGenerator : {}
+
+  Geometry : { strawtracker : @local::strawtracker_geom }
+  StrawTrackerGeometry : {}
+  StrawTrackerGeometryConstants : { DatabaseURL : @local::condb_prod_params } // dev db is @local::condb_dev_params
+
+  TrackQuality : {}
+
+  TFileService: {
+    fileName: "recoPlots.root"
+//    fileName: "LowDCAsPlots.root"
+  }
+
+} // end of services block
+physics : {
+
+  analyzers : {
+
+    trackPlotsFlipLR : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksFlipLR"
+      TrackInstanceName : "straws"
+      dirName : "trackPlotsFlipLR"
+      applyTrackQuality : true
+
+    }
+
+    extrapPlotsFlipLR : { 
+
+      module_type : TrackExtrapolationAna
+
+      TrackModuleLabel : "tracksFlipLR"
+      TrackInstanceName : "straws"
+      decayVertexModuleLabel : "verticesFlipLR"
+      decayVertexInstanceName : "backwards"
+      // nonePlusWrong : true
+      dirName : "extrapPlotsFlipLR"
+      doForwardsExtrap : false      
+      applyTrackQuality : true
+
+    }
+
+
+    trackPlotsMainFit : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksMainFit"
+      TrackInstanceName : "straws"
+      dirName : "trackPlotsMainFit"
+      applyTrackQuality : true
+
+    }
+
+    extrapPlotsMainFit : { 
+
+      module_type : TrackExtrapolationAna
+
+      TrackModuleLabel : "tracksMainFit"
+      TrackInstanceName : "straws"
+      decayVertexModuleLabel : "verticesMainFit"
+      decayVertexInstanceName : "backwards"
+      dirName : "extrapPlotsMainFit"
+      doForwardsExtrap : false      
+      applyTrackQuality : true
+
+    }
+
+    trackPlotsTruthLR : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksTruthLR"
+      TrackInstanceName : "straws"
+      dirName : "trackPlotsTruthLR"
+      applyTrackQuality : true
+
+    }
+
+    extrapPlotsTruthLR : { 
+
+      module_type : TrackExtrapolationAna
+
+      TrackModuleLabel : "tracksTruthLR"
+      TrackInstanceName : "straws"
+      decayVertexModuleLabel : "verticesTruthLR"
+      decayVertexInstanceName : "backwards"
+      dirName : "extrapPlotsTruthLR"
+      doForwardsExtrap : false
+      applyTrackQuality : true
+
+    }
+
+    trackPlotsFullSeqFit : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksFullSeqFit"
+      TrackInstanceName : "straws"
+      dirName : "trackPlotsFullSeqFit"
+      applyTrackQuality : true
+
+    }
+    
+
+    extrapPlotsFullSeqFit : { 
+
+      module_type : TrackExtrapolationAna
+
+      TrackModuleLabel : "tracksFullSeqFit"
+      TrackInstanceName : "straws"
+      decayVertexModuleLabel : "verticesFullSeqFit"
+      decayVertexInstanceName : "backwards"
+      dirName : "extrapPlotsFullSeqFit"
+      applyTrackQuality : true
+      doForwardsExtrap : false
+
+    }
+
+  }
+
+//  plotPath      : [ trackPlotsFlipLR, extrapPlotsFlipLR, trackPlotsMainFit, extrapPlotsMainFit, trackPlotsFullSeqFit, extrapPlotsFullSeqFit]
+  plotPath      : [extrapPlotsFlipLR]
+  trigger_paths : [] 
+  end_paths     : [plotPath]
+
+} // end of physics block

@@ -1,0 +1,910 @@
+// Run sim without producing track files
+
+// Do everything in one shot
+
+// Run different fit modes
+
+// Run LR flip
+
+// Run lock low DCA scan, fine and coarse
+
+#include "messageParams.fcl"
+#include "trackingConfig.fcl"
+#include "caloConfig.fcl"
+
+process_name : offline
+
+source :
+{
+  module_type : RootInput
+  maxEvents   : -1
+  firstRun : 1
+  firstSubRun : 1
+}
+
+
+services :
+{
+  FileCatalogMetadata : {
+      applicationFamily  : "tracker"
+      applicationVersion : "v9_45_00"
+      fileType           : "offline"
+  }
+
+  message : {
+    debugModules : []
+    suppressInfo : []
+
+    destinations : {
+      LogToConsole : {
+        type       : "cout"
+        threshold  : "INFO"
+        categories : @local::message_categories
+      }
+      LogToFile : {
+        type      : "file"
+        filename  : "gm2tracker_sim.log"
+        append    :  false
+        threshold : "INFO"
+        categories : @local::message_categories
+      }
+
+    }
+
+  } // end of message services
+
+  DetectorHolder    : {}
+  ActionHolder      : {}
+  CoordSystemsStore : {}
+  Gm2Constants      : {}
+  RandomNumberGenerator : {}
+
+  @table::trackingChain.reducedGeometry
+  @table::trackingChain.field
+
+  scheduler : { errorOnFailureToPut : false }
+  
+  TrackQuality : {}
+
+   TFileService: {
+      fileName: "simPlots.root"
+   }
+
+} // end of services block
+
+
+
+physics :
+
+{
+  producers : {
+
+     // digitization of simulation
+     digitizer : @local::digit_params
+
+     @table::trackingChain.producers
+
+     // Fit the tracks
+
+     // Different fit modes including LR flip, and get extrapolation
+     tracksFlipLR : @local::geanefit_params 
+     tracksTruthLR : @local::geanefit_params
+     tracksMainFit : @local::geanefit_params
+     tracksFullSeqFit : @local::geanefit_params
+     verticesFlipLR  : @local::vertex_params
+     verticesMainFit  : @local::vertex_params
+     verticesTruthLR  : @local::vertex_params
+     verticesFullSeqFit : @local::vertex_params
+
+     // Low DCA scan
+     tracks0 : @local::geanefit_params 
+     tracks1 : @local::geanefit_params 
+     tracks2 : @local::geanefit_params 
+     tracks3 : @local::geanefit_params 
+     tracks4 : @local::geanefit_params 
+     tracks5 : @local::geanefit_params 
+     tracks6 : @local::geanefit_params 
+     tracks7 : @local::geanefit_params 
+     tracks8 : @local::geanefit_params 
+     tracks9 : @local::geanefit_params 
+     tracks10 : @local::geanefit_params
+     tracks11 : @local::geanefit_params
+     tracks12 : @local::geanefit_params
+     tracks13 : @local::geanefit_params
+     tracks14 : @local::geanefit_params
+     tracks15 : @local::geanefit_params
+     tracks16 : @local::geanefit_params
+     tracks17 : @local::geanefit_params
+     tracks18 : @local::geanefit_params
+     tracks19 : @local::geanefit_params
+     tracks20 : @local::geanefit_params
+     tracks21 : @local::geanefit_params 
+     tracks22 : @local::geanefit_params 
+     tracks23 : @local::geanefit_params 
+     tracks24 : @local::geanefit_params 
+     tracks25 : @local::geanefit_params 
+     tracks26 : @local::geanefit_params 
+     tracks27 : @local::geanefit_params 
+     tracks28 : @local::geanefit_params 
+     tracks29 : @local::geanefit_params 
+     tracks30 : @local::geanefit_params 
+     tracks31 : @local::geanefit_params
+     tracks32 : @local::geanefit_params
+     tracks33 : @local::geanefit_params
+     tracks34 : @local::geanefit_params
+     tracks35 : @local::geanefit_params
+     tracks36 : @local::geanefit_params
+
+
+  } // end of producer block
+
+
+
+ filters : {
+
+     // Put many muons into same fill
+     fillEvents : @local::fill_params
+
+  } // end of filter block
+
+
+  analyzers : {
+
+    trackPlotsFlipLR : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracksFlipLR"
+      TrackInstanceName : "straws"
+      nonePlusWrong : true
+      dirName : "trackPlotsFlipLR"
+      applyTrackQuality : true
+
+    }
+
+    extrapPlotsFlipLR : { 
+
+      module_type : TrackExtrapolationAna
+
+      TrackModuleLabel : "tracksFlipLR"
+      TrackInstanceName : "straws"
+      decayVertexModuleLabel : "verticesFlipLR"
+      decayVertexInstanceName : "backwards"
+      // nonePlusWrong : true
+      dirName : "extrapPlotsFlipLR"
+      doForwardsExtrap : false      
+      applyTrackQuality : true
+
+    }
+
+
+    trackPlotsMainFit : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracksMainFit"
+      TrackInstanceName : "straws"
+      nonePlusWrong : true
+      dirName : "trackPlotsMainFit"
+      applyTrackQuality : true
+
+    }
+
+    extrapPlotsMainFit : { 
+
+      module_type : TrackExtrapolationAna
+
+      TrackModuleLabel : "tracksMainFit"
+      TrackInstanceName : "straws"
+      decayVertexModuleLabel : "verticesMainFit"
+      decayVertexInstanceName : "backwards"
+      // nonePlusWrong : true
+      dirName : "extrapPlotsMainFit"
+      doForwardsExtrap : false      
+      applyTrackQuality : true
+
+    }
+
+    trackPlotsTruthLR : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracksTruthLR"
+      TrackInstanceName : "straws"
+      nonePlusWrong : true
+      dirName : "trackPlotsTruthLR"
+      applyTrackQuality : true
+
+    }
+
+    extrapPlotsTruthLR : { 
+
+      module_type : TrackExtrapolationAna
+
+      TrackModuleLabel : "tracksTruthLR"
+      TrackInstanceName : "straws"
+      decayVertexModuleLabel : "verticesTruthLR"
+      decayVertexInstanceName : "backwards"
+      // nonePlusWrong : true
+      dirName : "extrapPlotsTruthLR"
+      doForwardsExtrap : false
+      applyTrackQuality : true
+
+    }
+
+    trackPlotsFullSeqFit : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracksFullSeqFit"
+      TrackInstanceName : "straws"
+      nonePlusWrong : true
+      dirName : "trackPlotsFullSeqFit"
+      applyTrackQuality : true
+
+    }
+
+    extrapPlotsFullSeqFit : { 
+
+      module_type : TrackExtrapolationAna
+
+      TrackModuleLabel : "tracksFullSeqFit"
+      TrackInstanceName : "straws"
+      decayVertexModuleLabel : "verticesFullSeqFit"
+      decayVertexInstanceName : "backwards"
+      // nonePlusWrong : true
+      dirName : "extrapPlotsFullSeqFit"
+      applyTrackQuality : true
+      doForwardsExtrap : false
+
+    }
+
+    // Low DCA scans
+
+    zero : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks0"
+      TrackInstanceName : "straws"
+      dirName : "0.000"
+      applyTrackQuality : true
+
+    }
+
+
+    one : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks1"
+      TrackInstanceName : "straws"
+      dirName : "0.025"
+      applyTrackQuality : true
+    }
+
+
+    two : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks2"
+      TrackInstanceName : "straws"
+      dirName : "0.050"
+      applyTrackQuality : true
+
+    }
+
+    three : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks3"
+      TrackInstanceName : "straws"
+      dirName : "0.075"
+      applyTrackQuality : true
+
+    }
+
+    four : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks4"
+      TrackInstanceName : "straws"
+      dirName : "0.100"
+      applyTrackQuality : true
+
+    }
+
+    five : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks5"
+      TrackInstanceName : "straws"
+      dirName : "0.105"
+      applyTrackQuality : true
+
+    }
+
+    six : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks6"
+      TrackInstanceName : "straws"
+      dirName : "0.110"
+      applyTrackQuality : true
+
+    }
+
+    seven : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks7"
+      TrackInstanceName : "straws"
+      dirName : "0.115"
+      applyTrackQuality : true
+
+    }
+
+    eight : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks8"
+      TrackInstanceName : "straws"
+      dirName : "0.120"
+      applyTrackQuality : true
+
+    }
+
+    nine : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks9"
+      TrackInstanceName : "straws"
+      dirName : "0.125"
+      applyTrackQuality : true
+
+    }
+
+    ten : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks10"
+      TrackInstanceName : "straws"
+      dirName : "0.130"
+      applyTrackQuality : true
+
+    }
+
+    eleven : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks11"
+      TrackInstanceName : "straws"
+      dirName : "0.135"
+      applyTrackQuality : true
+
+    }
+
+    twelve : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks12"
+      TrackInstanceName : "straws"
+      dirName : "0.140"
+      applyTrackQuality : true
+
+    }
+
+    thirteen : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks13"
+      TrackInstanceName : "straws"
+      dirName : "0.145"
+      applyTrackQuality : true
+
+    }
+
+    fourteen : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks14"
+      TrackInstanceName : "straws"
+      dirName : "0.150"
+      applyTrackQuality : true
+
+    }
+
+    fifteen : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks15"
+      TrackInstanceName : "straws"
+      dirName : "0.155"
+      applyTrackQuality : true
+
+    }
+
+    sixteen : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks16"
+      TrackInstanceName : "straws"
+      dirName : "0.160"
+      applyTrackQuality : true
+
+    }
+
+    seventeen : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks17"
+      TrackInstanceName : "straws"
+      dirName : "0.165"
+      applyTrackQuality : true
+
+    }
+
+    eighteen : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks18"
+      TrackInstanceName : "straws"
+      dirName : "0.170"
+      applyTrackQuality : true
+
+    }
+
+    nineteen : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks19"
+      TrackInstanceName : "straws"
+      dirName : "0.175"
+      applyTrackQuality : true
+
+    }
+
+    twenty : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks20"
+      TrackInstanceName : "straws"
+      dirName : "0.180"
+      applyTrackQuality : true
+
+    }
+
+    twentyOne : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks21"
+      TrackInstanceName : "straws"
+      dirName : "0.185"
+      applyTrackQuality : true
+
+    }
+
+    twentyTwo : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks22"
+      TrackInstanceName : "straws"
+      dirName : "0.190"
+      applyTrackQuality : true
+
+    }
+
+    twentyThree : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks23"
+      TrackInstanceName : "straws"
+      dirName : "0.195"
+      applyTrackQuality : true
+
+    }
+
+    twentyFour : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks24"
+      TrackInstanceName : "straws"
+      dirName : "0.200"
+      applyTrackQuality : true
+
+    }
+
+    twentyFive : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks25"
+      TrackInstanceName : "straws"
+      dirName : "0.225"
+      applyTrackQuality : true
+
+    }
+
+
+    twentySix : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks26"
+      TrackInstanceName : "straws"
+      dirName : "0.250"
+      applyTrackQuality : true
+
+    }
+
+    twentySeven : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks27"
+      TrackInstanceName : "straws"
+      dirName : "0.275"
+      applyTrackQuality : true
+
+    }
+
+    twentyEight : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks28"
+      TrackInstanceName : "straws"
+      dirName : "0.300"
+      applyTrackQuality : true
+
+    }
+
+    twentyNine : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks29"
+      TrackInstanceName : "straws"
+      dirName : "0.325"
+      applyTrackQuality : true
+
+    }
+
+    thirty : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks30"
+      TrackInstanceName : "straws"
+      dirName : "0.350"
+      applyTrackQuality : true
+
+    }
+
+    thirtyOne : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks31"
+      TrackInstanceName : "straws"
+      dirName : "0.375"
+      applyTrackQuality : true
+
+    }
+
+    thirtyTwo : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks32"
+      TrackInstanceName : "straws"
+      dirName : "0.400"
+      applyTrackQuality : true
+
+    }
+
+    thirtyThree : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks33"
+      TrackInstanceName : "straws"
+      dirName : "0.425"
+      applyTrackQuality : true
+
+    }
+
+
+    thirtyFour : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks34"
+      TrackInstanceName : "straws"
+      dirName : "0.450"
+      applyTrackQuality : true
+
+    }
+
+    thirtyFive : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks35"
+      TrackInstanceName : "straws"
+      dirName : "0.475"
+      applyTrackQuality : true
+
+    }
+
+    thirtySix : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks36"
+      TrackInstanceName : "straws"
+      dirName : "0.500"
+      applyTrackQuality : true
+
+    }
+
+  }
+
+
+  trackPath : [
+     artg4,
+     fillEvents,
+     digitizer,
+     removeFlash,
+     killStraws,
+     digitTimeSync,
+     deadTime,
+     timeIslands,
+     clustering,
+     seeds,
+     trackCandidates,
+     candidateCleaner,
+     t0Finder,
+     driftDistReco,
+     tracksFlipLR,
+     tracksTruthLR,
+     tracksMainFit,
+     tracksFullSeqFit,
+     tracks0,
+     tracks1,
+     tracks2,
+     tracks3, 
+     tracks4,
+     tracks5,
+     tracks6,
+     tracks7,
+     tracks8,
+     tracks9,
+     tracks10,
+     tracks11,
+     tracks12,
+     tracks13,
+     tracks14,
+     tracks15,
+     tracks16,
+     tracks17,
+     tracks18,
+     tracks19,
+     tracks20,
+     tracks21,
+     tracks22,
+     tracks23,
+     tracks24,
+     tracks25,
+     tracks26,
+     tracks27,
+     tracks28,
+     tracks29,
+     tracks30,
+     tracks31,
+     tracks32,
+     tracks33,
+     tracks34,
+     tracks35,
+     tracks36,
+     verticesFlipLR,
+     verticesMainFit,
+     verticesTruthLR,
+     verticesFullSeqFit
+     ]
+  
+
+  plotPath      : [ trackPlotsFlipLR, extrapPlotsFlipLR, trackPlotsMainFit, extrapPlotsMainFit, trackPlotsTruthLR, extrapPlotsTruthLR, trackPlotsFullSeqFit, extrapPlotsFullSeqFit, zero, one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twentyOne, twentyTwo,
+  twentyThree, twentyFour, twentyFive, twentySix, twentySeven, twentyEight, twentyNine, thirty, thirtyOne, thirtyTwo, thirtyThree, thirtyFour, thirtyFive, thirtySix ]
+  
+  trigger_paths : [ trackPath ]
+  end_paths     : [ plotPath ] // outputPath]
+} // end of physics block
+
+source.firstRun    : 1
+source.firstSubRun : 1
+
+// Make negative drift times possible
+physics.producers.digitizer.allowNegativeTimes : true
+
+physics.producers.tracksFlipLR.flipLR : true
+
+// Set different fit modes
+physics.producers.tracksFlipLR.fitMode : "mainFit"
+physics.producers.tracksTruthLR.fitMode : "truthLRFit"
+physics.producers.tracksMainFit.fitMode : "mainFit"
+physics.producers.tracksFullSeqFit.fitMode : "fullSeqFit"
+
+// Sort out vertices
+physics.producers.verticesFlipLR.trackModuleLabel : tracksFlipLR
+physics.producers.verticesMainFit.trackModuleLabel : tracksMainFit
+physics.producers.verticesTruthLR.trackModuleLabel : tracksTruthLR
+physics.producers.verticesFullSeqFit.trackModuleLabel : tracksFullSeqFit
+
+physics.producers.verticesFlipLR.doForwardsExtrap : false
+physics.producers.verticesMainFit.doForwardsExtrap : false
+physics.producers.verticesTruthLR.doForwardsExtrap : false
+physics.producers.verticesFullSeqFit.doForwardsExtrap : false
+
+// Drift time estimator patch
+physics.producers.digitizer.driftTimeModelName : "GaussianDriftModel"
+physics.producers.driftDistReco.calculatorName : "linearDriftDistanceEstimator"
+
+// t0 finder patches, don't need this since we're using truth t0
+// physics.producers.t0Finder.meanTimeOffset : 28.65 // garfield
+physics.producers.t0Finder.meanTimeOffset : 24.6 // gaussian
+
+physics.filters.fillEvents.KeepGhostDetHits    : true
+
+// If you have a track collection error, pick true or false at random and one of them will work
+physics.filters.fillEvents.KeepTrackingActions : false
+
+// Low DCAs scan
+physics.producers.tracks0.lockLowDCAs : 0.000
+physics.producers.tracks1.lockLowDCAs : 0.025
+physics.producers.tracks2.lockLowDCAs : 0.050
+physics.producers.tracks3.lockLowDCAs : 0.075
+physics.producers.tracks4.lockLowDCAs : 0.100
+physics.producers.tracks5.lockLowDCAs : 0.105
+physics.producers.tracks6.lockLowDCAs : 0.110
+physics.producers.tracks7.lockLowDCAs : 0.115
+physics.producers.tracks8.lockLowDCAs : 0.120
+physics.producers.tracks9.lockLowDCAs : 0.125
+physics.producers.tracks10.lockLowDCAs : 0.130
+physics.producers.tracks11.lockLowDCAs : 0.135
+physics.producers.tracks12.lockLowDCAs : 0.140
+physics.producers.tracks13.lockLowDCAs : 0.145
+physics.producers.tracks14.lockLowDCAs : 0.150
+physics.producers.tracks15.lockLowDCAs : 0.155
+physics.producers.tracks16.lockLowDCAs : 0.160
+physics.producers.tracks17.lockLowDCAs : 0.165
+physics.producers.tracks18.lockLowDCAs : 0.170
+physics.producers.tracks19.lockLowDCAs : 0.175
+physics.producers.tracks20.lockLowDCAs : 0.180
+physics.producers.tracks21.lockLowDCAs : 0.185
+physics.producers.tracks22.lockLowDCAs : 0.190
+physics.producers.tracks23.lockLowDCAs : 0.195
+physics.producers.tracks24.lockLowDCAs : 0.200
+physics.producers.tracks25.lockLowDCAs : 0.225
+physics.producers.tracks26.lockLowDCAs : 0.250
+physics.producers.tracks27.lockLowDCAs : 0.275
+physics.producers.tracks28.lockLowDCAs : 0.300
+physics.producers.tracks29.lockLowDCAs : 0.325
+physics.producers.tracks30.lockLowDCAs : 0.350
+physics.producers.tracks31.lockLowDCAs : 0.375
+physics.producers.tracks32.lockLowDCAs : 0.400
+physics.producers.tracks33.lockLowDCAs : 0.425
+physics.producers.tracks34.lockLowDCAs : 0.450
+physics.producers.tracks35.lockLowDCAs : 0.475
+physics.producers.tracks36.lockLowDCAs : 0.500
+
+// Save detailed art records for everything (may be needed for truth plots)
+physics.producers.tracksFlipLR.keepTrackDetailArtRecord : true
+physics.producers.tracksTruthLR.keepTrackDetailArtRecord : true
+physics.producers.tracksMainFit.keepTrackDetailArtRecord : true
+physics.producers.tracksFullSeqFit.keepTrackDetailArtRecord : true
+
+physics.producers.tracks0.keepTrackDetailArtRecord : true
+physics.producers.tracks1.keepTrackDetailArtRecord : true
+physics.producers.tracks2.keepTrackDetailArtRecord : true
+physics.producers.tracks3.keepTrackDetailArtRecord : true
+physics.producers.tracks4.keepTrackDetailArtRecord : true
+physics.producers.tracks5.keepTrackDetailArtRecord : true
+physics.producers.tracks6.keepTrackDetailArtRecord : true
+physics.producers.tracks7.keepTrackDetailArtRecord : true
+physics.producers.tracks8.keepTrackDetailArtRecord : true
+physics.producers.tracks9.keepTrackDetailArtRecord : true
+physics.producers.tracks10.keepTrackDetailArtRecord : true
+physics.producers.tracks11.keepTrackDetailArtRecord : true
+physics.producers.tracks12.keepTrackDetailArtRecord : true
+physics.producers.tracks13.keepTrackDetailArtRecord : true
+physics.producers.tracks14.keepTrackDetailArtRecord : true
+physics.producers.tracks15.keepTrackDetailArtRecord : true
+physics.producers.tracks16.keepTrackDetailArtRecord : true
+physics.producers.tracks17.keepTrackDetailArtRecord : true
+physics.producers.tracks18.keepTrackDetailArtRecord : true
+physics.producers.tracks19.keepTrackDetailArtRecord : true
+physics.producers.tracks20.keepTrackDetailArtRecord : true
+physics.producers.tracks21.keepTrackDetailArtRecord : true
+physics.producers.tracks22.keepTrackDetailArtRecord : true
+physics.producers.tracks23.keepTrackDetailArtRecord : true
+physics.producers.tracks24.keepTrackDetailArtRecord : true
+physics.producers.tracks25.keepTrackDetailArtRecord : true
+physics.producers.tracks26.keepTrackDetailArtRecord : true
+physics.producers.tracks27.keepTrackDetailArtRecord : true
+physics.producers.tracks28.keepTrackDetailArtRecord : true
+physics.producers.tracks29.keepTrackDetailArtRecord : true
+physics.producers.tracks30.keepTrackDetailArtRecord : true
+physics.producers.tracks31.keepTrackDetailArtRecord : true
+physics.producers.tracks32.keepTrackDetailArtRecord : true
+physics.producers.tracks33.keepTrackDetailArtRecord : true
+physics.producers.tracks34.keepTrackDetailArtRecord : true
+physics.producers.tracks35.keepTrackDetailArtRecord : true
+physics.producers.tracks36.keepTrackDetailArtRecord : true
+
+
+
+physics.analyzers.trackPlotsFlipLR.fourWrong : true
+physics.analyzers.trackPlotsMainFit.fourWrong : true
+physics.analyzers.trackPlotsTruthLR.fourWrong : true
+physics.analyzers.trackPlotsFullSeqFit.fourWrong : true
+physics.analyzers.zero.fourWrong : true
+physics.analyzers.one.fourWrong : true
+physics.analyzers.two.fourWrong : true
+physics.analyzers.three.fourWrong : true
+physics.analyzers.four.fourWrong : true
+physics.analyzers.five.fourWrong : true
+physics.analyzers.six.fourWrong : true
+physics.analyzers.seven.fourWrong : true
+physics.analyzers.eight.fourWrong : true
+physics.analyzers.nine.fourWrong : true
+physics.analyzers.ten.fourWrong : true
+physics.analyzers.eleven.fourWrong : true
+physics.analyzers.twelve.fourWrong : true
+physics.analyzers.thirteen.fourWrong : true
+physics.analyzers.fourteen.fourWrong : true
+physics.analyzers.fifteen.fourWrong : true
+physics.analyzers.sixteen.fourWrong : true
+physics.analyzers.seventeen.fourWrong : true
+physics.analyzers.eighteen.fourWrong : true
+physics.analyzers.nineteen.fourWrong : true
+physics.analyzers.twenty.fourWrong : true
+physics.analyzers.twentyOne.fourWrong : true
+physics.analyzers.twentyTwo.fourWrong : true
+physics.analyzers.twentyThree.fourWrong : true
+physics.analyzers.twentyFour.fourWrong : true
+physics.analyzers.twentyFive.fourWrong : true
+physics.analyzers.twentySix.fourWrong : true
+physics.analyzers.twentySeven.fourWrong : true
+physics.analyzers.twentyEight.fourWrong : true
+physics.analyzers.twentyNine.fourWrong : true
+physics.analyzers.thirty.fourWrong : true
+physics.analyzers.thirtyOne.fourWrong : true
+physics.analyzers.thirtyTwo.fourWrong : true
+physics.analyzers.thirtyThree.fourWrong : true
+physics.analyzers.thirtyFour.fourWrong : true
+physics.analyzers.thirtyFive.fourWrong : true
+physics.analyzers.thirtySix.fourWrong : true

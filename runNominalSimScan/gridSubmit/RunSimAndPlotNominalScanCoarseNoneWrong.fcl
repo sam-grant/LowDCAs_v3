@@ -1,0 +1,486 @@
+// Run sim without producing track files
+
+#include "messageParams.fcl"
+#include "trackingConfig.fcl"
+#include "caloConfig.fcl"
+
+process_name : offline
+
+source :
+{
+  module_type : RootInput
+  maxEvents   : -1
+  firstRun : 1
+  firstSubRun : 1
+}
+
+
+services :
+{
+  FileCatalogMetadata : {
+      applicationFamily  : "tracker"
+      applicationVersion : "v9_45_00"
+      fileType           : "offline"
+  }
+
+  message : {
+    debugModules : []
+    suppressInfo : []
+
+    destinations : {
+      LogToConsole : {
+        type       : "cout"
+        threshold  : "INFO"
+        categories : @local::message_categories
+      }
+      LogToFile : {
+        type      : "file"
+        filename  : "simPlots.log"
+        append    :  false
+        threshold : "INFO"
+        categories : @local::message_categories
+      }
+
+    }
+
+  } // end of message services
+
+  DetectorHolder    : {}
+  ActionHolder      : {}
+  CoordSystemsStore : {}
+  Gm2Constants      : {}
+  RandomNumberGenerator : {}
+
+  @table::trackingChain.reducedGeometry
+  @table::trackingChain.field
+
+  scheduler : { errorOnFailureToPut : false }
+  
+  TrackQuality : {}
+
+   TFileService: {
+      fileName: "simPlots_coarse.root"
+   }
+
+} // end of services block
+
+
+
+physics :
+
+{
+  producers : {
+
+     // digitization of simulation
+     digitizer : @local::digit_params
+
+     @table::trackingChain.producers
+
+     // Fit the tracks
+
+     // Low DCA scan
+     tracks0 : @local::geanefit_params 
+     tracks1 : @local::geanefit_params 
+     tracks2 : @local::geanefit_params 
+     tracks3 : @local::geanefit_params 
+     tracks4 : @local::geanefit_params 
+     tracks5 : @local::geanefit_params 
+     tracks6 : @local::geanefit_params 
+     tracks7 : @local::geanefit_params 
+     tracks8 : @local::geanefit_params 
+     tracks9 : @local::geanefit_params 
+     tracks10 : @local::geanefit_params
+     tracks11 : @local::geanefit_params
+     tracks12 : @local::geanefit_params
+     tracks13 : @local::geanefit_params
+     tracks14 : @local::geanefit_params
+     tracks15 : @local::geanefit_params
+     tracks16 : @local::geanefit_params
+     tracks17 : @local::geanefit_params
+     tracks18 : @local::geanefit_params
+     tracks19 : @local::geanefit_params
+     tracks20 : @local::geanefit_params
+
+  } // end of producer block
+
+
+
+ filters : {
+
+     // Put many muons into same fill
+     fillEvents : @local::fill_params
+
+  } // end of filter block
+
+
+  analyzers : {
+
+    // Low DCA scans
+
+    zero : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks0"
+      TrackInstanceName : "straws"
+      dirName : "0.000"
+      applyTrackQuality : true
+      noneWrong : true
+
+    }
+
+
+    one : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks1"
+      TrackInstanceName : "straws"
+      dirName : "0.025"
+      applyTrackQuality : true
+      noneWrong : true
+    }
+
+
+    two : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks2"
+      TrackInstanceName : "straws"
+      dirName : "0.050"
+      applyTrackQuality : true
+      noneWrong : true
+
+    }
+
+    three : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks3"
+      TrackInstanceName : "straws"
+      dirName : "0.075"
+      applyTrackQuality : true
+      noneWrong : true
+
+    }
+
+    four : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks4"
+      TrackInstanceName : "straws"
+      dirName : "0.100"
+      applyTrackQuality : true
+      noneWrong : true
+
+    }
+
+    five : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks5"
+      TrackInstanceName : "straws"
+      dirName : "0.125"
+      applyTrackQuality : true
+      noneWrong : true
+
+    }
+
+    six : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks6"
+      TrackInstanceName : "straws"
+      dirName : "0.150"
+      applyTrackQuality : true
+      noneWrong : true
+
+    }
+
+    seven : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks7"
+      TrackInstanceName : "straws"
+      dirName : "0.175"
+      applyTrackQuality : true
+      noneWrong : true
+
+    }
+
+    eight : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks8"
+      TrackInstanceName : "straws"
+      dirName : "0.200"
+      applyTrackQuality : true
+      noneWrong : true
+
+    }
+
+    nine : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks9"
+      TrackInstanceName : "straws"
+      dirName : "0.225"
+      applyTrackQuality : true
+      noneWrong : true
+
+    }
+
+    ten : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks10"
+      TrackInstanceName : "straws"
+      dirName : "0.250"
+      applyTrackQuality : true
+      noneWrong : true
+
+    }
+
+    eleven : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks11"
+      TrackInstanceName : "straws"
+      dirName : "0.275"
+      applyTrackQuality : true
+      noneWrong : true
+
+    }
+
+    twelve : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks12"
+      TrackInstanceName : "straws"
+      dirName : "0.300"
+      applyTrackQuality : true
+      noneWrong : true
+
+    }
+
+    thirteen : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks13"
+      TrackInstanceName : "straws"
+      dirName : "0.325"
+      applyTrackQuality : true
+      noneWrong : true
+
+    }
+
+    fourteen : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks14"
+      TrackInstanceName : "straws"
+      dirName : "0.350"
+      applyTrackQuality : true
+      noneWrong : true
+
+    }
+
+    fifteen : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks15"
+      TrackInstanceName : "straws"
+      dirName : "0.375"
+      applyTrackQuality : true
+      noneWrong : true
+    }
+
+    sixteen : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks16"
+      TrackInstanceName : "straws"
+      dirName : "0.400"
+      applyTrackQuality : true
+      noneWrong : true
+
+    }
+
+    seventeen : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks17"
+      TrackInstanceName : "straws"
+      dirName : "0.425"
+      applyTrackQuality : true
+      noneWrong : true
+
+    }
+
+    eighteen : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks18"
+      TrackInstanceName : "straws"
+      dirName : "0.450"
+      applyTrackQuality : true
+      noneWrong : true
+
+    }
+
+    nineteen : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks19"
+      TrackInstanceName : "straws"
+      dirName : "0.475"
+      applyTrackQuality : true
+      noneWrong : true
+
+    }
+
+    twenty : {
+ 
+      module_type :  LowDCAsTruthPlots
+ 
+      TrackModuleLabel : "tracks20"
+      TrackInstanceName : "straws"
+      dirName : "0.500"
+      applyTrackQuality : true
+      noneWrong : true
+
+    }
+
+  }
+
+
+  trackPath : [
+     artg4,
+     fillEvents,
+     digitizer,
+     removeFlash,
+     killStraws,
+     digitTimeSync,
+     deadTime,
+     timeIslands,
+     clustering,
+     seeds,
+     trackCandidates,
+     candidateCleaner,
+     t0Finder,
+     driftDistReco,
+     tracks0,
+     tracks1,
+     tracks2,
+     tracks3, 
+     tracks4,
+     tracks5,
+     tracks6,
+     tracks7,
+     tracks8,
+     tracks9,
+     tracks10,
+     tracks11,
+     tracks12,
+     tracks13,
+     tracks14,
+     tracks15,
+     tracks16,
+     tracks17,
+     tracks18,
+     tracks19,
+     tracks20
+     ]
+  
+
+  plotPath      : [ zero, one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty ]
+  
+  trigger_paths : [ trackPath ]
+  end_paths     : [ plotPath ] // outputPath]
+} // end of physics block
+
+source.firstRun    : 1
+source.firstSubRun : 1
+
+// Make negative drift times possible
+physics.producers.digitizer.allowNegativeTimes : true
+
+// Drift time estimator patch
+physics.producers.digitizer.driftTimeModelName : "GaussianDriftModel"
+physics.producers.driftDistReco.calculatorName : "linearDriftDistanceEstimator"
+
+// t0 finder patches, don't need this since we're using truth t0
+// physics.producers.t0Finder.meanTimeOffset : 28.65 // garfield
+physics.producers.t0Finder.meanTimeOffset : 24.6 // gaussian
+
+physics.filters.fillEvents.KeepGhostDetHits    : true
+
+// If you have a track collection error, pick true or false at random and one of them will work
+physics.filters.fillEvents.KeepTrackingActions : false
+
+// Low DCAs scan
+physics.producers.tracks0.lockLowDCAs : 0.000
+physics.producers.tracks1.lockLowDCAs : 0.025
+physics.producers.tracks2.lockLowDCAs : 0.050
+physics.producers.tracks3.lockLowDCAs : 0.075
+physics.producers.tracks4.lockLowDCAs : 0.100
+physics.producers.tracks5.lockLowDCAs : 0.125
+physics.producers.tracks6.lockLowDCAs : 0.150
+physics.producers.tracks7.lockLowDCAs : 0.175
+physics.producers.tracks8.lockLowDCAs : 0.200
+physics.producers.tracks9.lockLowDCAs : 0.225
+physics.producers.tracks10.lockLowDCAs : 0.250
+physics.producers.tracks11.lockLowDCAs : 0.275
+physics.producers.tracks12.lockLowDCAs : 0.300
+physics.producers.tracks13.lockLowDCAs : 0.325 
+physics.producers.tracks14.lockLowDCAs : 0.350
+physics.producers.tracks15.lockLowDCAs : 0.375
+physics.producers.tracks16.lockLowDCAs : 0.400
+physics.producers.tracks17.lockLowDCAs : 0.425
+physics.producers.tracks18.lockLowDCAs : 0.450
+physics.producers.tracks19.lockLowDCAs : 0.475
+physics.producers.tracks20.lockLowDCAs : 0.500
+
+physics.producers.tracks0.keepTrackDetailArtRecord : true
+physics.producers.tracks1.keepTrackDetailArtRecord : true
+physics.producers.tracks2.keepTrackDetailArtRecord : true
+physics.producers.tracks3.keepTrackDetailArtRecord : true
+physics.producers.tracks4.keepTrackDetailArtRecord : true
+physics.producers.tracks5.keepTrackDetailArtRecord : true
+physics.producers.tracks6.keepTrackDetailArtRecord : true
+physics.producers.tracks7.keepTrackDetailArtRecord : true
+physics.producers.tracks8.keepTrackDetailArtRecord : true
+physics.producers.tracks9.keepTrackDetailArtRecord : true
+physics.producers.tracks10.keepTrackDetailArtRecord : true
+physics.producers.tracks11.keepTrackDetailArtRecord : true
+physics.producers.tracks12.keepTrackDetailArtRecord : true
+physics.producers.tracks13.keepTrackDetailArtRecord : true
+physics.producers.tracks14.keepTrackDetailArtRecord : true
+physics.producers.tracks15.keepTrackDetailArtRecord : true
+physics.producers.tracks16.keepTrackDetailArtRecord : true
+physics.producers.tracks17.keepTrackDetailArtRecord : true
+physics.producers.tracks18.keepTrackDetailArtRecord : true
+physics.producers.tracks19.keepTrackDetailArtRecord : true
+physics.producers.tracks20.keepTrackDetailArtRecord : true
+
+
+
+

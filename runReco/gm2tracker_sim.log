@@ -1,0 +1,4 @@
+25-Jun-2020 22:38:16 CDT  Initiating request to open input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+25-Jun-2020 22:38:17 CDT  Opened input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+Begin processing the 1st record. run: 15921 subRun: 313 event: 1 at 25-Jun-2020 22:39:59 CDT
+Begin processing the 101st record. run: 15921 subRun: 313 event: 101 at 25-Jun-2020 23:57:01 CDT
