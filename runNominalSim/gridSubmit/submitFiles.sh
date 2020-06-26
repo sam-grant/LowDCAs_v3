@@ -126,6 +126,12 @@ for file in \`cat xrootdFileList${fileNum}.txt\`; do
   id=\${file%_*}
   id=\${id##*_}
 
+  # Skip if the output file already exists
+  if [ -f ${pnfsOutDir}/${fileNum}/simPlots_\${id}.root ]; then
+    echo "${pnfsOutDir}/${fileNum}/simPlots_\${id}.root exists, skipping..."
+    continue
+  fi
+
   gm2 -c RunSimAndPlotNominal.fcl -s \$file -T simPlots_\${id}.root
 
   # Only copy back if job completed successfully (output from last command was 0)
@@ -150,7 +156,7 @@ EOF
   done
 
   #Submit grid job
-  jobsub_submit -N 1 -G gm2 --OS=SL6 --resource-provides=usage_model=DEDICATED,OPPORTUNISTIC --expected-lifetime=4h --memory=3GB --role=Analysis file://${pnfsOutDir}/${fileNum}/runNominalSimJob${fileNum}.sh
+  jobsub_submit -N 1 -G gm2 --OS=SL6 --resource-provides=usage_model=DEDICATED,OPPORTUNISTIC --expected-lifetime=6h --role=Analysis file://${pnfsOutDir}/${fileNum}/runNominalSimJob${fileNum}.sh
   rm -f runNominalSimJob${fileNum}.sh
   rm -f xrootdFileList${fileNum}.txt
   rm -f SplitFileList${fileNum}.txt

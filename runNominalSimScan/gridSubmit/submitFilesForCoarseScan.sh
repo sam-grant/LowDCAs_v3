@@ -128,6 +128,12 @@ for file in \`cat xrootdFileList${fileNum}.txt\`; do
   id=\${file%_*}
   id=\${id##*_}
 
+  # Skip if the output file already exists
+  if [ -f ${pnfsOutDir}/${fileNum}/simScanCoarse_\${id}.root ]; then
+    echo "${pnfsOutDir}/${fileNum}/simScanCoarse_\${id}.root exists, skipping..."
+    continue
+  fi
+
   gm2 -c RunSimAndPlotNominalScanCoarse.fcl -s \$file -T simScanCoarse_\${id}.root
 
   # Only copy back if job completed successfully (output from last command was 0)
@@ -152,7 +158,7 @@ EOF
   done
 
   #Submit grid job
-  jobsub_submit -N 1 -G gm2 --OS=SL6 --resource-provides=usage_model=DEDICATED,OPPORTUNISTIC --expected-lifetime=4h --memory=3GB --role=Analysis file://${pnfsOutDir}/${fileNum}/runCoarseScanJob${fileNum}.sh
+  jobsub_submit -N 1 -G gm2 --OS=SL6 --resource-provides=usage_model=DEDICATED,OPPORTUNISTIC --expected-lifetime=6h --role=Analysis file://${pnfsOutDir}/${fileNum}/runCoarseScanJob${fileNum}.sh
   rm -f runCoarseScanJob${fileNum}.sh
   rm -f xrootdFileList${fileNum}.txt
   rm -f SplitFileList${fileNum}.txt

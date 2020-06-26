@@ -1,4 +1,4 @@
-pnfsOutDir=/pnfs/GM2/scratch/users/sgrant/LowDCAsNominalSim/Q
+pnfsOutDir=/pnfs/GM2/scratch/users/sgrant/LowDCAsNominalSim
 echo "Checking output files for in $pnfsOutDir"
 
 for line in `cat MainFileList.txt`; do

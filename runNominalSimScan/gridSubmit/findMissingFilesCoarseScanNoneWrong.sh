@@ -8,7 +8,7 @@ for line in `cat MainFileList.txt`; do
   id=${id##*_}
 
 
-  if [ ! -f ${pnfsOutDir}/*/simScanCoarse_${id}.root ]; then
+  if [ ! -f ${pnfsOutDir}/*/simScanCoarseNoneWrong_${id}.root ]; then
     echo $line
   fi
 
