@@ -1,0 +1,46 @@
+29-Jun-2020 12:24:45 CDT  Initiating request to open input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+29-Jun-2020 12:24:46 CDT  Opened input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+Begin processing the 1st record. run: 15921 subRun: 313 event: 1 at 29-Jun-2020 12:26:31 CDT
+29-Jun-2020 12:26:31 CDT  Opened output file with pattern "gm2tracker_recoNoQ.root"
+29-Jun-2020 12:41:45 CDT  Closed output file "gm2tracker_recoNoQ.root"
+29-Jun-2020 12:41:45 CDT  Closed input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+%MSG-i summary:  ImposeDeadTime:deadTime@EndJob 29-Jun-2020 12:41:45 CDT  ModuleEndJob
+
+--------- Tracker Impose Dead Time Report ---------
+  Total num digits killed = 8184 (of 72894, 11.2273%)
+  Total num digits kept = 64710 (of 72894, 88.7727%)
+------------------------------------------------
+
+%MSG
+%MSG-i summary:  KillStraws:killStraws@EndJob 29-Jun-2020 12:41:45 CDT  ModuleEndJob
+
+--------- Tracker Kill Straws Report ---------
+  Num straws to kill = 0
+  Total num digits killed = 0 (of 72894, 0%)
+  Total num digits kept = 72894 (of 72894, 100%)
+----------------------------------------------
+
+%MSG
+%MSG-i summary:  RemoveFlash:removeFlash@EndJob 29-Jun-2020 12:41:45 CDT  ModuleEndJob
+
+--------- Tracker Remove Flash Report ---------
+  Total num digits removed = 0 (of 72894, 0%)
+  Total num digits kept = 72894 (of 72894, 100%)
+----------------------------------------------
+
+%MSG
+
+TrigReport ---------- Event  Summary ------------
+TrigReport Events total = 20 passed = 9 failed = 11
+
+TrigReport ------ Modules in End-Path: end_path ------------
+TrigReport  Trig Bit#        Run    Success      Error Name
+TrigReport     0    0          9          9          0 out
+TrigReport     0    0          9          9          0 trackPlotsFlipLR
+
+TimeReport ---------- Time  Summary ---[sec]----
+TimeReport CPU = 975.758662 Real = 977.712170
+
+MemReport  ---------- Memory  Summary ---[base-10 MB]----
+MemReport  VmPeak = 2804.36 VmHWM = 1862.61
+

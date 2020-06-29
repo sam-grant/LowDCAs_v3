@@ -1,0 +1,23 @@
+29-Jun-2020 12:49:27 CDT  Initiating request to open input file "gm2tracker_recoNoQ.root"
+29-Jun-2020 12:49:27 CDT  Opened input file "gm2tracker_recoNoQ.root"
+29-Jun-2020 12:50:07 CDT  Closed input file "gm2tracker_recoNoQ.root"
+
+TrigReport ---------- Event  Summary ------------
+TrigReport Events total = 0 passed = 0 failed = 0
+
+TrigReport ------ Modules in End-Path: end_path ------------
+TrigReport  Trig Bit#        Run    Success      Error Name
+TrigReport     0    0          0          0          0 plot
+
+TimeReport ---------- Time  Summary ---[sec]----
+TimeReport CPU = 1.677746 Real = 36.073118
+
+MemReport  ---------- Memory  Summary ---[base-10 MB]----
+MemReport  VmPeak = 1388.55 VmHWM = 528.523
+
+%MSG-s ArtException:  PostEndJob 29-Jun-2020 12:50:07 CDT ModuleEndJob
+cet::exception caught in art
+---- OtherArt BEGIN
+  The provided folder was not present in the queried Conditions Database: tracker_align_external_status
+---- OtherArt END
+%MSG

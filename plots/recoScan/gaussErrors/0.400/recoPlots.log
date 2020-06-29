@@ -1,0 +1,19 @@
+22-May-2020 05:55:30 CDT  Initiating request to open input file "gm2tracker_reco.root"
+22-May-2020 05:55:31 CDT  Opened input file "gm2tracker_reco.root"
+Begin processing the 1st record. run: 15921 subRun: 313 event: 2 at 22-May-2020 05:55:38 CDT
+22-May-2020 05:55:56 CDT  Closed input file "gm2tracker_reco.root"
+
+TrigReport ---------- Event  Summary ------------
+TrigReport Events total = 73 passed = 73 failed = 0
+
+TrigReport ------ Modules in End-Path: end_path ------------
+TrigReport  Trig Bit#        Run    Success      Error Name
+TrigReport     0    0         73         73          0 noQuality
+TrigReport     0    0         73         73          0 quality
+
+TimeReport ---------- Time  Summary ---[sec]----
+TimeReport CPU = 14.415808 Real = 21.298907
+
+MemReport  ---------- Memory  Summary ---[base-10 MB]----
+MemReport  VmPeak = 1441.37 VmHWM = 576.463
+

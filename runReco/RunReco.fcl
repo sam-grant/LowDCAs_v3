@@ -136,7 +136,7 @@ physics : {
 physics.producers.t0Finder.meanTimeOffset : 34 // 36.5 is for 1550V, 34 for 1625V. Different for Sim. 
 
 physics.producers.tracksFlipLR.flipLR : true
-
+physics.producers.verticesFlipLR.flipLR : true
 // Set different fit modes
 physics.producers.tracksFlipLR.fitMode : "mainFit"
 physics.producers.tracksMainFit.fitMode : "mainFit"
@@ -147,6 +147,6 @@ physics.producers.verticesMainFit.trackModuleLabel : tracksMainFit
 physics.producers.verticesFullSeqFit.trackModuleLabel : tracksFullSeqFit
 
 // Save detailed art records for everything (may be needed for truth plots)
-physics.producers.tracksFlipLR.keepTrackDetailArtRecord : true
-physics.producers.tracksMainFit.keepTrackDetailArtRecord : true
-physics.producers.tracksFullSeqFit.keepTrackDetailArtRecord : true
+//physics.producers.tracksFlipLR.keepTrackDetailArtRecord : true/
+//physics.producers.tracksMainFit.keepTrackDetailArtRecord : true
+//physics.producers.tracksFullSeqFit.keepTrackDetailArtRecord : true

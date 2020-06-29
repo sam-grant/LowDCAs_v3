@@ -1,0 +1,211 @@
+#include "messageParams.fcl"
+#include "trackingConfig.fcl"
+
+process_name : reco
+
+// Input some unpacked data
+source : {
+  module_type : RootInput
+  maxEvents   : -1
+} 
+
+outputs : {
+  out : { 
+    module_type  : RootOutput
+    fileName     : "gm2tracker_reco_coarse.root"
+
+    dataTier     : "full"
+    outputCommands : [ "keep *",
+                      "drop *::*_*_*_unpacking",
+                      "drop gm2common::*_*_*_*",
+                      "drop gm2calo::*_*_*_*",
+                      "drop gm2aux::*_*_*_*",
+                      "drop gm2reconeast::*_*_*_*",
+                      "drop gm2midastoart::*_*_*_*",
+                      "drop gm2ccc::*_*_*_*",
+                      "drop *",
+                      @sequence::trackingChain.outputDrops
+                    ]
+
+     SelectEvents : ["path"]
+     //FCMDPlugins  : [ { plugin_type : Metadata
+     //                   fhicl_name  : "gm2tracker_particle_gun_full.fcl"
+     //                   requestid   : "1"
+     //                   run_config  : "commission" }]
+
+  } // out
+} // end of outputs block
+
+// Services block
+services : {
+  FileCatalogMetadata : {
+    applicationFamily  : "tracker"
+    applicationVersion : "v9_45_00"
+    fileType           : "offline"
+  }
+  message : {
+    debugModules : [] // ["*"]
+    suppressInfo : []
+
+    destinations : {
+      LogToConsole : {
+        type       : "cout"
+        threshold  : "INFO" // "DEBUG" //INFO"
+        categories : @local::message_categories
+      }
+      LogToFile : {
+        type      : "file"
+        filename  : "gm2tracker_reco_coarse.log"
+        append    :  false
+        threshold : "INFO" // "DEBUG"
+        categories : @local::message_categories
+      }
+    }
+  }  // end of message services
+
+  // the coordinate system data is used throughout the tracking code
+  // for now, the tracking uses GEANT for the coordinates
+  // to build the coordinates requires dependent on artg4
+
+  DetectorHolder    : {}
+  ActionHolder      : {}
+  CoordSystemsStore : {}
+  Gm2Constants      : {}
+  RandomNumberGenerator : {}
+
+  @table::trackingChain.reducedGeometry
+  @table::trackingChain.field
+
+  TrackQuality : {} // default is off
+  // Book ROOT file for plots
+  // TFileService : { fileName : "TrackingLockLowDCA.root" }
+
+} // end of services block
+
+physics : {
+
+  filters : {
+
+    TrackFilter : 
+    {
+      module_type : TrackerFillTypeFilter
+      fillType    : 1
+      throwOnEmptyHeaderCollection : false
+    }
+  }
+
+  producers : {
+    // Tracking chain
+   @table::trackingChain.producers
+    // Fit the tracks
+     tracks0 : @local::geanefit_params 
+     tracks1 : @local::geanefit_params 
+     tracks2 : @local::geanefit_params 
+     tracks3 : @local::geanefit_params 
+     tracks4 : @local::geanefit_params 
+     tracks5 : @local::geanefit_params 
+     tracks6 : @local::geanefit_params 
+     tracks7 : @local::geanefit_params 
+     tracks8 : @local::geanefit_params 
+     tracks9 : @local::geanefit_params 
+     tracks10 : @local::geanefit_params
+     tracks11 : @local::geanefit_params
+     tracks12 : @local::geanefit_params
+     tracks13 : @local::geanefit_params
+     tracks14 : @local::geanefit_params
+     tracks15 : @local::geanefit_params
+     tracks16 : @local::geanefit_params
+     tracks17 : @local::geanefit_params
+     tracks18 : @local::geanefit_params
+     tracks19 : @local::geanefit_params
+     tracks20 : @local::geanefit_params
+   } 
+
+  // My path, reconstructing tracks with different lockLowDCA values
+   path : [ TrackFilter,
+     artg4,
+     removeFlash,
+     killStraws,
+     digitTimeSync,
+     deadTime,
+     timeIslands,
+     clustering,
+     seeds,
+     trackCandidates,
+     candidateCleaner,
+     t0Finder,
+     driftDistReco,
+     tracks0,
+     tracks1,
+     tracks2,
+     tracks3, 
+     tracks4,
+     tracks5,
+     tracks6,
+     tracks7,
+     tracks8,
+     tracks9,
+     tracks10,
+     tracks11,
+     tracks12,
+     tracks13,
+     tracks14,
+     tracks15,
+     tracks16,
+     tracks17,
+     tracks18,
+     tracks19,
+     tracks20
+     ] 
+
+   outputPath    : [out] 
+   trigger_paths : [path]
+   end_paths     : [outputPath]
+} // end of physics block
+
+physics.producers.t0Finder.meanTimeOffset : 34 // 36.5 is for 1550V, 34 for 1625V. Different for Sim. 
+
+// Low DCAs scan
+physics.producers.tracks0.lockLowDCAs : 0.000
+physics.producers.tracks1.lockLowDCAs : 0.025
+physics.producers.tracks2.lockLowDCAs : 0.050
+physics.producers.tracks3.lockLowDCAs : 0.075
+physics.producers.tracks4.lockLowDCAs : 0.100
+physics.producers.tracks5.lockLowDCAs : 0.125
+physics.producers.tracks6.lockLowDCAs : 0.150
+physics.producers.tracks7.lockLowDCAs : 0.175
+physics.producers.tracks8.lockLowDCAs : 0.200
+physics.producers.tracks9.lockLowDCAs : 0.225
+physics.producers.tracks10.lockLowDCAs : 0.250
+physics.producers.tracks11.lockLowDCAs : 0.275
+physics.producers.tracks12.lockLowDCAs : 0.300
+physics.producers.tracks13.lockLowDCAs : 0.325 
+physics.producers.tracks14.lockLowDCAs : 0.350
+physics.producers.tracks15.lockLowDCAs : 0.375
+physics.producers.tracks16.lockLowDCAs : 0.400
+physics.producers.tracks17.lockLowDCAs : 0.425
+physics.producers.tracks18.lockLowDCAs : 0.450
+physics.producers.tracks19.lockLowDCAs : 0.475
+physics.producers.tracks20.lockLowDCAs : 0.500
+
+physics.producers.tracks0.keepTrackDetailArtRecord : true
+physics.producers.tracks1.keepTrackDetailArtRecord : true
+physics.producers.tracks2.keepTrackDetailArtRecord : true
+physics.producers.tracks3.keepTrackDetailArtRecord : true
+physics.producers.tracks4.keepTrackDetailArtRecord : true
+physics.producers.tracks5.keepTrackDetailArtRecord : true
+physics.producers.tracks6.keepTrackDetailArtRecord : true
+physics.producers.tracks7.keepTrackDetailArtRecord : true
+physics.producers.tracks8.keepTrackDetailArtRecord : true
+physics.producers.tracks9.keepTrackDetailArtRecord : true
+physics.producers.tracks10.keepTrackDetailArtRecord : true
+physics.producers.tracks11.keepTrackDetailArtRecord : true
+physics.producers.tracks12.keepTrackDetailArtRecord : true
+physics.producers.tracks13.keepTrackDetailArtRecord : true
+physics.producers.tracks14.keepTrackDetailArtRecord : true
+physics.producers.tracks15.keepTrackDetailArtRecord : true
+physics.producers.tracks16.keepTrackDetailArtRecord : true
+physics.producers.tracks17.keepTrackDetailArtRecord : true
+physics.producers.tracks18.keepTrackDetailArtRecord : true
+physics.producers.tracks19.keepTrackDetailArtRecord : true
+physics.producers.tracks20.keepTrackDetailArtRecord : true

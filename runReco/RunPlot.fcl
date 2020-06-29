@@ -111,31 +111,6 @@ physics : {
 
     }
 
-    trackPlotsTruthLR : {
- 
-      module_type :  LowDCAsPlots
- 
-      TrackModuleLabel : "tracksTruthLR"
-      TrackInstanceName : "straws"
-      dirName : "trackPlotsTruthLR"
-      applyTrackQuality : true
-
-    }
-
-    extrapPlotsTruthLR : { 
-
-      module_type : TrackExtrapolationAna
-
-      TrackModuleLabel : "tracksTruthLR"
-      TrackInstanceName : "straws"
-      decayVertexModuleLabel : "verticesTruthLR"
-      decayVertexInstanceName : "backwards"
-      dirName : "extrapPlotsTruthLR"
-      doForwardsExtrap : false
-      applyTrackQuality : true
-
-    }
-
     trackPlotsFullSeqFit : {
  
       module_type :  LowDCAsPlots
@@ -164,8 +139,8 @@ physics : {
 
   }
 
-//  plotPath      : [ trackPlotsFlipLR, extrapPlotsFlipLR, trackPlotsMainFit, extrapPlotsMainFit, trackPlotsFullSeqFit, extrapPlotsFullSeqFit]
-  plotPath      : [extrapPlotsFlipLR]
+  plotPath      : [ trackPlotsFlipLR, extrapPlotsFlipLR, trackPlotsMainFit, extrapPlotsMainFit, trackPlotsFullSeqFit, extrapPlotsFullSeqFit ]
+//  plotPath      : [extrapPlotsFlipLR]
   trigger_paths : [] 
   end_paths     : [plotPath]
 

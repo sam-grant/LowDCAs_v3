@@ -25,8 +25,8 @@ pwd
 pnfsInDir=/pnfs/GM2/scratch/users/${USER}/LowDCAsScans/FineNoneWrong
 
 #Make sure file list exists
-if [ ! -f ../MainFileList.txt ] || [ `cat ../MainFileList.txt | wc -l` -eq 0 ]; then
-  echo "Input file list \"MainFileList.txt\" is required.  This was not found or has 0 entries"
+if [ ! -f ../commonFilesAllScans.txt ] || [ `cat ../commonFilesAllScans.txt | wc -l` -eq 0 ]; then
+  echo "Input file list \"commonFilesAllScans.txt\" is required.  This was not found or has 0 entries"
   return
 fi
 
@@ -35,7 +35,7 @@ fi
 # Split into list with 15 each
 echo "Splitting file list" 
 rm -f SplitFileList*
-split ../MainFileList.txt -l 15 -a 3 -d SplitFileList
+split ../commonFilesAllScans.txt -l 15 -a 3 -d SplitFileList
 for file in `ls SplitFileList*`; do 
   mv $file ${file}.txt
 done

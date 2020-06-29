@@ -1,0 +1,15 @@
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Coarse/027/simScanCoarse_22551606.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Coarse/027/simScanCoarse_22551607.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Coarse/027/simScanCoarse_22551608.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Coarse/027/simScanCoarse_22551609.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Coarse/027/simScanCoarse_22551610.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Coarse/027/simScanCoarse_22551611.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Coarse/027/simScanCoarse_22551612.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Coarse/027/simScanCoarse_22551613.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Coarse/027/simScanCoarse_22551615.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Coarse/027/simScanCoarse_22551616.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Coarse/027/simScanCoarse_22551617.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Coarse/027/simScanCoarse_22551618.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Coarse/027/simScanCoarse_22551619.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Coarse/027/simScanCoarse_22551620.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Coarse/027/simScanCoarse_22551621.root

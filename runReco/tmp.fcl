@@ -1,0 +1,97 @@
+// Simplied version of reconstruction plotting fcl - for debugging
+// Sam Grant - Dec 2019
+
+#include "messageParams.fcl"
+#include "geom/strawtracker.fcl"
+#include "conDBParams.fcl" 
+
+process_name : plot
+
+source : {
+  module_type : RootInput
+  //fileNames : ["gm2tracker_reco.root"]
+  maxEvents   : -1
+}
+
+
+services : {
+
+  message : {
+    debugModules : []
+    suppressInfo : []
+
+    destinations : {
+      LogToConsole : {
+        type       : "cout"
+        threshold  : "INFO"
+        categories : @local::message_categories
+      }
+      LogToFile : {
+        type      : "file"
+        filename  : "recoPlots.log"
+//        filename  : "LowDCAsPlots.log"
+        append    :  false
+        threshold : "INFO"
+        categories : @local::message_categories
+      }
+    }
+  } // end of message services
+
+  DetectorHolder    : {}
+  ActionHolder      : {}
+  CoordSystemsStore : {}
+  Gm2Constants      : {}
+  RandomNumberGenerator : {}
+
+  Geometry : { strawtracker : @local::strawtracker_geom }
+  StrawTrackerGeometry : {}
+  StrawTrackerGeometryConstants : { DatabaseURL : @local::condb_prod_params } // dev db is @local::condb_dev_params
+
+  TrackQuality : {}
+
+  TFileService: {
+    fileName: "recoPlots.root"
+//    fileName: "LowDCAsPlots.root"
+  }
+
+} // end of services block
+physics : {
+
+  analyzers : {
+
+    noFlip    : {
+
+      module_type : LowDCAsPlots
+      // SelectEvents:["filterLaserFills"]
+      // SelectEvents:["strawPathwithDQC"]
+      TrackModuleLabel : "tracksMainFit"
+      TrackInstanceName : "straws"
+      dirName : "noFlip"
+      applyTrackQuality : true
+      
+      }
+
+
+    flip    : {
+
+      module_type : LowDCAsPlots
+
+      // SelectEvents:["filterLaserFills"]
+      // SelectEvents:["strawPathwithDQC"]
+      TrackModuleLabel : "tracksFlipLR"
+      TrackInstanceName : "straws"
+      dirName : "flip"
+      applyTrackQuality : true
+      
+      }
+
+
+
+  } // ana
+
+  plot : [ noFlip, flip ]
+
+  trigger_paths : [] 
+  end_paths     : [plot]
+
+} // end of physics block

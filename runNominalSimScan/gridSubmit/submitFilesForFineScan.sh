@@ -52,15 +52,27 @@ for file in `ls SplitFileList*`; do
 
   # Split output files into directories
   mkdir -p ${pnfsOutDir}/${fileNum}
-  chmod -R g+w $pnfsOutDir/${fileNum}
+  chmod -R g+w ${pnfsOutDir}/${fileNum}
 
   rm -f xrootFileList${fileNum}.txt && touch xrootdFileList${fileNum}.txt
 
   for line in `cat $file`; do
+    id=${line%_*}
+    id=${id##*_}
+    # Skip files already written
+    if [ -f ${pnfsOutDir}/${fileNum}/simScanFine_${id}.root ]; then
+      echo "${pnfsOutDir}/${fileNum}/simScanFine_${id}.root already exists, skipping..."
+      continue
+    fi
     # Strip /pnfs/ from file name and write into new file
     longFileName=${line#/pnfs/*}
     echo root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/${longFileName} >> xrootdFileList${fileNum}.txt
   done
+
+  echo "xrootdFileList${fileNum}.txt"
+  ls ${pnfsOutDir}/${fileNum}/*.root | wc -l
+  cat xrootdFileList${fileNum}.txt
+  
   # Copy fcl & .so file to pnfs so we can get it from grid jobs
   if [ -f ${pnfsOutDir}/${fileNum}/xrootdFileList${fileNum}.txt ]; then
     rm -f ${pnfsOutDir}/${fileNum}/xrootdFileList${fileNum}.txt 
@@ -127,12 +139,6 @@ for file in \`cat xrootdFileList${fileNum}.txt\`; do
 
   id=\${file%_*}
   id=\${id##*_}
-
-  # Skip if the output file already exists
-  if [ -f ${pnfsOutDir}/${fileNum}/simScanFine_\${id}.root ]; then
-    echo "${pnfsOutDir}/${fileNum}/simScanFine_\${id}.root exists, skipping..."
-    continue
-  fi
 
   gm2 -c RunSimAndPlotNominalScanFine.fcl -s \$file -T simScanFine_\${id}.root
 

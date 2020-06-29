@@ -52,15 +52,30 @@ for file in `ls SplitFileList*`; do
 
   # Split output files into directories
   mkdir -p ${pnfsOutDir}/${fileNum}
-  chmod -R g+w $pnfsOutDir/${fileNum}
+  chmod -R g+w ${pnfsOutDir}/${fileNum}
 
   rm -f xrootFileList${fileNum}.txt && touch xrootdFileList${fileNum}.txt
 
   for line in `cat $file`; do
     # Strip /pnfs/ from file name and write into new file
+
+    id=${line%_*}
+    id=${id##*_}
+    # Skip files already written
+    if [ -f ${pnfsOutDir}/${fileNum}/simScanCoarse_${id}.root ]; then
+      echo "${pnfsOutDir}/${fileNum}/simScanCoarse_${id}.root already exists, skipping..."
+      continue
+    fi
+
     longFileName=${line#/pnfs/*}
     echo root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/${longFileName} >> xrootdFileList${fileNum}.txt
   done
+
+  echo "xrootdFileList${fileNum}.txt"
+  ls ${pnfsOutDir}/${fileNum}/*.root | wc -l
+  cat xrootdFileList${fileNum}.txt
+
+  # break
   # Copy fcl & .so file to pnfs so we can get it from grid jobs
   if [ -f ${pnfsOutDir}/${fileNum}/xrootdFileList${fileNum}.txt ]; then
     rm -f ${pnfsOutDir}/${fileNum}/xrootdFileList${fileNum}.txt 
@@ -79,7 +94,7 @@ for file in `ls SplitFileList*`; do
   ifdh cp libgm2tracker_analyses_LowDCAsTruthPlots_module.so ${pnfsOutDir}/${fileNum}/libgm2tracker_analyses_LowDCAsTruthPlots_module.so
   ifdh cp xrootdFileList${fileNum}.txt ${pnfsOutDir}/${fileNum}/xrootdFileList${fileNum}.txt
 
-  echo "Copied RunSimAndPlotNominalScanCoarse.fcl, libgm2tracker_analyses_LowDCAsTruthPlots_module.so, and xrootdFileList${fileNum} to ${pnfsOutDir}/${fileNum}"
+  echo "Copied RunSimAndPlotNominalScanCoarse.fcl, libgm2tracker_analyses_LowDCAsTruthPlots_module.so, and xrootdFileList${fileNum}.txt to ${pnfsOutDir}/${fileNum}"
 
 
 # Make script that we'll want to run on the grid
@@ -127,12 +142,6 @@ for file in \`cat xrootdFileList${fileNum}.txt\`; do
 
   id=\${file%_*}
   id=\${id##*_}
-
-  # Skip if the output file already exists
-  if [ -f ${pnfsOutDir}/${fileNum}/simScanCoarse_\${id}.root ]; then
-    echo "${pnfsOutDir}/${fileNum}/simScanCoarse_\${id}.root exists, skipping..."
-    continue
-  fi
 
   gm2 -c RunSimAndPlotNominalScanCoarse.fcl -s \$file -T simScanCoarse_\${id}.root
 

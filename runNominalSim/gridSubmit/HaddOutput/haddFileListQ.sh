@@ -26,7 +26,7 @@ done
 
 
 # Hadd these files (using Joe's script that does a few at a time)
-../../hadd.sh nominalSimPlotsNoQ_${run}.root $files
+../../hadd.sh nominalSimPlotsQ_${run}.root $files
 
 # mv trackAndTrackCaloTrees_${run}.root /gm2/data/g2be/Production/TrackAndTrackCaloTrees/Run1/manualDQC/trackAndTrackCaloTrees_${run}.root
 

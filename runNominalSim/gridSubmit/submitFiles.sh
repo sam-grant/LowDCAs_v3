@@ -24,23 +24,24 @@ if [ ! -f MainFileList.txt ] || [ `cat MainFileList.txt | wc -l` -eq 0 ]; then
   return
 fi
 
-# Split into list with 15 each
-echo "Splitting file list" 
-rm -f SplitFileList*
-split MainFileList.txt -l 15 -a 3 -d SplitFileList
-for file in `ls SplitFileList*`; do 
-  mv $file ${file}.txt
-done
 
 # Make output directory
-pnfsOutDir=/pnfs/GM2/scratch/users/${USER}/LowDCAsNominalSim/Q
-
-echo "Output files will appear in $pnfsOutDir"
+pnfsOutDir=/pnfs/GM2/scratch/users/${USER}/LowDCAsNominalSim2/Q
 
 if [ ! -d $pnfsOutDir ]; then
   mkdir -p $pnfsOutDir
   chmod -R g+w $pnfsOutDir
 fi
+
+echo "Output files will appear in $pnfsOutDir"
+
+# Split into list with 5 each
+echo "Splitting file list" 
+rm -f SplitFileList*
+split MainFileList.txt -l 5 -a 3 -d SplitFileList
+for file in `ls SplitFileList*`; do 
+  mv $file ${file}.txt
+done
 
 # Add xrootd business to the start of file names
 for file in `ls SplitFileList*`; do 
@@ -48,17 +49,28 @@ for file in `ls SplitFileList*`; do
   fileNum=${file##SplitFileList}
   fileNum=${fileNum%.txt}
 
-  # Split output files into directories
-  mkdir -p ${pnfsOutDir}/${fileNum}
-  chmod -R g+w $pnfsOutDir/${fileNum}
-
   rm -f xrootFileList${fileNum}.txt && touch xrootdFileList${fileNum}.txt
 
   for line in `cat $file`; do
+    id=${line%_*}
+    id=${id##*_}
+    # Skip files already written
+    if [ -f ${pnfsOutDir}/${fileNum}/simPlots_${id}.root ]; then
+      echo "${pnfsOutDir}/${fileNum}/simPlots_${id}.root already exists, skipping..."
+      continue
+    fi
     # Strip /pnfs/ from file name and write into new file
     longFileName=${line#/pnfs/*}
     echo root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/${longFileName} >> xrootdFileList${fileNum}.txt
   done
+
+  echo "xrootdFileList${fileNum}.txt"
+  ls ${pnfsOutDir}/${fileNum}/*.root | wc -l
+  cat xrootdFileList${fileNum}.txt
+
+  # Split output files into directories
+  mkdir -p ${pnfsOutDir}/${fileNum}
+  chmod -R g+w ${pnfsOutDir}/${fileNum}
   # Copy fcl & .so file to pnfs so we can get it from grid jobs
   if [ -f ${pnfsOutDir}/${fileNum}/xrootdFileList${fileNum}.txt ]; then
     rm -f ${pnfsOutDir}/${fileNum}/xrootdFileList${fileNum}.txt 
@@ -125,12 +137,6 @@ for file in \`cat xrootdFileList${fileNum}.txt\`; do
 
   id=\${file%_*}
   id=\${id##*_}
-
-  # Skip if the output file already exists
-  if [ -f ${pnfsOutDir}/${fileNum}/simPlots_\${id}.root ]; then
-    echo "${pnfsOutDir}/${fileNum}/simPlots_\${id}.root exists, skipping..."
-    continue
-  fi
 
   gm2 -c RunSimAndPlotNominal.fcl -s \$file -T simPlots_\${id}.root
 

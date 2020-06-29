@@ -85,7 +85,7 @@ services : {
   TrackQuality : {} // default is off
 
    TFileService: {
-      fileName: "recoFineScanPlots.root"
+      fileName: "recoFineScanPlotsNoQ.root"
    }
 
 } // end of services block

@@ -1,0 +1,15 @@
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Fine/017/simScanFine_22551456.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Fine/017/simScanFine_22551457.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Fine/017/simScanFine_22551458.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Fine/017/simScanFine_22551459.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Fine/017/simScanFine_22551460.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Fine/017/simScanFine_22551461.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Fine/017/simScanFine_22551462.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Fine/017/simScanFine_22551463.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Fine/017/simScanFine_22551464.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Fine/017/simScanFine_22551465.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Fine/017/simScanFine_22551466.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Fine/017/simScanFine_22551467.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Fine/017/simScanFine_22551468.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Fine/017/simScanFine_22551469.root
+/pnfs/GM2/scratch/users/sgrant/LowDCAsScans/Fine/017/simScanFine_22551470.root

@@ -8,7 +8,7 @@ for line in `cat MainFileList.txt`; do
   id=${id##*_}
 
 
-  if [ ! -f ${pnfsOutDir}/*/simPlots_${id}.root ]; then
+  if [ ! -f ${pnfsOutDir}/0*/simPlots_${id}.root ]; then
     echo $line
   fi
 
