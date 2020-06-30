@@ -1,7 +1,7 @@
 void vertialPosMainFit()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Mon Jun 29 16:38:52 2020) by ROOT version 6.12/04
+//=========  (Mon Jun 29 21:59:07 2020) by ROOT version 6.12/04
    TCanvas *c = new TCanvas("c", "c",0,0,800,600);
    c->SetHighLightColor(2);
    c->Range(0,0,1,1);
@@ -84,6 +84,8 @@ void vertialPosMainFit()
    MainFit__4->SetBinContent(235,1);
    MainFit__4->SetBinContent(236,1);
    MainFit__4->SetBinContent(246,1);
+   MainFit__4->SetMinimum(0);
+   MainFit__4->SetMaximum(20);
    MainFit__4->SetEntries(420);
    MainFit__4->SetLineWidth(3);
    MainFit__4->GetXaxis()->SetTitle("Vertical decay position [mm]");

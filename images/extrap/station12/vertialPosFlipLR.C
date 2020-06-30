@@ -1,7 +1,7 @@
 void vertialPosFlipLR()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Mon Jun 29 16:38:52 2020) by ROOT version 6.12/04
+//=========  (Mon Jun 29 21:59:08 2020) by ROOT version 6.12/04
    TCanvas *c = new TCanvas("c", "c",0,0,800,600);
    c->SetHighLightColor(2);
    c->Range(0,0,1,1);
@@ -81,6 +81,8 @@ void vertialPosFlipLR()
    FlipLR__14->SetBinContent(237,1);
    FlipLR__14->SetBinContent(239,2);
    FlipLR__14->SetBinContent(243,1);
+   FlipLR__14->SetMinimum(0);
+   FlipLR__14->SetMaximum(20);
    FlipLR__14->SetEntries(351);
    FlipLR__14->SetLineWidth(3);
    FlipLR__14->GetXaxis()->SetTitle("Vertical decay position [mm]");

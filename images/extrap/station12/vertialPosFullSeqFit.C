@@ -1,7 +1,7 @@
 void vertialPosFullSeqFit()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Mon Jun 29 16:38:52 2020) by ROOT version 6.12/04
+//=========  (Mon Jun 29 21:59:07 2020) by ROOT version 6.12/04
    TCanvas *c = new TCanvas("c", "c",0,0,800,600);
    c->SetHighLightColor(2);
    c->Range(0,0,1,1);
@@ -85,6 +85,8 @@ void vertialPosFullSeqFit()
    FullSeqFit__6->SetBinContent(237,1);
    FullSeqFit__6->SetBinContent(240,1);
    FullSeqFit__6->SetBinContent(241,1);
+   FullSeqFit__6->SetMinimum(0);
+   FullSeqFit__6->SetMaximum(20);
    FullSeqFit__6->SetEntries(434);
    FullSeqFit__6->SetLineWidth(3);
    FullSeqFit__6->GetXaxis()->SetTitle("Vertical decay position [mm]");

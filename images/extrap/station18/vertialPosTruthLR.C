@@ -1,7 +1,7 @@
 void vertialPosTruthLR()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Mon Jun 29 16:38:52 2020) by ROOT version 6.12/04
+//=========  (Mon Jun 29 21:59:07 2020) by ROOT version 6.12/04
    TCanvas *c = new TCanvas("c", "c",0,0,800,600);
    c->SetHighLightColor(2);
    c->Range(0,0,1,1);
@@ -86,6 +86,8 @@ void vertialPosTruthLR()
    TruthLR__12->SetBinContent(236,1);
    TruthLR__12->SetBinContent(238,1);
    TruthLR__12->SetBinContent(239,3);
+   TruthLR__12->SetMinimum(0);
+   TruthLR__12->SetMaximum(20);
    TruthLR__12->SetEntries(557);
    TruthLR__12->SetLineWidth(3);
    TruthLR__12->GetXaxis()->SetTitle("Vertical decay position [mm]");

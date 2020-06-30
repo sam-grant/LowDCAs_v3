@@ -1,7 +1,7 @@
 void radialPosTruthLR()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Mon Jun 29 16:38:52 2020) by ROOT version 6.12/04
+//=========  (Mon Jun 29 21:59:07 2020) by ROOT version 6.12/04
    TCanvas *c = new TCanvas("c", "c",0,0,800,600);
    c->SetHighLightColor(2);
    c->Range(0,0,1,1);
@@ -94,6 +94,8 @@ void radialPosTruthLR()
    TruthLR__11->SetBinContent(242,4);
    TruthLR__11->SetBinContent(243,1);
    TruthLR__11->SetBinContent(244,1);
+   TruthLR__11->SetMinimum(0);
+   TruthLR__11->SetMaximum(20);
    TruthLR__11->SetEntries(557);
    TruthLR__11->SetLineWidth(3);
    TruthLR__11->GetXaxis()->SetTitle("Radial decay position [mm]");

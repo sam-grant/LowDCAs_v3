@@ -48,8 +48,8 @@ for i in range(len(fnames)): # quality on/off files
 			radial.GetXaxis().SetRangeUser(-100,100)
 			vertical.GetXaxis().SetRangeUser(-100,100)
 
-			# radial.GetYaxis().SetRangeUser(0,25)
-			# vertical.GetYaxis().SetRangeUser(0,25)			
+			radial.GetYaxis().SetRangeUser(0,20)
+			vertical.GetYaxis().SetRangeUser(0,20)			
 
 			# Plot invidual ones
 			FancyDraw1D(radial, ";Radial decay position [mm];Tracks", "../images/extrap/"+stations[k]+"/radialPos"+fitModes[j])
@@ -57,11 +57,15 @@ for i in range(len(fnames)): # quality on/off files
 
 
 	# FancyDraw1DOverlay3(radial12_[0],radial12_[1],radial12_[2],"test","../images/extrap/"+stations[0]+"/radialPosOverlay")
+	FancyDraw1DOverlay3(radial12_[0],radial12_[1],radial12_[2],"Station 12;Radial decay position [mm];Tracks","../images/extrap/"+stations[0]+"/radialPosOverlay3")
+	FancyDraw1DOverlay3(radial18_[0],radial18_[1],radial18_[2],"Station 18;Radial decay position [mm];Tracks","../images/extrap/"+stations[1]+"/radialPosOverlay3")
+	FancyDraw1DOverlay3(vertical12_[0],vertical12_[1],vertical12_[2],"Station 12;Vertical decay position [mm];Tracks","../images/extrap/"+stations[0]+"/verticalPosOverlay3")
+	FancyDraw1DOverlay3(vertical18_[0],vertical18_[1],vertical18_[2],"Station 18;Vertical decay position [mm];Tracks","../images/extrap/"+stations[1]+"/verticalPosOverlay3")
 
-	FancyDraw1DOverlay(radial12_[2],radial12_[1],"Station 12;Radial decay position [mm];Tracks","../images/extrap/"+stations[0]+"/radialPosOverlay")
-	FancyDraw1DOverlay(radial18_[2],radial18_[1],"Station 18;Radial decay position [mm];Tracks","../images/extrap/"+stations[1]+"/radialPosOverlay")
-	FancyDraw1DOverlay(vertical12_[2],vertical12_[1],"Station 12;Vertical decay position [mm];Tracks","../images/extrap/"+stations[0]+"/verticalPosOverlay")
-	FancyDraw1DOverlay(vertical18_[2],vertical18_[1],"Station 18;Vertical decay position [mm];Tracks","../images/extrap/"+stations[1]+"/verticalPosOverlay")
+	# FancyDraw1DOverlay(radial12_[2],radial12_[1],"Station 12;Radial decay position [mm];Tracks","../images/extrap/"+stations[0]+"/radialPosOverlay")
+	# FancyDraw1DOverlay(radial18_[2],radial18_[1],"Station 18;Radial decay position [mm];Tracks","../images/extrap/"+stations[1]+"/radialPosOverlay")
+	# FancyDraw1DOverlay(vertical12_[2],vertical12_[1],"Station 12;Vertical decay position [mm];Tracks","../images/extrap/"+stations[0]+"/verticalPosOverlay")
+	# FancyDraw1DOverlay(vertical18_[2],vertical18_[1],"Station 18;Vertical decay position [mm];Tracks","../images/extrap/"+stations[1]+"/verticalPosOverlay")
 
 
 

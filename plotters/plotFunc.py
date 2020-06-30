@@ -1,4 +1,4 @@
-from ROOT import TH1, TH2, TGraphErrors, TCanvas, TLegend, gStyle
+from ROOT import TH1, TH2, TGraphErrors, TCanvas, TLegend, gStyle, TPad, TGaxis
 from array import array
 
 # Need some overlay functionality, and TGraphErrors. 
@@ -76,7 +76,19 @@ def FancyDraw1DOverlay3(hist1, hist2, hist3, title, fname):
 	c = TCanvas("c","c",800,600)
 
 	hist1.SetTitle(title)
+
+	leg = TLegend(0.60,0.65,0.89,0.89)
+	#leg.SetHeader("Mean time offset")
+	leg.AddEntry(hist1,"#splitline{"+str(hist1.GetName())+"}{Mean = "+str('%s' % float('%.2g' % hist1.GetMean()))+"#pm"+str('%s' % float('%.1g' % hist1.GetMeanError()))+" ns}")
+	leg.AddEntry(hist2,"#splitline{"+str(hist2.GetName())+"}{Mean = "+str('%s' % float('%.2g' % hist2.GetMean()))+"#pm"+str('%s' % float('%.1g' % hist2.GetMeanError()))+" ns}")
+	leg.AddEntry(hist3,"#splitline{"+str(hist3.GetName())+"}{Mean = "+str('%s' % float('%.2g' % hist3.GetMean()))+"#pm"+str('%s' % float('%.1g' % hist3.GetMeanError()))+" ns}")
 			
+	leg.SetBorderSize(0)
+
+	hist1.SetStats(0)
+	hist2.SetStats(0)
+	hist3.SetStats(0)
+
 	hist1.GetXaxis().SetTitleSize(.04)
 	hist1.GetYaxis().SetTitleSize(.04)
 	hist1.GetXaxis().SetTitleOffset(1.1)
@@ -86,14 +98,15 @@ def FancyDraw1DOverlay3(hist1, hist2, hist3, title, fname):
  	hist1.GetYaxis().SetMaxDigits(4)
 
 	# hist1.SetLineWidth(3)
-	hist1.SetLineColor(1)	
-	hist1.SetLineColor(1)
+	# hist1.SetLineColor(1)	
+	hist1.SetLineColor(4)
 	hist2.SetLineColor(2)
-	hist3.SetLineColor(4)
+	hist3.SetLineColor(1)
 
 	hist1.Draw()
 	hist2.Draw("SAME")
 	hist3.Draw("SAME")
+	leg.Draw("SAME")
 	
 	c.SaveAs(fname+".C")
 	c.SaveAs(fname+".pdf")
@@ -213,9 +226,86 @@ def DrawScatOverlay(graph1, graph2, name1, name2, title, fname): #, grid):
 
 	return
 
+def DrawScatRatio(graph1, graph2, ratio, name1, name2, fname): #, grid):
+
+	c = TCanvas("c","c",800,800)
+	# Upper histogram plot is pad1
+	p1 = TPad("p1", "p1", 0, 0.3, 1, 1.0)
+	p1.SetBottomMargin(0)  # joins upper and lower plot
+	p1.Draw()
+	# Lower ratio plot is pad 2
+	c.cd()  # returns to main canvas before defining pad2
+	p2 = TPad("p2", "p2", 0, 0.05, 1, 0.3)
+	p2.SetTopMargin(0)  # joins upper and lower plot
+	p2.SetBottomMargin(0.2)
+	# p2.SetGridx()
+	p2.Draw()
+
+	# Now draw
+	p1.cd()
+
+	leg = TLegend(0.69,0.89,0.69,0.89)
+	leg.AddEntry(graph1,name1)
+	leg.AddEntry(graph2,name2)
+	leg.SetBorderSize(0)
+	graph1.SetTitle("")
+	graph1.GetXaxis().SetRangeUser(-1,501)
+	graph1.GetYaxis().SetTitle("Tracks passing quality cuts")
+	# graph1.GetYaxis().SetTitleSize(20) # .04)
+	graph1.GetYaxis().SetTitleOffset(1.25)
+	graph1.GetYaxis().CenterTitle(1)
+	graph1.SetMarkerStyle(20) # Full circle
+	graph2.SetMarkerStyle(24) # Open circle
+	graph1.Draw("AP")
+	graph2.Draw("P SAME")
+	leg.Draw("same")
+
+	# to avoid clipping the bottom zero, redraw a small axis
+  	# ratio.GetYaxis().SetLabelSize(15) # SetLabelSize(.05)
+  	# axis = TGaxis(-5, 20, -5, 220, 20, 220, 510, "")
+  	# axis.SetLabelFont(43)
+  	# axis.SetLabelSize(15)
+
+
+
+
+  	p2.cd()
+  	# Sort out y-axis\
+  	ratio.SetTitle("") # ;test;test")
+  	y2 = ratio.GetYaxis()
+  	y2.SetTitle("Ratio")
+  	y2.CenterTitle(1)
+  	y2.SetTitleOffset(1.75)
+  	y2.SetTitleSize(20)
+  	y2.SetTitleFont(43)
+  	y2.SetLabelFont(43)
+  	y2.SetLabelSize(15)
+  	y2.SetNdivisions(6)
+  	# Sort x-axis
+  	x2 = ratio.GetXaxis()
+  	x2.SetTitle("Lock low DCA threshold [#mum]")
+  	x2.CenterTitle(1)
+	x2.SetTitleSize(20) #)
+	x2.SetTitleFont(43)
+	x2.SetRangeUser(-1,501)
+	x2.SetTitleOffset(3.5)
+	x2.SetLabelFont(43)
+	x2.SetLabelSize(15)
+	ratio.SetLineColor(2)
+	ratio.SetMarkerColor(2)
+	ratio.SetMarkerStyle(24)
+  	ratio.Draw("AP")
+	c.SaveAs(fname+".pdf")
+	c.SaveAs(fname+".C")
+
+	return
+
 def DrawScatOverlay3(graph1, graph2, graph3, name1, name2, name3, title, fname): #, grid):
 
 	c = TCanvas("c","c",800,600)
+	c.Divide(2)
+
+
 
 	leg = TLegend(0.69,0.89,0.69,0.89)
 	leg.AddEntry(graph1,name1)

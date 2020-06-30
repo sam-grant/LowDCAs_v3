@@ -1,7 +1,7 @@
 void radialPosMainFit()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Mon Jun 29 16:38:52 2020) by ROOT version 6.12/04
+//=========  (Mon Jun 29 21:59:07 2020) by ROOT version 6.12/04
    TCanvas *c = new TCanvas("c", "c",0,0,800,600);
    c->SetHighLightColor(2);
    c->Range(0,0,1,1);
@@ -95,6 +95,8 @@ void radialPosMainFit()
    MainFit__3->SetBinContent(243,1);
    MainFit__3->SetBinContent(244,1);
    MainFit__3->SetBinContent(251,1);
+   MainFit__3->SetMinimum(0);
+   MainFit__3->SetMaximum(20);
    MainFit__3->SetEntries(420);
    MainFit__3->SetLineWidth(3);
    MainFit__3->GetXaxis()->SetTitle("Radial decay position [mm]");

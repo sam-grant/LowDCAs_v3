@@ -1,7 +1,7 @@
 void radialPosFlipLR()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Mon Jun 29 16:38:52 2020) by ROOT version 6.12/04
+//=========  (Mon Jun 29 21:59:08 2020) by ROOT version 6.12/04
    TCanvas *c = new TCanvas("c", "c",0,0,800,600);
    c->SetHighLightColor(2);
    c->Range(0,0,1,1);
@@ -95,6 +95,8 @@ void radialPosFlipLR()
    FlipLR__15->SetBinContent(243,1);
    FlipLR__15->SetBinContent(244,1);
    FlipLR__15->SetBinContent(251,1);
+   FlipLR__15->SetMinimum(0);
+   FlipLR__15->SetMaximum(20);
    FlipLR__15->SetEntries(420);
    FlipLR__15->SetLineWidth(3);
    FlipLR__15->GetXaxis()->SetTitle("Radial decay position [mm]");
