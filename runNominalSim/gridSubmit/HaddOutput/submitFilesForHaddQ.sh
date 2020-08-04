@@ -25,14 +25,14 @@ pwd
 pnfsInDir=/pnfs/GM2/scratch/users/${USER}/LowDCAsNominalSim/Q
 
 #Make sure file list exists
-if [ ! -f ../commonFilesForHadd.txt ] || [ `cat ../commonFilesForHadd.txt | wc -l` -eq 0 ]; then
-  echo "Input file list \"commonFilesForHadd.txt\" is required.  This was not found or has 0 entries"
-  return
-fi
+# if [ ! -f ../commonFilesForHadd.txt ] || [ `cat ../commonFilesForHadd.txt | wc -l` -eq 0 ]; then
+#   echo "Input file list \"commonFilesForHadd.txt\" is required.  This was not found or has 0 entries"
+#   return
+# fi
 
 # Really really dumb way of doing this
 
-# Split into list with 15 each
+# Split into list with 5 each
 echo "Splitting file list" 
 rm -f SplitFileList*
 split ../commonFilesForHadd.txt -l 15 -a 3 -d SplitFileList

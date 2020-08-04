@@ -129,8 +129,8 @@ physics : {
       TrackModuleLabel : "tracksFlipLR"
       TrackInstanceName : "straws"
       dirName : "trackPlotsFlipLR"
-      SelectEvents :["trackPath"] // offline:strawPathwithDQC"]
-      applyTrackQuality : false
+      SelectEvents :["trackPath"] 
+      applyTrackQuality : true
 
     }
 
@@ -142,7 +142,7 @@ physics : {
       TrackInstanceName : "straws"
       decayVertexModuleLabel : "verticesFlipLR"
       decayVertexInstanceName : "backwards"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       dirName : "extrapPlotsFlipLR"
       doForwardsExtrap : false      
       applyTrackQuality : true
@@ -156,7 +156,7 @@ physics : {
  
       TrackModuleLabel : "tracksMainFit"
       TrackInstanceName : "straws"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       dirName : "trackPlotsMainFit"
       applyTrackQuality : true
 
@@ -170,7 +170,8 @@ physics : {
       TrackInstanceName : "straws"
       decayVertexModuleLabel : "verticesMainFit"
       decayVertexInstanceName : "backwards"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
       dirName : "extrapPlotsMainFit"
       doForwardsExtrap : false      
       applyTrackQuality : true
@@ -183,7 +184,8 @@ physics : {
  
       TrackModuleLabel : "tracksFullSeqFit"
       TrackInstanceName : "straws"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
       dirName : "trackPlotsFullSeqFit"
       applyTrackQuality : true
 
@@ -197,7 +199,8 @@ physics : {
       TrackInstanceName : "straws"
       decayVertexModuleLabel : "verticesFullSeqFit"
       decayVertexInstanceName : "backwards"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
       dirName : "extrapPlotsFullSeqFit"
       applyTrackQuality : true
       doForwardsExtrap : false
@@ -228,7 +231,7 @@ physics : {
      verticesFullSeqFit
      ] 
 
-  plotPath      : [ out, trackPlotsFlipLR ] // , extrapPlotsFlipLR, trackPlotsMainFit, extrapPlotsMainFit, trackPlotsFullSeqFit, extrapPlotsFullSeqFit]
+  plotPath      : [ out, trackPlotsFlipLR, extrapPlotsFlipLR, trackPlotsMainFit, extrapPlotsMainFit, trackPlotsFullSeqFit, extrapPlotsFullSeqFit]
   // plotPath      : [ trackPlotsMainFit ]
   
   trigger_paths : [ trackPath ]

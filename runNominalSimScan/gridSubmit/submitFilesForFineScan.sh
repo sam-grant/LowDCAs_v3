@@ -29,7 +29,7 @@ fi
 # Split into list with 15 each
 echo "Splitting file list" 
 rm -f SplitFileList*
-split MainFileList.txt -l 15 -a 3 -d SplitFileList
+split MainFileList.txt -l 5 -a 3 -d SplitFileList
 for file in `ls SplitFileList*`; do 
   mv $file ${file}.txt
 done
@@ -164,7 +164,7 @@ EOF
   done
 
   #Submit grid job
-  jobsub_submit -N 1 -G gm2 --OS=SL6 --resource-provides=usage_model=DEDICATED,OPPORTUNISTIC --expected-lifetime=6h --role=Analysis file://${pnfsOutDir}/${fileNum}/runFineScanJob${fileNum}.sh
+  jobsub_submit -N 1 -G gm2 --OS=SL6 --resource-provides=usage_model=DEDICATED,OPPORTUNISTIC --expected-lifetime=4h --memory=3GB --role=Analysis file://${pnfsOutDir}/${fileNum}/runFineScanJob${fileNum}.sh
   rm -f runFineScanJob${fileNum}.sh
   rm -f xrootdFileList${fileNum}.txt
   rm -f SplitFileList${fileNum}.txt

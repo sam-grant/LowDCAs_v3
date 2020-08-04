@@ -147,7 +147,7 @@ physics : {
       TrackModuleLabel : "tracks0"
       TrackInstanceName : "straws"
       dirName : "0.100"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       applyTrackQuality : false
 
     }
@@ -160,7 +160,7 @@ physics : {
       TrackModuleLabel : "tracks1"
       TrackInstanceName : "straws"
       dirName : "0.105"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       applyTrackQuality : false
     }
 
@@ -172,7 +172,7 @@ physics : {
       TrackModuleLabel : "tracks2"
       TrackInstanceName : "straws"
       dirName : "0.110"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       applyTrackQuality : false
 
     }
@@ -184,7 +184,7 @@ physics : {
       TrackModuleLabel : "tracks3"
       TrackInstanceName : "straws"
       dirName : "0.115"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       applyTrackQuality : false
 
     }
@@ -196,7 +196,7 @@ physics : {
       TrackModuleLabel : "tracks4"
       TrackInstanceName : "straws"
       dirName : "0.120"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       applyTrackQuality : false
 
     }
@@ -208,7 +208,7 @@ physics : {
       TrackModuleLabel : "tracks5"
       TrackInstanceName : "straws"
       dirName : "0.125"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       applyTrackQuality : false
 
     }
@@ -220,7 +220,7 @@ physics : {
       TrackModuleLabel : "tracks6"
       TrackInstanceName : "straws"
       dirName : "0.130"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       applyTrackQuality : false
 
     }
@@ -232,7 +232,7 @@ physics : {
       TrackModuleLabel : "tracks7"
       TrackInstanceName : "straws"
       dirName : "0.135"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       applyTrackQuality : false
 
     }
@@ -244,7 +244,7 @@ physics : {
       TrackModuleLabel : "tracks8"
       TrackInstanceName : "straws"
       dirName : "0.140"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       applyTrackQuality : false
 
     }
@@ -256,7 +256,7 @@ physics : {
       TrackModuleLabel : "tracks9"
       TrackInstanceName : "straws"
       dirName : "0.145"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       applyTrackQuality : false
 
     }
@@ -268,7 +268,7 @@ physics : {
       TrackModuleLabel : "tracks10"
       TrackInstanceName : "straws"
       dirName : "0.150"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       applyTrackQuality : false
 
     }
@@ -280,7 +280,7 @@ physics : {
       TrackModuleLabel : "tracks11"
       TrackInstanceName : "straws"
       dirName : "0.155"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       applyTrackQuality : false
 
     }
@@ -292,7 +292,7 @@ physics : {
       TrackModuleLabel : "tracks12"
       TrackInstanceName : "straws"
       dirName : "0.160"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       applyTrackQuality : false
 
     }
@@ -304,7 +304,7 @@ physics : {
       TrackModuleLabel : "tracks13"
       TrackInstanceName : "straws"
       dirName : "0.165"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       applyTrackQuality : false
 
     }
@@ -316,7 +316,7 @@ physics : {
       TrackModuleLabel : "tracks14"
       TrackInstanceName : "straws"
       dirName : "0.170"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       applyTrackQuality : false
 
     }
@@ -328,7 +328,7 @@ physics : {
       TrackModuleLabel : "tracks15"
       TrackInstanceName : "straws"
       dirName : "0.175"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       applyTrackQuality : false
 
     }
@@ -340,7 +340,7 @@ physics : {
       TrackModuleLabel : "tracks16"
       TrackInstanceName : "straws"
       dirName : "0.180"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       applyTrackQuality : false
 
     }
@@ -352,7 +352,7 @@ physics : {
       TrackModuleLabel : "tracks17"
       TrackInstanceName : "straws"
       dirName : "0.185"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       applyTrackQuality : false
 
     }
@@ -364,7 +364,7 @@ physics : {
       TrackModuleLabel : "tracks18"
       TrackInstanceName : "straws"
       dirName : "0.190"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       applyTrackQuality : false
 
     }
@@ -376,7 +376,7 @@ physics : {
       TrackModuleLabel : "tracks19"
       TrackInstanceName : "straws"
       dirName : "0.195"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       applyTrackQuality : false
 
     }
@@ -388,7 +388,7 @@ physics : {
       TrackModuleLabel : "tracks20"
       TrackInstanceName : "straws"
       dirName : "0.200"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       applyTrackQuality : false
 
     }

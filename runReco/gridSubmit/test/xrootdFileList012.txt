@@ -1,0 +1,15 @@
+root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551381_1567190852.1.root
+root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551382_1567190852.1.root
+root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551383_1567190852.1.root
+root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551384_1567190852.1.root
+root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551385_1567190852.1.root
+root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551386_1567190852.1.root
+root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551387_1567190852.1.root
+root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551388_1567190852.1.root
+root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551389_1567190852.1.root
+root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551390_1567190852.1.root
+root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551391_1567190852.1.root
+root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551392_1567190852.1.root
+root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551393_1567190852.1.root
+root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551394_1567190852.1.root
+root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551395_1567190852.1.root

@@ -35,9 +35,11 @@ fi
 
 echo "Output files will appear in $pnfsOutDir"
 
-# Split into list with 5 each
+# Split into "list" with 5 files each
 echo "Splitting file list" 
 rm -f SplitFileList*
+rm -f xrootdFileList*
+
 split MainFileList.txt -l 5 -a 3 -d SplitFileList
 for file in `ls SplitFileList*`; do 
   mv $file ${file}.txt
@@ -51,12 +53,14 @@ for file in `ls SplitFileList*`; do
 
   rm -f xrootFileList${fileNum}.txt && touch xrootdFileList${fileNum}.txt
 
+  rm -f ${pnfsOutDir}/xrootdFileList*.txt
+
   for line in `cat $file`; do
     id=${line%_*}
     id=${id##*_}
     # Skip files already written
-    if [ -f ${pnfsOutDir}/${fileNum}/simPlots_${id}.root ]; then
-      echo "${pnfsOutDir}/${fileNum}/simPlots_${id}.root already exists, skipping..."
+    if [ -f ${pnfsOutDir}/simPlots_${id}.root ]; then
+      echo "${pnfsOutDir}/simPlots_${id}.root already exists, skipping..."
       continue
     fi
     # Strip /pnfs/ from file name and write into new file
@@ -64,32 +68,41 @@ for file in `ls SplitFileList*`; do
     echo root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/${longFileName} >> xrootdFileList${fileNum}.txt
   done
 
+  # Skip if file list is empty
+  if [[ ! -s xrootdFileList${fileNum}.txt ]]; then
+    echo "File list is empty, no job submitted"
+    continue
+  fi
+
   echo "xrootdFileList${fileNum}.txt"
-  ls ${pnfsOutDir}/${fileNum}/*.root | wc -l
+  # ls ${pnfsOutDir}/${fileNum}/*.root | wc -l
   cat xrootdFileList${fileNum}.txt
 
-  # Split output files into directories
-  mkdir -p ${pnfsOutDir}/${fileNum}
-  chmod -R g+w ${pnfsOutDir}/${fileNum}
+  # # Split output files into directories
+  # mkdir -p ${pnfsOutDir}
+  # chmod -R g+w ${pnfsOutDir}
   # Copy fcl & .so file to pnfs so we can get it from grid jobs
-  if [ -f ${pnfsOutDir}/${fileNum}/xrootdFileList${fileNum}.txt ]; then
-    rm -f ${pnfsOutDir}/${fileNum}/xrootdFileList${fileNum}.txt 
+  if [ -f ${pnfsOutDir}/xrootdFileList${fileNum}.txt ]; then
+    rm -f ${pnfsOutDir}/xrootdFileList${fileNum}.txt 
   fi
 
-  if [ -f ${pnfsOutDir}/${fileNum}/RunSimAndPlotNominal.fcl ]; then
-    rm -f ${pnfsOutDir}/${fileNum}/RunSimAndPlotNominal.fcl  
+  if [ -f ${pnfsOutDir}/RunSimAndPlotNominal.fcl ]; then
+    rm -f ${pnfsOutDir}/RunSimAndPlotNominal.fcl  
   fi
-  if [ -f ${pnfsOutDir}/${fileNum}/libgm2tracker_analyses_LowDCAsTruthPlots_module.so ]; then
-    rm -f ${pnfsOutDir}/${fileNum}/libgm2tracker_analyses_LowDCAsTruthPlots_module.so
+  if [ -f ${pnfsOutDir}/libgm2tracker_analyses_LowDCAsTruthPlots_module.so ]; then
+    rm -f ${pnfsOutDir}/libgm2tracker_analyses_LowDCAsTruthPlots_module.so
   fi
 
   sleep 5
 
-  ifdh cp RunSimAndPlotNominal.fcl ${pnfsOutDir}/${fileNum}/RunSimAndPlotNominal.fcl
-  ifdh cp libgm2tracker_analyses_LowDCAsTruthPlots_module.so ${pnfsOutDir}/${fileNum}/libgm2tracker_analyses_LowDCAsTruthPlots_module.so
-  ifdh cp xrootdFileList${fileNum}.txt ${pnfsOutDir}/${fileNum}/xrootdFileList${fileNum}.txt
+  ifdh cp RunSimAndPlotNominal.fcl ${pnfsOutDir}/RunSimAndPlotNominal.fcl
+  ifdh cp libgm2tracker_analyses_LowDCAsTruthPlots_module.so ${pnfsOutDir}/libgm2tracker_analyses_LowDCAsTruthPlots_module.so
+  if [ -f ${pnfsOutDir}/xrootdFileList${fileNum}.txt ]; then
+      rm -f ${pnfsOutDir}/xrootdFileList${fileNum}.txt
+  fi
+  ifdh cp xrootdFileList${fileNum}.txt ${pnfsOutDir}/xrootdFileList${fileNum}.txt
 
-  echo "Copied RunSimAndPlotNominal.fcl, libgm2tracker_analyses_LowDCAsTruthPlots_module.so, and xrootdFileList${fileNum} to ${pnfsOutDir}/${fileNum}"
+  echo "Copied RunSimAndPlotNominal.fcl, libgm2tracker_analyses_LowDCAsTruthPlots_module.so, and xrootdFileList${fileNum} to ${pnfsOutDir}"
 
 
 # Make script that we'll want to run on the grid
@@ -100,22 +113,22 @@ source /cvmfs/fermilab.opensciencegrid.org/products/larsoft/setup
 setup ifdhc
 
 # Copy xrootdFileList${fileNum} here
-if [ ! -z "\`ifdh ls ${pnfsOutDir}/${fileNum}/xrootdFileList${fileNum}.txt\`" ]; then
-  ifdh cp ${pnfsOutDir}/${fileNum}/xrootdFileList${fileNum}.txt xrootdFileList${fileNum}.txt
+if [ ! -z "\`ifdh ls ${pnfsOutDir}/xrootdFileList${fileNum}.txt\`" ]; then
+  ifdh cp ${pnfsOutDir}/xrootdFileList${fileNum}.txt xrootdFileList${fileNum}.txt
 else 
-  echo "${pnfsOutDir}/${fileNum}/xrootdFileList${fileNum}.txt does not exist"
+  echo "${pnfsOutDir}/xrootdFileList${fileNum}.txt does not exist"
 fi
 
 #Copy fcl and .so files
-if [ ! -z "\`ifdh ls ${pnfsOutDir}/${fileNum}/RunSimAndPlotNominal.fcl\`" ]; then
-  ifdh cp ${pnfsOutDir}/${fileNum}/RunSimAndPlotNominal.fcl ./RunSimAndPlotNominal.fcl
+if [ ! -z "\`ifdh ls ${pnfsOutDir}/RunSimAndPlotNominal.fcl\`" ]; then
+  ifdh cp ${pnfsOutDir}/RunSimAndPlotNominal.fcl ./RunSimAndPlotNominal.fcl
 else 
-  echo "${pnfsOutDir}/${fileNum}/RunSimAndPlotNominal.fcl does not exist"
+  echo "${pnfsOutDir}/RunSimAndPlotNominal.fcl does not exist"
 fi
-if [ ! -z "\`ifdh ls ${pnfsOutDir}/${fileNum}/libgm2tracker_analyses_LowDCAsTruthPlots_module.so\`" ]; then
-  ifdh cp ${pnfsOutDir}/${fileNum}/libgm2tracker_analyses_LowDCAsTruthPlots_module.so ./libgm2tracker_analyses_LowDCAsTruthPlots_module.so
+if [ ! -z "\`ifdh ls ${pnfsOutDir}/libgm2tracker_analyses_LowDCAsTruthPlots_module.so\`" ]; then
+  ifdh cp ${pnfsOutDir}/libgm2tracker_analyses_LowDCAsTruthPlots_module.so ./libgm2tracker_analyses_LowDCAsTruthPlots_module.so
 else 
-  echo "${pnfsOutDir}/${fileNum}/libgm2tracker_analyses_LowDCAsTruthPlots_module.so does not exist"
+  echo "${pnfsOutDir}/libgm2tracker_analyses_LowDCAsTruthPlots_module.so does not exist"
 fi
 
 #Setup gm2
@@ -143,7 +156,7 @@ for file in \`cat xrootdFileList${fileNum}.txt\`; do
   # Only copy back if job completed successfully (output from last command was 0)
   if [ \$? -eq 0 ]; then
     if [ -f simPlots_\${id}.root ]; then
-      ifdh mv simPlots_\${id}.root ${pnfsOutDir}/${fileNum}/simPlots_\${id}.root
+      ifdh mv simPlots_\${id}.root ${pnfsOutDir}/simPlots_\${id}.root
     else 
       echo "simPlots_\${id}.root does not exist.  ls reads:"
       ls
@@ -152,20 +165,23 @@ for file in \`cat xrootdFileList${fileNum}.txt\`; do
 done
 EOF
 
-  if [ -f ${pnfsOutDir}/${fileNum}/runNominalSimJob${fileNum}.sh ]; then
-    rm -f ${pnfsOutDir}/${fileNum}/runNominalSimJob${fileNum}.sh
+  if [ -f ${pnfsOutDir}/runNominalSimJob${fileNum}.sh ]; then
+    rm -f ${pnfsOutDir}/runNominalSimJob${fileNum}.sh
   fi
-    ifdh cp runNominalSimJob${fileNum}.sh ${pnfsOutDir}/${fileNum}/runNominalSimJob${fileNum}.sh
-  while [ ! -f ${pnfsOutDir}/${fileNum}/runNominalSimJob${fileNum}.sh ]; do
-    echo "${pnfsOutDir}/${fileNum}/runNominalSimJob${fileNum}.sh not found after ifdh cp.  Sleeping 5..."
+    ifdh cp runNominalSimJob${fileNum}.sh ${pnfsOutDir}/runNominalSimJob${fileNum}.sh
+  while [ ! -f ${pnfsOutDir}/runNominalSimJob${fileNum}.sh ]; do
+    echo "${pnfsOutDir}/runNominalSimJob${fileNum}.sh not found after ifdh cp.  Sleeping 5..."
     sleep 5
   done
 
   #Submit grid job
-  jobsub_submit -N 1 -G gm2 --OS=SL6 --resource-provides=usage_model=DEDICATED,OPPORTUNISTIC --expected-lifetime=6h --role=Analysis file://${pnfsOutDir}/${fileNum}/runNominalSimJob${fileNum}.sh
+  jobsub_submit -N 1 -G gm2 --OS=SL6 --resource-provides=usage_model=DEDICATED,OPPORTUNISTIC --expected-lifetime=4h --memory=3GB --role=Analysis file://${pnfsOutDir}/runNominalSimJob${fileNum}.sh
+
   rm -f runNominalSimJob${fileNum}.sh
   rm -f xrootdFileList${fileNum}.txt
   rm -f SplitFileList${fileNum}.txt
+
+  # break
 
 done
 

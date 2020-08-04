@@ -1,0 +1,12 @@
+29-Jul-2020 02:33:26 CDT  Initiating request to open input file "root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551498_1567190852.1.root"
+%MSG-s ArtException:  Early 29-Jul-2020 06:33:26 CDT JobSetup
+cet::exception caught in art
+---- FileOpenError BEGIN
+  ---- FatalRootError BEGIN
+    Fatal Root Error: @SUB=TNetXNGFile::Open
+    [ERROR] Operation expired
+  ---- FatalRootError END
+  
+  RootInputFileSequence::initFile(): Input file root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551498_1567190852.1.root was not found or could not be opened.
+---- FileOpenError END
+%MSG

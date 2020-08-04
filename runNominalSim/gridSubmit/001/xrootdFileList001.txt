@@ -1,0 +1,3 @@
+root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551203_1567190852.1.root
+root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551204_1567190852.1.root
+root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551205_1567190852.1.root

@@ -41,6 +41,7 @@ for i in range(len(fnames)): # quality on/off files
 			if(k==0):
 				radial12_.append(radial)
 				vertical12_.append(vertical)
+				print("Station 12, radial mean:\t"+str(radial.GetMean())+"+/-"+str(radial.GetMeanError()))
 			else:
 				radial18_.append(radial)
 				vertical18_.append(vertical)

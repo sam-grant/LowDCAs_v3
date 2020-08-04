@@ -1,0 +1,567 @@
+strawSD is not found in /
+30-Jul-2020 10:48:36 CDT  Initiating request to open input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+30-Jul-2020 10:48:36 CDT  Opened input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 1.16415e-09
+P0 = (6745.36,1895.27,-38.1659)
+P1 = (6745.36,1895.27,-38.1659)
+P2 = (6745.36,1895.27,-34.7345)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43143
+Side3 length (P2->P0) = 3.43142
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6745.36,1895.27,-38.1659)
+P[1]      = (6745.36,1895.27,-38.1659)
+P[2]      = (6745.36,1895.27,-34.7345)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 2.32831e-10
+P0 = (6745.36,1895.27,-38.6708)
+P1 = (6745.36,1895.27,-38.6708)
+P2 = (6745.36,1895.27,-42.1005)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.4297
+Side3 length (P2->P0) = 3.42969
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6745.36,1895.27,-38.6708)
+P[1]      = (6745.36,1895.27,-38.6708)
+P[2]      = (6745.36,1895.27,-42.1005)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 4.65661e-10
+P0 = (6744.77,1897.35,-38.1642)
+P1 = (6744.77,1897.35,-38.1642)
+P2 = (6744.77,1897.35,-34.7345)
+Side1 length (P0->P1) = 7.62939e-06
+Side2 length (P1->P2) = 3.4297
+Side3 length (P2->P0) = 3.42969
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6744.77,1897.35,-38.1642)
+P[1]      = (6744.77,1897.35,-38.1642)
+P[2]      = (6744.77,1897.35,-34.7345)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 6.98492e-10
+P0 = (6745.5,1894.78,-38.669)
+P1 = (6745.5,1894.78,-38.669)
+P2 = (6745.5,1894.78,-42.1005)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43151
+Side3 length (P2->P0) = 3.43151
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6745.5,1894.78,-38.669)
+P[1]      = (6745.5,1894.78,-38.669)
+P[2]      = (6745.5,1894.78,-42.1005)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 1.16415e-09
+P0 = (6745.36,1895.27,-38.1659)
+P1 = (6745.36,1895.27,-38.1659)
+P2 = (6745.36,1895.27,-34.7345)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43143
+Side3 length (P2->P0) = 3.43142
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6745.36,1895.27,-38.1659)
+P[1]      = (6745.36,1895.27,-38.1659)
+P[2]      = (6745.36,1895.27,-34.7345)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 2.32831e-10
+P0 = (6745.36,1895.27,-38.6708)
+P1 = (6745.36,1895.27,-38.6708)
+P2 = (6745.36,1895.27,-42.1005)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.4297
+Side3 length (P2->P0) = 3.42969
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6745.36,1895.27,-38.6708)
+P[1]      = (6745.36,1895.27,-38.6708)
+P[2]      = (6745.36,1895.27,-42.1005)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 4.65661e-10
+P0 = (6744.77,1897.35,-38.1642)
+P1 = (6744.77,1897.35,-38.1642)
+P2 = (6744.77,1897.35,-34.7345)
+Side1 length (P0->P1) = 7.62939e-06
+Side2 length (P1->P2) = 3.4297
+Side3 length (P2->P0) = 3.42969
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6744.77,1897.35,-38.1642)
+P[1]      = (6744.77,1897.35,-38.1642)
+P[2]      = (6744.77,1897.35,-34.7345)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 6.98492e-10
+P0 = (6745.5,1894.78,-38.669)
+P1 = (6745.5,1894.78,-38.669)
+P2 = (6745.5,1894.78,-42.1005)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43151
+Side3 length (P2->P0) = 3.43151
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6745.5,1894.78,-38.669)
+P[1]      = (6745.5,1894.78,-38.669)
+P[2]      = (6745.5,1894.78,-42.1005)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 1.10595e-09
+P0 = (6953.16,326.999,-38.1659)
+P1 = (6953.16,326.999,-38.1659)
+P2 = (6953.16,326.998,-34.7345)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43143
+Side3 length (P2->P0) = 3.43142
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6953.16,326.999,-38.1659)
+P[1]      = (6953.16,326.999,-38.1659)
+P[2]      = (6953.16,326.998,-34.7345)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 1.10595e-09
+P0 = (6953.05,329.154,-38.6691)
+P1 = (6953.05,329.154,-38.6691)
+P2 = (6953.05,329.155,-42.1005)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43143
+Side3 length (P2->P0) = 3.43142
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6953.05,329.154,-38.6691)
+P[1]      = (6953.05,329.154,-38.6691)
+P[2]      = (6953.05,329.155,-42.1005)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 1.10595e-09
+P0 = (6953.16,326.999,-38.1659)
+P1 = (6953.16,326.999,-38.1659)
+P2 = (6953.16,326.998,-34.7345)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43143
+Side3 length (P2->P0) = 3.43142
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6953.16,326.999,-38.1659)
+P[1]      = (6953.16,326.999,-38.1659)
+P[2]      = (6953.16,326.998,-34.7345)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 1.10595e-09
+P0 = (6953.05,329.154,-38.6691)
+P1 = (6953.05,329.154,-38.6691)
+P2 = (6953.05,329.155,-42.1005)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43143
+Side3 length (P2->P0) = 3.43142
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6953.05,329.154,-38.6691)
+P[1]      = (6953.05,329.154,-38.6691)
+P[2]      = (6953.05,329.155,-42.1005)
+*********************************************************************
+RingSD is not found in /
+buildMylarWindow_: 0
+buildMylarWindow_: 0
+buildMylarWindow_: 0
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6918.61,359.301,24.5252)
+P1 = (6823.05,356.348,21.6281)
+P2 = (6823.05,356.348,21.6281)
+Side1 length (P0->P1) = 95.6427
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 95.6427
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6918.61,359.301,24.5252)
+P[1]      = (6823.05,356.348,21.6281)
+P[2]      = (6823.05,356.348,21.6281)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6823.05,356.39,21.6281)
+P1 = (6823.05,356.348,21.6281)
+P2 = (6823.05,356.348,21.6281)
+Side1 length (P0->P1) = 0.0422815
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 0.0422815
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6823.05,356.39,21.6281)
+P[1]      = (6823.05,356.348,21.6281)
+P[2]      = (6823.05,356.348,21.6281)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6442.25,2091.24,24.5508)
+P1 = (6498.34,2110.15,21.6281)
+P2 = (6498.34,2110.15,21.6281)
+Side1 length (P0->P1) = 59.2658
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 59.2658
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6442.25,2091.24,24.5508)
+P[1]      = (6498.34,2110.15,21.6281)
+P[2]      = (6498.34,2110.15,21.6281)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6498.33,2110.19,21.6281)
+P1 = (6498.34,2110.15,21.6281)
+P2 = (6498.34,2110.15,21.6281)
+Side1 length (P0->P1) = 0.0422363
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 0.0422363
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6498.33,2110.19,21.6281)
+P[1]      = (6498.34,2110.15,21.6281)
+P[2]      = (6498.34,2110.15,21.6281)
+*********************************************************************

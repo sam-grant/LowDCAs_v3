@@ -9,7 +9,7 @@ LoadPlotFunc()
  
 fnames = [ "nominalSimPlotsQ.root" ] #"magicPlots_noQ.root" , "magicPlots_Q.root"]
 fitModes = [ "TruthLR", "MainFit", "FullSeqFit", "FlipLR" ] 
-orientation = [ "radialPos", "verticalPos" ] 
+orientation = [ "radialPos"] # , "verticalPos" ] 
 
 for i in range(len(fnames)): # quality on/off files
 
@@ -27,10 +27,14 @@ for i in range(len(fnames)): # quality on/off files
 		for k in range(len(fitModes)): 
 
 			h12 = file.Get("extrapPlots"+fitModes[k]+"/vertices/station12/h_"+orientation[j]) 
+			print("extrapPlots"+fitModes[k]+"/vertices/station12/h_"+orientation[j])
 			h18 = file.Get("extrapPlots"+fitModes[k]+"/vertices/station18/h_"+orientation[j])
 
 			means12.append(h12.GetMean())
 			errors12.append(h12.GetMeanError())
+			print("Station 12, mean:\t"+str(h12.GetMean())+"+/-"+str(h12.GetMeanError()))
+			print("Station 18, mean:\t"+str(h18.GetMean())+"+/-"+str(h18.GetMeanError()))
+
 			means18.append(h18.GetMean())
 			errors18.append(h18.GetMeanError())
 

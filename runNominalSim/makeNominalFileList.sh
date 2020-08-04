@@ -45,18 +45,16 @@
 
 # done
 
-# Act of desperation here!
-
-ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{200..219}_1567190852.1.root >> files/file200
-ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{220..239}_1567190852.1.root >> files/file220
-ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{240..259}_1567190852.1.root >> files/file240
-ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{260..279}_1567190852.1.root >> files/file260
-ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{280..299}_1567190852.1.root >> files/file280
-ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{300..319}_1567190852.1.root >> files/file300
-ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{320..339}_1567190852.1.root >> files/file320
-ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{340..359}_1567190852.1.root >> files/file340
-ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{360..379}_1567190852.1.root >> files/file360
-ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{380..399}_1567190852.1.root >> files/file380
+ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{200..204}_1567190852.1.root >> files/file200
+ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{205..209}_1567190852.1.root >> files/file220
+ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{210..214}_1567190852.1.root >> files/file240
+ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{215..219}_1567190852.1.root >> files/file260
+ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{220..224}_1567190852.1.root >> files/file280
+ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{225..229}_1567190852.1.root >> files/file300
+ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{300..304}_1567190852.1.root >> files/file320
+ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{305..309}_1567190852.1.root >> files/file340
+ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{310..314}_1567190852.1.root >> files/file360
+ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{315..319}_1567190852.1.root >> files/file380
 ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{400..419}_1567190852.1.root >> files/file400
 ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{420..439}_1567190852.1.root >> files/file420
 ls /pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551{440..459}_1567190852.1.root >> files/file440

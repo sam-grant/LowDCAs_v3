@@ -1,0 +1,4 @@
+22-Jul-2020 14:36:41 CDT  Initiating request to open input file "root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+22-Jul-2020 14:36:42 CDT  Opened input file "root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+Begin processing the 1st record. run: 15921 subRun: 313 event: 1 at 22-Jul-2020 14:38:57 CDT
+Begin processing the 101st record. run: 15921 subRun: 313 event: 101 at 22-Jul-2020 16:54:21 CDT

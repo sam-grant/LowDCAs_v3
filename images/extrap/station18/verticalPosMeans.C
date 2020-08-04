@@ -1,7 +1,7 @@
 void verticalPosMeans()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Mon Jun 29 16:45:27 2020) by ROOT version 6.12/04
+//=========  (Tue Jun 30 09:40:25 2020) by ROOT version 6.12/04
    TCanvas *c = new TCanvas("c", "c",0,0,800,600);
    c->SetHighLightColor(2);
    c->Range(0.25,-2.02957,4.75,1.141206);

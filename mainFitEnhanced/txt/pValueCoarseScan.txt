@@ -1,0 +1,134 @@
+strawSD is not found in /
+03-Aug-2020 11:18:18 CDT  Initiating request to open input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+03-Aug-2020 11:18:19 CDT  Opened input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+
+Number of times FSQ is called in mainFitEnhanced:	0
+Number of times FSQ is called in mainFitEnhanced:	0
+Number of times FSQ is called in mainFitEnhanced:	13509
+Number of times FSQ is called in mainFitEnhanced:	3135
+Number of times FSQ is called in mainFitEnhanced:	2824
+Number of times FSQ is called in mainFitEnhanced:	2626
+Number of times FSQ is called in mainFitEnhanced:	2460
+Number of times FSQ is called in mainFitEnhanced:	2342
+Number of times FSQ is called in mainFitEnhanced:	2253
+Number of times FSQ is called in mainFitEnhanced:	2167
+Number of times FSQ is called in mainFitEnhanced:	2109
+Number of times FSQ is called in mainFitEnhanced:	2046
+*** Run = 15921	Events = 73	Tracks = 1962
+*** Run = 15921	Events = 73	Tracks = 2948
+*** Run = 15921	Events = 73	Tracks = 3000
+*** Run = 15921	Events = 73	Tracks = 2247
+*** Run = 15921	Events = 73	Tracks = 2185
+*** Run = 15921	Events = 73	Tracks = 2135
+*** Run = 15921	Events = 73	Tracks = 2097
+*** Run = 15921	Events = 73	Tracks = 2060
+*** Run = 15921	Events = 73	Tracks = 2038
+*** Run = 15921	Events = 73	Tracks = 2017
+*** Run = 15921	Events = 73	Tracks = 2007
+*** Run = 15921	Events = 73	Tracks = 1985
+03-Aug-2020 13:40:56 CDT  Closed output file "gm2tracker_reco.root"
+03-Aug-2020 13:40:56 CDT  Closed input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+%MSG-i summary:  ImposeDeadTime:deadTime@EndJob 03-Aug-2020 13:40:56 CDT  ModuleEndJob
+
+--------- Tracker Impose Dead Time Report ---------
+  Total num digits killed = 65607 (of 589355, 11.132%)
+  Total num digits kept = 523748 (of 589355, 88.868%)
+------------------------------------------------
+
+%MSG
+%MSG-i summary:  KillStraws:killStraws@EndJob 03-Aug-2020 13:40:56 CDT  ModuleEndJob
+
+--------- Tracker Kill Straws Report ---------
+  Num straws to kill = 0
+  Total num digits killed = 0 (of 589355, 0%)
+  Total num digits kept = 589355 (of 589355, 100%)
+----------------------------------------------
+
+%MSG
+%MSG-i summary:  RemoveFlash:removeFlash@EndJob 03-Aug-2020 13:40:56 CDT  ModuleEndJob
+
+--------- Tracker Remove Flash Report ---------
+  Total num digits removed = 0 (of 589355, 0%)
+  Total num digits kept = 589355 (of 589355, 100%)
+----------------------------------------------
+
+%MSG
+
+====================================================================================================================================
+TimeTracker printout (sec)                            Min           Avg           Max         Median          RMS         nEvts   
+====================================================================================================================================
+Full event                                        0.000940673     54.2108       217.789      0.106476       59.9395        155    
+------------------------------------------------------------------------------------------------------------------------------------
+source:RootInput(read)                            0.000358937   0.00399358     0.0179087    0.000647265   0.00414807       155    
+trackPath:TrackFilter:TrackerFillTypeFilter       0.00034787     0.0223086     0.261446      0.0148182     0.0334615       155    
+trackPath:TriggerResults:TriggerResultInserter     1.979e-05    0.000226663   0.00257506    5.3184e-05    0.000447107      155    
+end_path:out:RootOutput                            4.895e-06    2.0821e-05    0.000526325    1.249e-05    5.7553e-05       155    
+end_path:mainFit:LowDCAsPlots                      2.355e-06     0.0356704     0.477561     1.1008e-05     0.057608        155    
+end_path:FSQ:LowDCAsPlots                          1.911e-06     0.0177368     0.0813103     3.673e-06     0.0201767       155    
+end_path:A:LowDCAsPlots                            1.783e-06     0.0171902     0.0800524     3.492e-06     0.0195497       155    
+end_path:B:LowDCAsPlots                            1.759e-06     0.0144367     0.0633056     3.74e-06      0.0162931       155    
+end_path:C:LowDCAsPlots                            1.926e-06     0.0139122     0.0554006     3.404e-06     0.0156061       155    
+end_path:D:LowDCAsPlots                            1.744e-06     0.0137188     0.0586449     3.236e-06     0.0154615       155    
+end_path:E:LowDCAsPlots                             1.9e-06      0.0134879     0.0694376     6.468e-06     0.0152639       155    
+end_path:F:LowDCAsPlots                            1.809e-06     0.0131714     0.0695633     3.657e-06     0.0150378       155    
+end_path:G:LowDCAsPlots                            1.993e-06     0.0131262     0.0627524     3.514e-06     0.014879        155    
+end_path:H:LowDCAsPlots                            1.94e-06      0.0127352     0.0484435     3.601e-06     0.0141695       155    
+end_path:I:LowDCAsPlots                            1.812e-06     0.013119      0.0948518     3.227e-06     0.0155816       155    
+end_path:J:LowDCAsPlots                            1.822e-06     0.0131146     0.0943174     3.435e-06     0.0156725       155    
+end_path:out:RootOutput(write)                     1.292e-06      1.98947       9.02159      2.725e-06      2.20835        155    
+trackPath:artg4:BuildCoordSystems                  2.03e-06     3.5263e-06    1.5527e-05     2.713e-06    2.31312e-06      73     
+trackPath:removeFlash:RemoveFlash                 0.00681352     0.0346121     0.121393      0.0286613     0.0252785       73     
+trackPath:killStraws:KillStraws                   0.000966034   0.00245906     0.055606     0.00154265    0.00630517       73     
+trackPath:digitTimeSync:DigitTimeSyncer           0.000764801   0.00141152    0.00579797    0.00113036    0.000785464      73     
+trackPath:deadTime:ImposeDeadTime                 0.00679115    0.00935889     0.0244627    0.00923449    0.00213679       73     
+trackPath:timeIslands:TimeIsland                  0.00180335    0.00287951     0.0141212    0.00279015    0.00137647       73     
+trackPath:clustering:ClusterFormation              0.0100505     0.0163996     0.0364195     0.0160224    0.00402532       73     
+trackPath:seeds:SeedFormation                      0.0269891     0.0460673     0.141904      0.0441634     0.0168051       73     
+trackPath:trackCandidates:TrackFinding             0.052035      0.0925662     0.210766      0.0909336     0.0244432       73     
+trackPath:candidateCleaner:CandidateCleaner       0.00269487    0.00498211     0.0173299    0.00456196    0.00208702       73     
+trackPath:t0Finder:T0Finder                       0.000544911   0.000946341   0.00207214    0.000882498   0.000255132      73     
+trackPath:driftDistReco:DriftDistanceCal          0.00374253    0.00537269     0.0160427    0.00521768    0.00149262       73     
+trackPath:tracksMainFit:GeaneReco                   4.45573       6.39788       12.3371       6.1179        1.40645        73     
+trackPath:tracksFSQ:GeaneReco                       12.2563       17.485        34.6837       16.6411       4.20263        73     
+trackPath:tracksA:GeaneReco                         13.425        19.5465       36.6074       18.626        4.65656        73     
+trackPath:tracksB:GeaneReco                         5.15904       8.28937       15.4406       7.85338       1.93493        73     
+trackPath:tracksC:GeaneReco                         4.97062       8.06233       16.0845       7.55099       2.17626        73     
+trackPath:tracksD:GeaneReco                         4.89086        7.713        14.7402       7.35875       1.81991        73     
+trackPath:tracksE:GeaneReco                         4.85365       7.55266       16.7661       7.21998       2.15488        73     
+trackPath:tracksF:GeaneReco                         5.06327       7.24138       13.6845       6.97231       1.56413        73     
+trackPath:tracksG:GeaneReco                          4.888        7.13307       13.1802       6.86698       1.47739        73     
+trackPath:tracksH:GeaneReco                         4.82993       6.98993       15.1506       6.67722       1.53218        73     
+trackPath:tracksI:GeaneReco                         4.82826       6.93654       12.5774       6.68683       1.50438        73     
+trackPath:tracksJ:GeaneReco                         4.66247       6.84859       14.0496       6.55592       1.5285         73     
+====================================================================================================================================
+
+TrigReport ---------- Event  Summary ------------
+TrigReport Events total = 155 passed = 73 failed = 82
+
+TrigReport ------ Modules in End-Path: end_path ------------
+TrigReport  Trig Bit#        Run    Success      Error Name
+TrigReport     0    0         73         73          0 out
+TrigReport     0    0         73         73          0 mainFit
+TrigReport     0    0         73         73          0 FSQ
+TrigReport     0    0         73         73          0 A
+TrigReport     0    0         73         73          0 B
+TrigReport     0    0         73         73          0 C
+TrigReport     0    0         73         73          0 D
+TrigReport     0    0         73         73          0 E
+TrigReport     0    0         73         73          0 F
+TrigReport     0    0         73         73          0 G
+TrigReport     0    0         73         73          0 H
+TrigReport     0    0         73         73          0 I
+TrigReport     0    0         73         73          0 J
+
+TimeReport ---------- Time  Summary ---[sec]----
+TimeReport CPU = 7983.182371 Real = 8515.744113
+
+MemReport  ---------- Memory  Summary ---[base-10 MB]----
+MemReport  VmPeak = 3408.06 VmHWM = 2381.95
+
+Art has completed and will exit with status 0.
+WARNING - Attempt to delete the region store while geometry closed !
+WARNING - Attempt to delete the physical volume store while geometry closed !
+WARNING - Attempt to delete the logical volume store while geometry closed !
+WARNING - Attempt to delete the solid store while geometry closed !

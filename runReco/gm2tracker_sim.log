@@ -1,46 +1,52 @@
-29-Jun-2020 18:00:05 CDT  Initiating request to open input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
-29-Jun-2020 18:00:06 CDT  Opened input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
-Begin processing the 1st record. run: 15921 subRun: 313 event: 1 at 29-Jun-2020 18:01:45 CDT
-29-Jun-2020 18:01:45 CDT  Opened output file with pattern "gm2tracker_reco.root"
-29-Jun-2020 19:17:01 CDT  Closed output file "gm2tracker_reco.root"
-29-Jun-2020 19:17:01 CDT  Closed input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
-%MSG-i summary:  ImposeDeadTime:deadTime@EndJob 29-Jun-2020 19:17:01 CDT  ModuleEndJob
+03-Jul-2020 09:33:23 CDT  Initiating request to open input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+03-Jul-2020 09:33:24 CDT  Opened input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+Begin processing the 1st record. run: 15921 subRun: 313 event: 1 at 03-Jul-2020 09:35:05 CDT
+03-Jul-2020 09:35:05 CDT  Opened output file with pattern "gm2tracker_reco.root"
+Begin processing the 101st record. run: 15921 subRun: 313 event: 101 at 03-Jul-2020 10:52:57 CDT
+03-Jul-2020 11:38:52 CDT  Closed output file "gm2tracker_reco.root"
+03-Jul-2020 11:38:52 CDT  Closed input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+%MSG-i summary:  ImposeDeadTime:deadTime@EndJob 03-Jul-2020 11:38:52 CDT  ModuleEndJob
 
 --------- Tracker Impose Dead Time Report ---------
-  Total num digits killed = 41899 (of 376645, 11.1243%)
-  Total num digits kept = 334746 (of 376645, 88.8757%)
+  Total num digits killed = 65607 (of 589355, 11.132%)
+  Total num digits kept = 523748 (of 589355, 88.868%)
 ------------------------------------------------
 
 %MSG
-%MSG-i summary:  KillStraws:killStraws@EndJob 29-Jun-2020 19:17:01 CDT  ModuleEndJob
+%MSG-i summary:  KillStraws:killStraws@EndJob 03-Jul-2020 11:38:52 CDT  ModuleEndJob
 
 --------- Tracker Kill Straws Report ---------
   Num straws to kill = 0
-  Total num digits killed = 0 (of 376645, 0%)
-  Total num digits kept = 376645 (of 376645, 100%)
+  Total num digits killed = 0 (of 589355, 0%)
+  Total num digits kept = 589355 (of 589355, 100%)
 ----------------------------------------------
 
 %MSG
-%MSG-i summary:  RemoveFlash:removeFlash@EndJob 29-Jun-2020 19:17:01 CDT  ModuleEndJob
+%MSG-i summary:  RemoveFlash:removeFlash@EndJob 03-Jul-2020 11:38:52 CDT  ModuleEndJob
 
 --------- Tracker Remove Flash Report ---------
-  Total num digits removed = 0 (of 376645, 0%)
-  Total num digits kept = 376645 (of 376645, 100%)
+  Total num digits removed = 0 (of 589355, 0%)
+  Total num digits kept = 589355 (of 589355, 100%)
 ----------------------------------------------
 
 %MSG
 
 TrigReport ---------- Event  Summary ------------
-TrigReport Events total = 100 passed = 47 failed = 53
+TrigReport Events total = 155 passed = 73 failed = 82
 
 TrigReport ------ Modules in End-Path: end_path ------------
 TrigReport  Trig Bit#        Run    Success      Error Name
-TrigReport     0    0         47         47          0 out
-TrigReport     0    0         47         47          0 trackPlotsFlipLR
+TrigReport     0    0         73         73          0 out
+TrigReport     0    0         73         73          0 trackPlotsFlipLR
+TrigReport     0    0         73         73          0 extrapPlotsFlipLR
+TrigReport     0    0         73         73          0 trackPlotsMainFit
+TrigReport     0    0         73         73          0 extrapPlotsMainFit
+TrigReport     0    0         73         73          0 trackPlotsFullSeqFit
+TrigReport     0    0         73         73          0 extrapPlotsFullSeqFit
 
 TimeReport ---------- Time  Summary ---[sec]----
-TimeReport CPU = 4569.234372 Real = 4576.187671
+TimeReport CPU = 7459.075048 Real = 7488.978418
 
 MemReport  ---------- Memory  Summary ---[base-10 MB]----
-MemReport  VmPeak = 2830.75 VmHWM = 1870.04
+MemReport  VmPeak = 3822.81 VmHWM = 2847.68
 

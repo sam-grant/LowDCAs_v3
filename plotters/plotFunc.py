@@ -1,4 +1,4 @@
-from ROOT import TH1, TH2, TGraphErrors, TCanvas, TLegend, gStyle, TPad, TGaxis
+from ROOT import TH1, TH2, TGraphErrors, TCanvas, TLegend, gStyle, TPad, TGaxis, gPad, TLine
 from array import array
 
 # Need some overlay functionality, and TGraphErrors. 
@@ -193,6 +193,102 @@ def DrawScat(graph, title, fname): #, grid):
 	c.SaveAs(fname+".pdf")
 	c.SaveAs(fname+".C")
 	# c2.SaveAs(fname+".pdf")
+
+	return
+
+def DrawScatXLine(graph, title, fname, ycoord): #, grid):
+
+	c = TCanvas("c","c",800,600)
+			
+	graph.SetTitle(title)			
+	graph.GetXaxis().SetTitleSize(.04)
+	graph.GetYaxis().SetTitleSize(.04)
+	graph.GetXaxis().SetTitleOffset(1.2)
+	graph.GetYaxis().SetTitleOffset(1.25)
+	graph.GetXaxis().CenterTitle(1)
+	graph.GetYaxis().CenterTitle(1)
+	graph.GetYaxis().SetMaxDigits(4)
+	graph.SetMarkerStyle(20) # Full circle
+	graph.Draw()
+
+	gPad.Update()
+	line = TLine(gPad.GetUxmin(),ycoord,gPad.GetUxmax(),ycoord)
+	# print(gPad.GetUymin(),gPad.GetUymax())
+	line.SetLineStyle(2)
+	line.SetLineColor(1)
+	line.SetLineWidth(3)
+
+	graph.Draw("AP")
+	line.Draw("same")
+	
+	c.SaveAs(fname+".C")
+	c.SaveAs(fname+".pdf")
+
+	return
+
+def DrawScatYLine(graph, title, fname, xcoord): #, grid):
+
+	c = TCanvas("c","c",800,600)
+			
+	graph.SetTitle(title)			
+	graph.GetXaxis().SetTitleSize(.04)
+	graph.GetYaxis().SetTitleSize(.04)
+	graph.GetXaxis().SetTitleOffset(1.2)
+	graph.GetYaxis().SetTitleOffset(1.25)
+	graph.GetXaxis().CenterTitle(1)
+	graph.GetYaxis().CenterTitle(1)
+	graph.GetYaxis().SetMaxDigits(4)
+	graph.SetMarkerStyle(20) # Full circle
+	graph.Draw()
+
+	gPad.Update()
+	# line = TLine(gPad.GetUxmin(),ycoord,gPad.GetUxmax(),ycoord)
+	line = TLine(xcoord, gPad.GetUymin(), xcoord, gPad.GetUymax())
+	# print(gPad.GetUymin(),gPad.GetUymax())
+	line.SetLineStyle(2)
+	line.SetLineColor(2)
+	line.SetLineWidth(3)
+
+	graph.Draw("AP")
+	line.Draw("same")
+	
+	c.SaveAs(fname+".C")
+	c.SaveAs(fname+".pdf")
+
+	return
+
+def DrawScatX2Line(graph, title, fname, ycoord1, ycoord2): #, grid):
+
+	c = TCanvas("c","c",800,600)
+			
+	graph.SetTitle(title)			
+	graph.GetXaxis().SetTitleSize(.04)
+	graph.GetYaxis().SetTitleSize(.04)
+	graph.GetXaxis().SetTitleOffset(1.2)
+	graph.GetYaxis().SetTitleOffset(1.25)
+	graph.GetXaxis().CenterTitle(1)
+	graph.GetYaxis().CenterTitle(1)
+	graph.GetYaxis().SetMaxDigits(4)
+	graph.SetMarkerStyle(20) # Full circle
+	graph.Draw()
+
+	gPad.Update()
+	line1 = TLine(gPad.GetUxmin(),ycoord1,gPad.GetUxmax(),ycoord1)
+	line2 = TLine(gPad.GetUxmin(),ycoord2,gPad.GetUxmax(),ycoord2)
+	# print(gPad.GetUymin(),gPad.GetUymax())
+	line1.SetLineStyle(2)
+	line1.SetLineColor(2)
+	line1.SetLineWidth(3)
+	line2.SetLineStyle(2)
+	line2.SetLineColor(4)
+	line2.SetLineWidth(3)
+
+	graph.Draw("AP")
+	line1.Draw("same")
+	line2.Draw("same")
+	
+	c.SaveAs(fname+".C")
+	c.SaveAs(fname+".pdf")
 
 	return
 

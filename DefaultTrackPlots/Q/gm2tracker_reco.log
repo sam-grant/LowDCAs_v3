@@ -1,0 +1,45 @@
+29-Jul-2020 17:47:15 CDT  Initiating request to open input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+29-Jul-2020 17:47:16 CDT  Opened input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+Begin processing the 1st record. run: 15921 subRun: 313 event: 1 at 29-Jul-2020 17:48:50 CDT
+29-Jul-2020 17:51:32 CDT  Closed input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+%MSG-i summary:  ImposeDeadTime:deadTime@EndJob 29-Jul-2020 17:51:32 CDT  ModuleEndJob
+
+--------- Tracker Impose Dead Time Report ---------
+  Total num digits killed = 6255 (of 55538, 11.2626%)
+  Total num digits kept = 49283 (of 55538, 88.7374%)
+------------------------------------------------
+
+%MSG
+%MSG-i summary:  KillStraws:killStraws@EndJob 29-Jul-2020 17:51:32 CDT  ModuleEndJob
+
+--------- Tracker Kill Straws Report ---------
+  Num straws to kill = 0
+  Total num digits killed = 0 (of 55538, 0%)
+  Total num digits kept = 55538 (of 55538, 100%)
+----------------------------------------------
+
+%MSG
+%MSG-i summary:  RemoveFlash:removeFlash@EndJob 29-Jul-2020 17:51:32 CDT  ModuleEndJob
+
+--------- Tracker Remove Flash Report ---------
+  Total num digits removed = 0 (of 55538, 0%)
+  Total num digits kept = 55538 (of 55538, 100%)
+----------------------------------------------
+
+%MSG
+
+TrigReport ---------- Event  Summary ------------
+TrigReport Events total = 15 passed = 7 failed = 8
+
+TrigReport ------ Modules in End-Path: end_path ------------
+TrigReport  Trig Bit#        Run    Success      Error Name
+TrigReport     0    0          7          7          0 zero
+TrigReport     0    0          7          7          0 one
+TrigReport     0    0          7          7          0 two
+
+TimeReport ---------- Time  Summary ---[sec]----
+TimeReport CPU = 218.877726 Real = 219.079029
+
+MemReport  ---------- Memory  Summary ---[base-10 MB]----
+MemReport  VmPeak = 2589.88 VmHWM = 1672.33
+

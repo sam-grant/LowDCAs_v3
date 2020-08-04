@@ -1,19 +1,18 @@
-29-Jun-2020 12:01:07 CDT  Initiating request to open input file "gm2tracker_reco.root"
-29-Jun-2020 12:01:07 CDT  Opened input file "gm2tracker_reco.root"
-Begin processing the 1st record. run: 15921 subRun: 313 event: 2 at 29-Jun-2020 12:01:14 CDT
-29-Jun-2020 12:01:15 CDT  Closed input file "gm2tracker_reco.root"
+30-Jun-2020 11:23:04 CDT  Initiating request to open input file "gm2tracker_reco.root"
+30-Jun-2020 11:23:05 CDT  Opened input file "gm2tracker_reco.root"
+Begin processing the 1st record. run: 15921 subRun: 313 event: 2 at 30-Jun-2020 11:23:12 CDT
+30-Jun-2020 11:23:20 CDT  Closed input file "gm2tracker_reco.root"
 
 TrigReport ---------- Event  Summary ------------
-TrigReport Events total = 9 passed = 9 failed = 0
+TrigReport Events total = 47 passed = 47 failed = 0
 
 TrigReport ------ Modules in End-Path: end_path ------------
 TrigReport  Trig Bit#        Run    Success      Error Name
-TrigReport     0    0          9          9          0 noFlip
-TrigReport     0    0          9          9          0 flip
+TrigReport     0    0         47         47          0 trackPlotsFlipLR
 
 TimeReport ---------- Time  Summary ---[sec]----
-TimeReport CPU = 4.610299 Real = 4.734700
+TimeReport CPU = 11.111311 Real = 12.482619
 
 MemReport  ---------- Memory  Summary ---[base-10 MB]----
-MemReport  VmPeak = 1442.33 VmHWM = 595.8
+MemReport  VmPeak = 1445.2 VmHWM = 579.338
 

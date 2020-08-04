@@ -1,0 +1,62 @@
+22-Jul-2020 13:31:07 CDT  Initiating request to open input file "root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551251_1567190852.1.root"
+22-Jul-2020 13:31:08 CDT  Opened input file "root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551251_1567190852.1.root"
+Begin processing the 1st record. run: 1567190852 subRun: 1 event: 1 at 22-Jul-2020 13:32:38 CDT
+Begin processing the 101st record. run: 1567190852 subRun: 1 event: 101 at 22-Jul-2020 13:32:41 CDT
+Begin processing the 201st record. run: 1567190852 subRun: 1 event: 201 at 22-Jul-2020 13:32:41 CDT
+Begin processing the 301st record. run: 1567190852 subRun: 1 event: 301 at 22-Jul-2020 13:32:43 CDT
+Begin processing the 401st record. run: 1567190852 subRun: 1 event: 401 at 22-Jul-2020 13:32:45 CDT
+Begin processing the 501st record. run: 1567190852 subRun: 1 event: 501 at 22-Jul-2020 13:32:45 CDT
+Begin processing the 601st record. run: 1567190852 subRun: 1 event: 601 at 22-Jul-2020 13:32:46 CDT
+Begin processing the 701st record. run: 1567190852 subRun: 1 event: 701 at 22-Jul-2020 13:32:47 CDT
+Begin processing the 801st record. run: 1567190852 subRun: 1 event: 801 at 22-Jul-2020 13:32:47 CDT
+Begin processing the 901st record. run: 1567190852 subRun: 1 event: 901 at 22-Jul-2020 13:32:48 CDT
+Begin processing the 2000th record. run: 1567190852 subRun: 1 event: 2000 at 22-Jul-2020 13:33:11 CDT
+Begin processing the 3000th record. run: 1567190852 subRun: 1 event: 3000 at 22-Jul-2020 13:33:33 CDT
+Begin processing the 5000th record. run: 1567190852 subRun: 1 event: 5000 at 22-Jul-2020 13:34:14 CDT
+22-Jul-2020 13:34:14 CDT  Closed input file "root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551251_1567190852.1.root"
+%MSG-i summary:  ImposeDeadTime:deadTime@EndJob 22-Jul-2020 13:34:14 CDT  ModuleEndJob
+
+--------- Tracker Impose Dead Time Report ---------
+  Total num digits killed = 0 (of 4548, 0%)
+  Total num digits kept = 4548 (of 4548, 100%)
+------------------------------------------------
+
+%MSG
+%MSG-i summary:  KillStraws:killStraws@EndJob 22-Jul-2020 13:34:14 CDT  ModuleEndJob
+
+--------- Tracker Kill Straws Report ---------
+  Num straws to kill = 0
+  Total num digits killed = 0 (of 4548, 0%)
+  Total num digits kept = 4548 (of 4548, 100%)
+----------------------------------------------
+
+%MSG
+%MSG-i summary:  RemoveFlash:removeFlash@EndJob 22-Jul-2020 13:34:14 CDT  ModuleEndJob
+
+--------- Tracker Remove Flash Report ---------
+  Total num digits removed = 0 (of 4548, 0%)
+  Total num digits kept = 4548 (of 4548, 100%)
+----------------------------------------------
+
+%MSG
+
+TrigReport ---------- Event  Summary ------------
+TrigReport Events total = 5000 passed = 5000 failed = 0
+
+TrigReport ------ Modules in End-Path: end_path ------------
+TrigReport  Trig Bit#        Run    Success      Error Name
+TrigReport     0    0       5000       5000          0 trackPlotsFlipLR
+TrigReport     0    0       5000       5000          0 extrapPlotsFlipLR
+TrigReport     0    0       5000       5000          0 trackPlotsMainFit
+TrigReport     0    0       5000       5000          0 extrapPlotsMainFit
+TrigReport     0    0       5000       5000          0 trackPlotsTruthLR
+TrigReport     0    0       5000       5000          0 extrapPlotsTruthLR
+TrigReport     0    0       5000       5000          0 trackPlotsFullSeqFit
+TrigReport     0    0       5000       5000          0 extrapPlotsFullSeqFit
+
+TimeReport ---------- Time  Summary ---[sec]----
+TimeReport CPU = 147.651553 Real = 151.917290
+
+MemReport  ---------- Memory  Summary ---[base-10 MB]----
+MemReport  VmPeak = 3751.9 VmHWM = 2427.56
+

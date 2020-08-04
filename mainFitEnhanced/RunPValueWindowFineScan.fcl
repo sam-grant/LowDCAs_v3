@@ -1,0 +1,580 @@
+#include "messageParams.fcl"
+#include "trackingConfig.fcl"
+#include "conDBParams.fcl"
+
+process_name : reco
+
+// Input some unpacked data
+source : {
+  module_type : RootInput
+  maxEvents   : -1
+} 
+
+outputs : {
+  out : { 
+    module_type  : RootOutput
+    fileName     : "gm2tracker_reco.root"
+
+    dataTier     : "full"
+    outputCommands : [ "keep *",
+                      "drop *::*_*_*_unpacking",
+                      "drop gm2common::*_*_*_*",
+                      "drop gm2calo::*_*_*_*",
+                      "drop gm2aux::*_*_*_*",
+                      "drop gm2reconeast::*_*_*_*",
+                      "drop gm2midastoart::*_*_*_*",
+                      "drop gm2ccc::*_*_*_*",
+                      @sequence::trackingChain.outputDrops
+                    ]
+
+     SelectEvents : ["trackPath"]
+     //FCMDPlugins  : [ { plugin_type : Metadata
+     //                   fhicl_name  : "gm2tracker_particle_gun_full.fcl"
+     //                   requestid   : "1"
+     //                   run_config  : "commission" }]
+
+  } // out
+} // end of outputs block
+
+
+// Services block
+services : {
+  FileCatalogMetadata : {
+    applicationFamily  : "tracker"
+    applicationVersion : "v9_43_00"
+    fileType           : "offline"
+  }
+
+  message : {
+    debugModules : []
+    suppressInfo : []
+
+    destinations : {
+      LogToConsole : {
+        type       : "cout"
+        threshold  : "INFO"
+        categories : @local::message_categories
+      }
+      LogToFile : {
+        type      : "file"
+        filename  : "gm2tracker_sim.log"
+        append    :  false
+        threshold : "INFO"
+        categories : @local::message_categories
+      }
+    }
+  }
+
+  // the coordinate system data is used throughout the tracking code
+  // for now, the tracking uses GEANT for the coordinates
+  // to build the coordinates requires dependent on artg4
+
+  DetectorHolder    : {}
+  ActionHolder      : {}
+  CoordSystemsStore : {}
+  Gm2Constants      : {}
+  RandomNumberGenerator : {}
+
+  Geometry : { strawtracker : @local::strawtracker_geom }
+  StrawTrackerGeometry : {}
+  StrawTrackerGeometryConstants : { DatabaseURL : @local::condb_prod_params }
+
+  @table::trackingChain.reducedGeometry
+  @table::trackingChain.field
+
+  TrackQuality : {} // default is off
+
+  TimeTracker : {}
+
+   TFileService: {
+      fileName: "recoPlots_pValueCutFineScan.root"
+   }
+
+} // end of services block
+
+physics : {
+
+  filters : {
+
+    TrackFilter : 
+    {
+      module_type : TrackerFillTypeFilter
+      fillType    : 1
+      throwOnEmptyHeaderCollection : false
+    }
+  }
+
+  producers : {
+
+    @table::trackingChain.producers
+     tracksMainFit : @local::geanefit_params
+     tracksFSQ : @local::geanefit_params
+     tracksA : @local::geanefit_params 
+     tracksB : @local::geanefit_params 
+     tracksC : @local::geanefit_params 
+     tracksD : @local::geanefit_params 
+     tracksE : @local::geanefit_params 
+     tracksF : @local::geanefit_params 
+     tracksG : @local::geanefit_params 
+     tracksH : @local::geanefit_params 
+     tracksI : @local::geanefit_params 
+     tracksJ : @local::geanefit_params
+     tracksK : @local::geanefit_params 
+     tracksL : @local::geanefit_params 
+     tracksM : @local::geanefit_params 
+     tracksN : @local::geanefit_params 
+     tracksO : @local::geanefit_params 
+     tracksP : @local::geanefit_params 
+     tracksQ : @local::geanefit_params 
+     tracksR : @local::geanefit_params 
+     tracksS : @local::geanefit_params 
+     tracksT : @local::geanefit_params 
+     tracksU : @local::geanefit_params 
+   } 
+
+  analyzers : {
+
+    mainFit : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksMainFit"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      dirName : "mainFit"
+      //SelectEvents :["offline:strawPathwithDQC"]
+      applyTrackQuality : true
+
+    }
+
+    FSQ : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksFSQ"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      dirName : "FSQ"
+      //SelectEvents :["offline:strawPathwithDQC"]
+      applyTrackQuality : true
+
+    }
+
+    A : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksA"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "0.000"
+      applyTrackQuality : true
+
+    }
+
+    B : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksB"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "0.001"
+      applyTrackQuality : true
+
+    }
+
+    C : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksC"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "0.002"
+      applyTrackQuality : true
+
+    }
+
+    D : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksD"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "0.003"
+      applyTrackQuality : true
+
+    }
+
+    E : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksE"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "0.004"
+      applyTrackQuality : true
+
+    }
+
+    F : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksF"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "0.005"
+      applyTrackQuality : true
+
+    }
+
+    G : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksG"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "0.006"
+      applyTrackQuality : true
+
+    }
+
+    H : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksH"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "0.007"
+      applyTrackQuality : true
+
+    }
+
+    I : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksI"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "0.008"
+      applyTrackQuality : true
+
+    }
+
+    J : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksJ"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "0.009"
+      applyTrackQuality : true
+
+    }
+
+    K : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksK"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "0.010"
+      applyTrackQuality : true
+
+    }
+
+    L : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksL"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "0.011"
+      applyTrackQuality : true
+
+    }
+
+    M : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksM"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "0.012"
+      applyTrackQuality : true
+
+    }
+
+    N : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksN"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "0.013"
+      applyTrackQuality : true
+
+    }
+
+    O : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksO"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "0.014"
+      applyTrackQuality : true
+
+    }
+
+    P : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksP"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "0.015"
+      applyTrackQuality : true
+
+    }
+
+    Q : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksQ"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "0.016"
+      applyTrackQuality : true
+
+    }
+
+    R : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksR"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "0.017"
+      applyTrackQuality : true
+
+    }
+
+    S : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksS"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "0.018"
+      applyTrackQuality : true
+
+    }
+
+    T : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksT"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "0.019"
+      applyTrackQuality : true
+
+    }
+
+    U : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksU"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "0.020"
+      applyTrackQuality : true
+
+    }
+
+  }
+
+  // My path, reconstructing tracks with different lockLowDCA values
+  trackPath : [ TrackFilter,
+     artg4,
+     removeFlash,
+     killStraws,
+     digitTimeSync,
+     deadTime,
+     timeIslands,
+     clustering,
+     seeds,
+     trackCandidates,
+     candidateCleaner,
+     t0Finder,
+     driftDistReco,
+     tracksMainFit,
+     tracksFSQ,
+     tracksA,
+     tracksB,
+     tracksC,
+     tracksD,
+     tracksE,
+     tracksF,
+     tracksG,
+     tracksH,
+     tracksI,
+     tracksJ,
+     tracksK,
+     tracksL,
+     tracksM,
+     tracksN,
+     tracksO,
+     tracksP,
+     tracksQ,
+     tracksR,
+     tracksS,
+     tracksT,
+     tracksU
+     ] 
+
+    plotPath      : [ out, mainFit, FSQ, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U ] 
+
+    trigger_paths : [ trackPath ]
+    end_paths     : [ plotPath ] 
+
+}
+
+physics.producers.t0Finder.meanTimeOffset : 34 // 36.5 is for 1550V, 34 for 1625V. Different for Sim.
+
+physics.producers.tracksMainFit.planesHitCut : 12 
+physics.producers.tracksFSQ.planesHitCut : 12 
+physics.producers.tracksA.planesHitCut : 12 
+physics.producers.tracksB.planesHitCut : 12 
+physics.producers.tracksC.planesHitCut : 12 
+physics.producers.tracksD.planesHitCut : 12 
+physics.producers.tracksE.planesHitCut : 12 
+physics.producers.tracksF.planesHitCut : 12 
+physics.producers.tracksG.planesHitCut : 12 
+physics.producers.tracksH.planesHitCut : 12 
+physics.producers.tracksI.planesHitCut : 12 
+physics.producers.tracksJ.planesHitCut : 12 
+physics.producers.tracksK.planesHitCut : 12 
+physics.producers.tracksL.planesHitCut : 12 
+physics.producers.tracksM.planesHitCut : 12 
+physics.producers.tracksN.planesHitCut : 12 
+physics.producers.tracksO.planesHitCut : 12 
+physics.producers.tracksP.planesHitCut : 12 
+physics.producers.tracksQ.planesHitCut : 12 
+physics.producers.tracksR.planesHitCut : 12 
+physics.producers.tracksS.planesHitCut : 12 
+physics.producers.tracksT.planesHitCut : 12 
+physics.producers.tracksU.planesHitCut : 12 
+
+physics.producers.tracksA.pValueCutLo : 0.000
+physics.producers.tracksB.pValueCutLo : 0.001
+physics.producers.tracksC.pValueCutLo : 0.002
+physics.producers.tracksD.pValueCutLo : 0.003
+physics.producers.tracksE.pValueCutLo : 0.004
+physics.producers.tracksF.pValueCutLo : 0.005
+physics.producers.tracksG.pValueCutLo : 0.006
+physics.producers.tracksH.pValueCutLo : 0.007
+physics.producers.tracksI.pValueCutLo : 0.008
+physics.producers.tracksJ.pValueCutLo : 0.009
+physics.producers.tracksK.pValueCutLo : 0.010
+physics.producers.tracksL.pValueCutLo : 0.011
+physics.producers.tracksM.pValueCutLo : 0.012
+physics.producers.tracksN.pValueCutLo : 0.013
+physics.producers.tracksO.pValueCutLo : 0.014
+physics.producers.tracksP.pValueCutLo : 0.015
+physics.producers.tracksQ.pValueCutLo : 0.016
+physics.producers.tracksR.pValueCutLo : 0.017
+physics.producers.tracksS.pValueCutLo : 0.018
+physics.producers.tracksT.pValueCutLo : 0.019
+physics.producers.tracksU.pValueCutLo : 0.020
+
+physics.producers.tracksMainFit.fitMode : "mainFit" 
+physics.producers.tracksFSQ.fitMode : "fullSeqFit"
+physics.producers.tracksA.fitMode : "mainFitEnhanced"
+physics.producers.tracksB.fitMode : "mainFitEnhanced"
+physics.producers.tracksC.fitMode : "mainFitEnhanced"
+physics.producers.tracksD.fitMode : "mainFitEnhanced"
+physics.producers.tracksE.fitMode : "mainFitEnhanced"
+physics.producers.tracksF.fitMode : "mainFitEnhanced"
+physics.producers.tracksG.fitMode : "mainFitEnhanced"
+physics.producers.tracksH.fitMode : "mainFitEnhanced"
+physics.producers.tracksI.fitMode : "mainFitEnhanced"
+physics.producers.tracksJ.fitMode : "mainFitEnhanced"
+physics.producers.tracksK.fitMode : "mainFitEnhanced"
+physics.producers.tracksL.fitMode : "mainFitEnhanced"
+physics.producers.tracksM.fitMode : "mainFitEnhanced"
+physics.producers.tracksN.fitMode : "mainFitEnhanced"
+physics.producers.tracksO.fitMode : "mainFitEnhanced"
+physics.producers.tracksP.fitMode : "mainFitEnhanced"
+physics.producers.tracksQ.fitMode : "mainFitEnhanced"
+physics.producers.tracksR.fitMode : "mainFitEnhanced"
+physics.producers.tracksS.fitMode : "mainFitEnhanced"
+physics.producers.tracksT.fitMode : "mainFitEnhanced"
+physics.producers.tracksU.fitMode : "mainFitEnhanced"
+
+physics.producers.tracksMainFit.keepTrackDetailArtRecord : true 
+physics.producers.tracksFSQ.keepTrackDetailArtRecord : true
+physics.producers.tracksA.keepTrackDetailArtRecord : true
+physics.producers.tracksB.keepTrackDetailArtRecord : true
+physics.producers.tracksC.keepTrackDetailArtRecord : true
+physics.producers.tracksD.keepTrackDetailArtRecord : true
+physics.producers.tracksE.keepTrackDetailArtRecord : true
+physics.producers.tracksF.keepTrackDetailArtRecord : true
+physics.producers.tracksG.keepTrackDetailArtRecord : true
+physics.producers.tracksH.keepTrackDetailArtRecord : true
+physics.producers.tracksI.keepTrackDetailArtRecord : true
+physics.producers.tracksJ.keepTrackDetailArtRecord : true
+physics.producers.tracksK.keepTrackDetailArtRecord : true
+physics.producers.tracksL.keepTrackDetailArtRecord : true
+physics.producers.tracksM.keepTrackDetailArtRecord : true
+physics.producers.tracksN.keepTrackDetailArtRecord : true
+physics.producers.tracksO.keepTrackDetailArtRecord : true
+physics.producers.tracksP.keepTrackDetailArtRecord : true
+physics.producers.tracksQ.keepTrackDetailArtRecord : true
+physics.producers.tracksR.keepTrackDetailArtRecord : true
+physics.producers.tracksS.keepTrackDetailArtRecord : true
+physics.producers.tracksT.keepTrackDetailArtRecord : true
+physics.producers.tracksU.keepTrackDetailArtRecord : true
+
+

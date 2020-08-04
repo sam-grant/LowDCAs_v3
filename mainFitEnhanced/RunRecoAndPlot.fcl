@@ -1,0 +1,293 @@
+#include "messageParams.fcl"
+#include "trackingConfig.fcl"
+#include "conDBParams.fcl"
+
+process_name : reco
+
+// Input some unpacked data
+source : {
+  module_type : RootInput
+  maxEvents   : -1
+} 
+
+outputs : {
+  out : { 
+    module_type  : RootOutput
+    fileName     : "gm2tracker_reco.root"
+
+    dataTier     : "full"
+    outputCommands : [ "keep *",
+                      "drop *::*_*_*_unpacking",
+                      "drop gm2common::*_*_*_*",
+                      "drop gm2calo::*_*_*_*",
+                      "drop gm2aux::*_*_*_*",
+                      "drop gm2reconeast::*_*_*_*",
+                      "drop gm2midastoart::*_*_*_*",
+                      "drop gm2ccc::*_*_*_*",
+                      @sequence::trackingChain.outputDrops
+                    ]
+
+     SelectEvents : ["trackPath"]
+     //FCMDPlugins  : [ { plugin_type : Metadata
+     //                   fhicl_name  : "gm2tracker_particle_gun_full.fcl"
+     //                   requestid   : "1"
+     //                   run_config  : "commission" }]
+
+  } // out
+} // end of outputs block
+
+
+// Services block
+services : {
+  FileCatalogMetadata : {
+    applicationFamily  : "tracker"
+    applicationVersion : "v9_43_00"
+    fileType           : "offline"
+  }
+
+  message : {
+    debugModules : []
+    suppressInfo : []
+
+    destinations : {
+      LogToConsole : {
+        type       : "cout"
+        threshold  : "INFO"
+        categories : @local::message_categories
+      }
+      LogToFile : {
+        type      : "file"
+        filename  : "gm2tracker_sim.log"
+        append    :  false
+        threshold : "INFO"
+        categories : @local::message_categories
+      }
+    }
+  }
+
+  // the coordinate system data is used throughout the tracking code
+  // for now, the tracking uses GEANT for the coordinates
+  // to build the coordinates requires dependent on artg4
+
+  DetectorHolder    : {}
+  ActionHolder      : {}
+  CoordSystemsStore : {}
+  Gm2Constants      : {}
+  RandomNumberGenerator : {}
+
+  Geometry : { strawtracker : @local::strawtracker_geom }
+  StrawTrackerGeometry : {}
+  StrawTrackerGeometryConstants : { DatabaseURL : @local::condb_prod_params }
+
+  @table::trackingChain.reducedGeometry
+  @table::trackingChain.field
+
+  TrackQuality : {} // default is off
+
+  TimeTracker : {}
+
+   TFileService: {
+      fileName: "recoPlots.root"
+   }
+
+} // end of services block
+
+physics : {
+
+  filters : {
+
+    TrackFilter : 
+    {
+      module_type : TrackerFillTypeFilter
+      fillType    : 1
+      throwOnEmptyHeaderCollection : false
+    }
+  }
+
+  producers : {
+
+    @table::trackingChain.producers
+     tracksMainFitEnhanced : @local::geanefit_params 
+     tracksFlipLR : @local::geanefit_params
+     tracksMainFit : @local::geanefit_params
+     tracksFullSeqFit : @local::geanefit_params
+     //verticesMainFitEnhanced : @local::vertex_params
+     //verticesFlipLR  : @local::vertex_params
+     //verticesMainFit  : @local::vertex_params
+     //verticesFullSeqFit : @local::vertex_params
+   } 
+
+  analyzers : {
+
+    trackPlotsMainFit : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksMainFit"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "trackPlotsMainFit"
+      applyTrackQuality : true
+
+    }
+
+    extrapPlotsMainFit : { 
+
+      module_type : TrackExtrapolationAna
+
+      TrackModuleLabel : "tracksMainFit"
+      TrackInstanceName : "straws"
+      decayVertexModuleLabel : "verticesMainFit"
+      decayVertexInstanceName : "backwards"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "extrapPlotsMainFit"
+      doForwardsExtrap : false      
+      applyTrackQuality : true
+
+    }
+
+    trackPlotsMainFitEnhanced : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksMainFitEnhanced"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "trackPlotsMainFitEnhanced"
+      applyTrackQuality : true
+
+    }
+
+    extrapPlotsMainFitEnhanced : { 
+
+      module_type : TrackExtrapolationAna
+
+      TrackModuleLabel : "tracksMainFitEnhanced"
+      TrackInstanceName : "straws"
+      decayVertexModuleLabel : "verticesMainFitEnhanced"
+      decayVertexInstanceName : "backwards"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "extrapPlotsMainFitEnhanced"
+      doForwardsExtrap : false      
+      applyTrackQuality : true
+
+    }
+
+    trackPlotsFlipLR : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksFlipLR"
+      TrackInstanceName : "straws"
+      dirName : "trackPlotsFlipLR"
+      SelectEvents :["trackPath"] //
+      applyTrackQuality : true
+
+    }
+
+    extrapPlotsFlipLR : { 
+
+      module_type : TrackExtrapolationAna
+
+      TrackModuleLabel : "tracksFlipLR"
+      TrackInstanceName : "straws"
+      decayVertexModuleLabel : "verticesFlipLR"
+      decayVertexInstanceName : "backwards"
+      SelectEvents :["trackPath"]
+      dirName : "extrapPlotsFlipLR"
+      doForwardsExtrap : false      
+      applyTrackQuality : true
+
+    }
+
+    trackPlotsFullSeqFit : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksFullSeqFit"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      dirName : "trackPlotsFullSeqFit"
+      applyTrackQuality : true
+
+    }
+
+    extrapPlotsFullSeqFit : { 
+
+      module_type : TrackExtrapolationAna
+
+      TrackModuleLabel : "tracksFullSeqFit"
+      TrackInstanceName : "straws"
+      decayVertexModuleLabel : "verticesFullSeqFit"
+      decayVertexInstanceName : "backwards"
+      SelectEvents :["trackPath"]
+      dirName : "extrapPlotsFullSeqFit"
+      applyTrackQuality : true
+      doForwardsExtrap : false
+
+    }
+
+  }
+
+  // My path, reconstructing tracks with different lockLowDCA values
+  trackPath : [ TrackFilter,
+     artg4,
+     removeFlash,
+     killStraws,
+     digitTimeSync,
+     deadTime,
+     timeIslands,
+     clustering,
+     seeds,
+     trackCandidates,
+     candidateCleaner,
+     t0Finder,
+     driftDistReco,
+     tracksMainFitEnhanced,
+     tracksFlipLR,
+     tracksMainFit,
+     tracksFullSeqFit
+     //verticesFlipLR,
+     //verticesMainFit,
+     //verticesMainFitEnhanced,
+     //verticesFullSeqFit
+     ] 
+
+    plotPath      : [ out, trackPlotsMainFit, trackPlotsMainFitEnhanced, trackPlotsFlipLR, trackPlotsFullSeqFit] // , extrapPlotsMainFit, extrapPlotsMainFitEnhanced, extrapPlotsFlipLR, extrapPlotsFullSeqFit] 
+
+    trigger_paths : [ trackPath ]
+    end_paths     : [ plotPath ] 
+
+}
+
+physics.producers.t0Finder.meanTimeOffset : 34 // 36.5 is for 1550V, 34 for 1625V. Different for Sim.
+
+physics.producers.tracksFlipLR.flipLR : true
+//physics.producers.verticesFlipLR.flipLR : true
+
+physics.producers.tracksMainFitEnhanced.planesHitCut : 12 
+physics.producers.tracksFlipLR.planesHitCut : 12 
+physics.producers.tracksMainFit.planesHitCut : 12 
+physics.producers.tracksFullSeqFit.planesHitCut : 12 
+// Set different fit modes
+
+physics.producers.tracksMainFitEnhanced.fitMode : "mainFitEnhanced" // mainFit"
+physics.producers.tracksFlipLR.fitMode : "mainFit"
+physics.producers.tracksMainFit.fitMode : "mainFit"
+physics.producers.tracksFullSeqFit.fitMode : "fullSeqFit"
+
+//physics.producers.verticesMainFitEnhanced.trackModuleLabel : tracksMainFitEnhanced
+//physics.producers.verticesMainFit.trackModuleLabel : tracksMainFit
+//physics.producers.verticesFullSeqFit.trackModuleLabel : tracksFullSeqFit
+//physics.producers.verticesFlipLR.trackModuleLabel : tracksFlipLR
+
+// Save detailed art records for everything (may be needed for truth plots)
+physics.producers.tracksMainFitEnhanced.keepTrackDetailArtRecord : true
+physics.producers.tracksFlipLR.keepTrackDetailArtRecord : true
+physics.producers.tracksMainFit.keepTrackDetailArtRecord : true
+physics.producers.tracksFullSeqFit.keepTrackDetailArtRecord : true
+

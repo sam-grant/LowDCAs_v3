@@ -1,4 +1,4 @@
-pnfsOutDir=/pnfs/GM2/scratch/users/sgrant/LowDCAsNominalSim/NoQ
+pnfsOutDir=/pnfs/GM2/scratch/users/sgrant/LowDCAsNominalSim2/NoQ
 echo "Checking output files for in $pnfsOutDir"
 
 for line in `cat MainFileList.txt`; do
@@ -8,8 +8,8 @@ for line in `cat MainFileList.txt`; do
   id=${id##*_}
 
 
-  if [ ! -f ${pnfsOutDir}/*/simPlots_${id}.root ]; then
-    echo $line
+  if [ ! -f ${pnfsOutDir}/simPlots_${id}.root ]; then
+    echo ${pnfsOutDir}/simPlots_${id}.root
   fi
 
 done

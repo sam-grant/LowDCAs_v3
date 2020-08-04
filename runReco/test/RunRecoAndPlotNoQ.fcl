@@ -13,7 +13,7 @@ source : {
 outputs : {
   out : { 
     module_type  : RootOutput
-    fileName     : "gm2tracker_recoNoQ.root"
+    fileName     : "gm2tracker_reco.root"
 
     dataTier     : "full"
     outputCommands : [ "keep *",
@@ -41,7 +41,7 @@ outputs : {
 services : {
   FileCatalogMetadata : {
     applicationFamily  : "tracker"
-    applicationVersion : "v9_45_00"
+    applicationVersion : "v9_43_00"
     fileType           : "offline"
   }
 
@@ -57,7 +57,7 @@ services : {
       }
       LogToFile : {
         type      : "file"
-        filename  : "gm2tracker_reco.log"
+        filename  : "gm2tracker_sim.log"
         append    :  false
         threshold : "INFO"
         categories : @local::message_categories
@@ -85,7 +85,7 @@ services : {
   TrackQuality : {} // default is off
 
    TFileService: {
-      fileName: "recoPlotsNoQ.root"
+      fileName: "recoPlots.root"
    }
 
 } // end of services block
@@ -104,17 +104,12 @@ physics : {
 
   producers : {
 
-    // digitization of simulation
-    // digitizer : @local::digit_params
-    // Tracking chain
     @table::trackingChain.producers
-    // Fit the tracks
-     // Fit the tracks
-
-     // Different fit modes including LR flip, and get extrapolation
-     tracksFlipLR : @local::geanefit_params 
+     tracksMainFitEnhanced : @local::geanefit_params 
+     tracksFlipLR : @local::geanefit_params
      tracksMainFit : @local::geanefit_params
      tracksFullSeqFit : @local::geanefit_params
+     verticesMainFitEnhanced : @local::vertex_params
      verticesFlipLR  : @local::vertex_params
      verticesMainFit  : @local::vertex_params
      verticesFullSeqFit : @local::vertex_params
@@ -122,41 +117,14 @@ physics : {
 
   analyzers : {
 
-    trackPlotsFlipLR : {
- 
-      module_type :  LowDCAsPlots
- 
-      TrackModuleLabel : "tracksFlipLR"
-      TrackInstanceName : "straws"
-      dirName : "trackPlotsFlipLR"
-      SelectEvents :["trackPath" ] // offline:strawPathwithDQC"]
-      applyTrackQuality : false
-
-    }
-
-    extrapPlotsFlipLR : { 
-
-      module_type : TrackExtrapolationAna
-
-      TrackModuleLabel : "tracksFlipLR"
-      TrackInstanceName : "straws"
-      decayVertexModuleLabel : "verticesFlipLR"
-      decayVertexInstanceName : "backwards"
-      SelectEvents :["offline:strawPathwithDQC"]
-      dirName : "extrapPlotsFlipLR"
-      doForwardsExtrap : false      
-      applyTrackQuality : false
-
-    }
-
-
     trackPlotsMainFit : {
  
       module_type :  LowDCAsPlots
  
       TrackModuleLabel : "tracksMainFit"
       TrackInstanceName : "straws"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
       dirName : "trackPlotsMainFit"
       applyTrackQuality : false
 
@@ -170,8 +138,65 @@ physics : {
       TrackInstanceName : "straws"
       decayVertexModuleLabel : "verticesMainFit"
       decayVertexInstanceName : "backwards"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
       dirName : "extrapPlotsMainFit"
+      doForwardsExtrap : false      
+      applyTrackQuality : false
+
+    }
+
+    trackPlotsMainFitEnhanced : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksMainFitEnhanced"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "trackPlotsMainFitEnhanced"
+      applyTrackQuality : false
+
+    }
+
+    extrapPlotsMainFitEnhanced : { 
+
+      module_type : TrackExtrapolationAna
+
+      TrackModuleLabel : "tracksMainFitEnhanced"
+      TrackInstanceName : "straws"
+      decayVertexModuleLabel : "verticesMainFitEnhanced"
+      decayVertexInstanceName : "backwards"
+      SelectEvents :["trackPath"]
+      //SelectEvents :["offline:strawPathwithDQC"]
+      dirName : "extrapPlotsMainFitEnhanced"
+      doForwardsExtrap : false      
+      applyTrackQuality : false
+
+    }
+
+    trackPlotsFlipLR : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksFlipLR"
+      TrackInstanceName : "straws"
+      dirName : "trackPlotsFlipLR"
+      SelectEvents :["trackPath"] //
+      applyTrackQuality : false
+
+    }
+
+    extrapPlotsFlipLR : { 
+
+      module_type : TrackExtrapolationAna
+
+      TrackModuleLabel : "tracksFlipLR"
+      TrackInstanceName : "straws"
+      decayVertexModuleLabel : "verticesFlipLR"
+      decayVertexInstanceName : "backwards"
+      SelectEvents :["trackPath"]
+      dirName : "extrapPlotsFlipLR"
       doForwardsExtrap : false      
       applyTrackQuality : false
 
@@ -183,7 +208,7 @@ physics : {
  
       TrackModuleLabel : "tracksFullSeqFit"
       TrackInstanceName : "straws"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       dirName : "trackPlotsFullSeqFit"
       applyTrackQuality : false
 
@@ -197,7 +222,7 @@ physics : {
       TrackInstanceName : "straws"
       decayVertexModuleLabel : "verticesFullSeqFit"
       decayVertexInstanceName : "backwards"
-      SelectEvents :["offline:strawPathwithDQC"]
+      SelectEvents :["trackPath"]
       dirName : "extrapPlotsFullSeqFit"
       applyTrackQuality : false
       doForwardsExtrap : false
@@ -220,36 +245,47 @@ physics : {
      candidateCleaner,
      t0Finder,
      driftDistReco,
+     tracksMainFitEnhanced,
      tracksFlipLR,
      tracksMainFit,
      tracksFullSeqFit,
      verticesFlipLR,
      verticesMainFit,
+     verticesMainFitEnhanced,
      verticesFullSeqFit
      ] 
 
-  plotPath      : [ out, trackPlotsFlipLR ] // , extrapPlotsFlipLR, trackPlotsMainFit, extrapPlotsMainFit, trackPlotsFullSeqFit, extrapPlotsFullSeqFit]
-  // plotPath      : [ trackPlotsMainFit ]
-  
-  trigger_paths : [ trackPath ]
-  end_paths     : [ plotPath ] 
+    plotPath      : [ out, trackPlotsMainFit, trackPlotsMainFitEnhanced, trackPlotsFlipLR, trackPlotsFullSeqFit, extrapPlotsMainFit, extrapPlotsMainFitEnhanced, extrapPlotsFlipLR, extrapPlotsFullSeqFit] 
+
+    trigger_paths : [ trackPath ]
+    end_paths     : [ plotPath ] 
 
 }
 
-physics.producers.t0Finder.meanTimeOffset : 34 // 36.5 is for 1550V, 34 for 1625V. Different for Sim. 
+physics.producers.t0Finder.meanTimeOffset : 34 // 36.5 is for 1550V, 34 for 1625V. Different for Sim.
 
 physics.producers.tracksFlipLR.flipLR : true
+physics.producers.verticesFlipLR.flipLR : true
 
+physics.producers.tracksMainFitEnhanced.planesHitCut : 12 
+physics.producers.tracksFlipLR.planesHitCut : 12 
+physics.producers.tracksMainFit.planesHitCut : 12 
+physics.producers.tracksFullSeqFit.planesHitCut : 12 
 // Set different fit modes
+
+physics.producers.tracksMainFitEnhanced.fitMode : "mainFitEnhanced" // mainFit"
 physics.producers.tracksFlipLR.fitMode : "mainFit"
 physics.producers.tracksMainFit.fitMode : "mainFit"
 physics.producers.tracksFullSeqFit.fitMode : "fullSeqFit"
 
-physics.producers.verticesFlipLR.trackModuleLabel : tracksFlipLR
+physics.producers.verticesMainFitEnhanced.trackModuleLabel : tracksMainFitEnhanced
 physics.producers.verticesMainFit.trackModuleLabel : tracksMainFit
 physics.producers.verticesFullSeqFit.trackModuleLabel : tracksFullSeqFit
+physics.producers.verticesFlipLR.trackModuleLabel : tracksFlipLR
 
 // Save detailed art records for everything (may be needed for truth plots)
+physics.producers.tracksMainFitEnhanced.keepTrackDetailArtRecord : true
 physics.producers.tracksFlipLR.keepTrackDetailArtRecord : true
 physics.producers.tracksMainFit.keepTrackDetailArtRecord : true
 physics.producers.tracksFullSeqFit.keepTrackDetailArtRecord : true
+
