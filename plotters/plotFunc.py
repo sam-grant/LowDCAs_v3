@@ -196,6 +196,81 @@ def DrawScat(graph, title, fname): #, grid):
 
 	return
 
+def DrawScatXYLine(graph, title, fname, xcoord, ycoord): #, grid):
+
+	c = TCanvas("c","c",800,600)
+			
+	graph.SetTitle(title)			
+	graph.GetXaxis().SetTitleSize(.04)
+	graph.GetYaxis().SetTitleSize(.04)
+	graph.GetXaxis().SetTitleOffset(1.2)
+	graph.GetYaxis().SetTitleOffset(1.25)
+	graph.GetXaxis().CenterTitle(1)
+	graph.GetYaxis().CenterTitle(1)
+	graph.GetYaxis().SetMaxDigits(4)
+	graph.SetMarkerStyle(20) # Full circle
+	graph.Draw()
+
+	gPad.Update()
+	xLine = TLine(xcoord, gPad.GetUymin(), xcoord, gPad.GetUymax())
+	yLine = TLine(gPad.GetUxmin(),ycoord,gPad.GetUxmax(),ycoord)
+	# print(gPad.GetUymin(),gPad.GetUymax())
+	xLine.SetLineWidth(3)
+	xLine.SetLineColor(2)
+	xLine.SetLineStyle(2)
+	yLine.SetLineStyle(2)
+	yLine.SetLineColor(2)
+	yLine.SetLineWidth(3)
+
+	graph.Draw("AP")
+	xLine.Draw("same")
+	yLine.Draw("same")
+	
+	c.SaveAs(fname+".C")
+	c.SaveAs(fname+".pdf")
+
+	return
+
+def DrawScatXYYLine(graph, title, fname, xcoord, ycoord, xcoord2): #, grid):
+
+	c = TCanvas("c","c",800,600)
+			
+	graph.SetTitle(title)			
+	graph.GetXaxis().SetTitleSize(.04)
+	graph.GetYaxis().SetTitleSize(.04)
+	graph.GetXaxis().SetTitleOffset(1.2)
+	graph.GetYaxis().SetTitleOffset(1.25)
+	graph.GetXaxis().CenterTitle(1)
+	graph.GetYaxis().CenterTitle(1)
+	graph.GetYaxis().SetMaxDigits(4)
+	graph.SetMarkerStyle(20) # Full circle
+	graph.Draw()
+
+	gPad.Update()
+	xLine = TLine(xcoord, gPad.GetUymin(), xcoord, gPad.GetUymax())
+	xLine2 = TLine(xcoord2, gPad.GetUymin(), xcoord2, gPad.GetUymax())
+	yLine = TLine(gPad.GetUxmin(),ycoord,gPad.GetUxmax(),ycoord)
+	# print(gPad.GetUymin(),gPad.GetUymax())
+	xLine.SetLineWidth(3)
+	xLine.SetLineColor(2)
+	xLine.SetLineStyle(2)
+	xLine2.SetLineWidth(3)
+	xLine2.SetLineColor(2)
+	xLine2.SetLineStyle(2)
+	yLine.SetLineStyle(2)
+	yLine.SetLineColor(2)
+	yLine.SetLineWidth(3)
+
+	graph.Draw("AP")
+	xLine.Draw("same")
+	# xLine2.Draw("same")
+	yLine.Draw("same")
+	
+	c.SaveAs(fname+".C")
+	c.SaveAs(fname+".pdf")
+
+	return
+
 def DrawScatXLine(graph, title, fname, ycoord): #, grid):
 
 	c = TCanvas("c","c",800,600)
@@ -215,7 +290,7 @@ def DrawScatXLine(graph, title, fname, ycoord): #, grid):
 	line = TLine(gPad.GetUxmin(),ycoord,gPad.GetUxmax(),ycoord)
 	# print(gPad.GetUymin(),gPad.GetUymax())
 	line.SetLineStyle(2)
-	line.SetLineColor(1)
+	line.SetLineColor(2)
 	line.SetLineWidth(3)
 
 	graph.Draw("AP")
@@ -257,7 +332,7 @@ def DrawScatYLine(graph, title, fname, xcoord): #, grid):
 
 	return
 
-def DrawScatX2Line(graph, title, fname, ycoord1, ycoord2): #, grid):
+def DrawScat2XLine(graph, title, fname, ycoord1, ycoord2): #, grid):
 
 	c = TCanvas("c","c",800,600)
 			
@@ -280,7 +355,7 @@ def DrawScatX2Line(graph, title, fname, ycoord1, ycoord2): #, grid):
 	line1.SetLineColor(2)
 	line1.SetLineWidth(3)
 	line2.SetLineStyle(2)
-	line2.SetLineColor(4)
+	line2.SetLineColor(2)
 	line2.SetLineWidth(3)
 
 	graph.Draw("AP")

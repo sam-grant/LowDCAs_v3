@@ -1,0 +1,4532 @@
+strawSD is not found in /
+04-Aug-2020 11:54:34 CDT  Initiating request to open input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+04-Aug-2020 11:54:35 CDT  Opened input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 1.16415e-09
+P0 = (6745.36,1895.27,-38.1659)
+P1 = (6745.36,1895.27,-38.1659)
+P2 = (6745.36,1895.27,-34.7345)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43143
+Side3 length (P2->P0) = 3.43142
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6745.36,1895.27,-38.1659)
+P[1]      = (6745.36,1895.27,-38.1659)
+P[2]      = (6745.36,1895.27,-34.7345)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 2.32831e-10
+P0 = (6745.36,1895.27,-38.6708)
+P1 = (6745.36,1895.27,-38.6708)
+P2 = (6745.36,1895.27,-42.1005)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.4297
+Side3 length (P2->P0) = 3.42969
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6745.36,1895.27,-38.6708)
+P[1]      = (6745.36,1895.27,-38.6708)
+P[2]      = (6745.36,1895.27,-42.1005)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 4.65661e-10
+P0 = (6744.77,1897.35,-38.1642)
+P1 = (6744.77,1897.35,-38.1642)
+P2 = (6744.77,1897.35,-34.7345)
+Side1 length (P0->P1) = 7.62939e-06
+Side2 length (P1->P2) = 3.4297
+Side3 length (P2->P0) = 3.42969
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6744.77,1897.35,-38.1642)
+P[1]      = (6744.77,1897.35,-38.1642)
+P[2]      = (6744.77,1897.35,-34.7345)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 6.98492e-10
+P0 = (6745.5,1894.78,-38.669)
+P1 = (6745.5,1894.78,-38.669)
+P2 = (6745.5,1894.78,-42.1005)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43151
+Side3 length (P2->P0) = 3.43151
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6745.5,1894.78,-38.669)
+P[1]      = (6745.5,1894.78,-38.669)
+P[2]      = (6745.5,1894.78,-42.1005)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 1.16415e-09
+P0 = (6745.36,1895.27,-38.1659)
+P1 = (6745.36,1895.27,-38.1659)
+P2 = (6745.36,1895.27,-34.7345)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43143
+Side3 length (P2->P0) = 3.43142
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6745.36,1895.27,-38.1659)
+P[1]      = (6745.36,1895.27,-38.1659)
+P[2]      = (6745.36,1895.27,-34.7345)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 2.32831e-10
+P0 = (6745.36,1895.27,-38.6708)
+P1 = (6745.36,1895.27,-38.6708)
+P2 = (6745.36,1895.27,-42.1005)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.4297
+Side3 length (P2->P0) = 3.42969
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6745.36,1895.27,-38.6708)
+P[1]      = (6745.36,1895.27,-38.6708)
+P[2]      = (6745.36,1895.27,-42.1005)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 4.65661e-10
+P0 = (6744.77,1897.35,-38.1642)
+P1 = (6744.77,1897.35,-38.1642)
+P2 = (6744.77,1897.35,-34.7345)
+Side1 length (P0->P1) = 7.62939e-06
+Side2 length (P1->P2) = 3.4297
+Side3 length (P2->P0) = 3.42969
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6744.77,1897.35,-38.1642)
+P[1]      = (6744.77,1897.35,-38.1642)
+P[2]      = (6744.77,1897.35,-34.7345)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 6.98492e-10
+P0 = (6745.5,1894.78,-38.669)
+P1 = (6745.5,1894.78,-38.669)
+P2 = (6745.5,1894.78,-42.1005)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43151
+Side3 length (P2->P0) = 3.43151
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6745.5,1894.78,-38.669)
+P[1]      = (6745.5,1894.78,-38.669)
+P[2]      = (6745.5,1894.78,-42.1005)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 1.10595e-09
+P0 = (6953.16,326.999,-38.1659)
+P1 = (6953.16,326.999,-38.1659)
+P2 = (6953.16,326.998,-34.7345)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43143
+Side3 length (P2->P0) = 3.43142
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6953.16,326.999,-38.1659)
+P[1]      = (6953.16,326.999,-38.1659)
+P[2]      = (6953.16,326.998,-34.7345)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 1.10595e-09
+P0 = (6953.05,329.154,-38.6691)
+P1 = (6953.05,329.154,-38.6691)
+P2 = (6953.05,329.155,-42.1005)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43143
+Side3 length (P2->P0) = 3.43142
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6953.05,329.154,-38.6691)
+P[1]      = (6953.05,329.154,-38.6691)
+P[2]      = (6953.05,329.155,-42.1005)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 1.10595e-09
+P0 = (6953.16,326.999,-38.1659)
+P1 = (6953.16,326.999,-38.1659)
+P2 = (6953.16,326.998,-34.7345)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43143
+Side3 length (P2->P0) = 3.43142
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6953.16,326.999,-38.1659)
+P[1]      = (6953.16,326.999,-38.1659)
+P[2]      = (6953.16,326.998,-34.7345)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 1.10595e-09
+P0 = (6953.05,329.154,-38.6691)
+P1 = (6953.05,329.154,-38.6691)
+P2 = (6953.05,329.155,-42.1005)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43143
+Side3 length (P2->P0) = 3.43142
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6953.05,329.154,-38.6691)
+P[1]      = (6953.05,329.154,-38.6691)
+P[2]      = (6953.05,329.155,-42.1005)
+*********************************************************************
+RingSD is not found in /
+buildMylarWindow_: 0
+buildMylarWindow_: 0
+buildMylarWindow_: 0
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6918.61,359.301,24.5252)
+P1 = (6823.05,356.348,21.6281)
+P2 = (6823.05,356.348,21.6281)
+Side1 length (P0->P1) = 95.6427
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 95.6427
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6918.61,359.301,24.5252)
+P[1]      = (6823.05,356.348,21.6281)
+P[2]      = (6823.05,356.348,21.6281)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6823.05,356.39,21.6281)
+P1 = (6823.05,356.348,21.6281)
+P2 = (6823.05,356.348,21.6281)
+Side1 length (P0->P1) = 0.0422815
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 0.0422815
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6823.05,356.39,21.6281)
+P[1]      = (6823.05,356.348,21.6281)
+P[2]      = (6823.05,356.348,21.6281)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6442.25,2091.24,24.5508)
+P1 = (6498.34,2110.15,21.6281)
+P2 = (6498.34,2110.15,21.6281)
+Side1 length (P0->P1) = 59.2658
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 59.2658
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6442.25,2091.24,24.5508)
+P[1]      = (6498.34,2110.15,21.6281)
+P[2]      = (6498.34,2110.15,21.6281)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6498.33,2110.19,21.6281)
+P1 = (6498.34,2110.15,21.6281)
+P2 = (6498.34,2110.15,21.6281)
+Side1 length (P0->P1) = 0.0422363
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 0.0422363
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6498.33,2110.19,21.6281)
+P[1]      = (6498.34,2110.15,21.6281)
+P[2]      = (6498.34,2110.15,21.6281)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6763.98,352.597,24.5508)
+P1 = (6823.05,356.348,21.6281)
+P2 = (6823.05,356.348,21.6281)
+Side1 length (P0->P1) = 59.2658
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 59.2658
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6763.98,352.597,24.5508)
+P[1]      = (6823.05,356.348,21.6281)
+P[2]      = (6823.05,356.348,21.6281)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6823.05,356.39,21.6281)
+P1 = (6823.05,356.348,21.6281)
+P2 = (6823.05,356.348,21.6281)
+Side1 length (P0->P1) = 0.0422815
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 0.0422815
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6823.05,356.39,21.6281)
+P[1]      = (6823.05,356.348,21.6281)
+P[2]      = (6823.05,356.348,21.6281)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6442.25,2091.24,24.5508)
+P1 = (6498.34,2110.15,21.6281)
+P2 = (6498.34,2110.15,21.6281)
+Side1 length (P0->P1) = 59.2658
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 59.2658
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6442.25,2091.24,24.5508)
+P[1]      = (6498.34,2110.15,21.6281)
+P[2]      = (6498.34,2110.15,21.6281)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6498.33,2110.19,21.6281)
+P1 = (6498.34,2110.15,21.6281)
+P2 = (6498.34,2110.15,21.6281)
+Side1 length (P0->P1) = 0.0422363
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 0.0422363
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6498.33,2110.19,21.6281)
+P[1]      = (6498.34,2110.15,21.6281)
+P[2]      = (6498.34,2110.15,21.6281)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6442.25,2091.24,24.5508)
+P1 = (6498.34,2110.15,21.6281)
+P2 = (6498.34,2110.15,21.6281)
+Side1 length (P0->P1) = 59.2658
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 59.2658
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6442.25,2091.24,24.5508)
+P[1]      = (6498.34,2110.15,21.6281)
+P[2]      = (6498.34,2110.15,21.6281)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6498.33,2110.19,21.6281)
+P1 = (6498.34,2110.15,21.6281)
+P2 = (6498.34,2110.15,21.6281)
+Side1 length (P0->P1) = 0.0422363
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 0.0422363
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6498.33,2110.19,21.6281)
+P[1]      = (6498.34,2110.15,21.6281)
+P[2]      = (6498.34,2110.15,21.6281)
+*********************************************************************
+Checking overlaps for volume quadPlatePV[00] ... OK! 
+Checking overlaps for volume quadPlatePV[01] ... OK! 
+Checking overlaps for volume quadPlatePV[03] ... OK! 
+Checking overlaps for volume quadPlatePV[04] ... OK! 
+Checking overlaps for volume quadPlatePV[06] ... OK! 
+Checking overlaps for volume quadPlatePV[07] ... OK! 
+Checking overlaps for volume quadPlatePV[09] ... OK! 
+Checking overlaps for volume quadPlatePV[10] ... OK! 
+Checking overlaps for volume Q1LongOuterFoil ... OK! 
+Checking overlaps for volume Q0ShortOuterFoil ... OK! 
+Checking overlaps for volume quadStandoffPV[00] ... OK! 
+Checking overlaps for volume quadStandoffPV[01] ... OK! 
+Checking overlaps for volume quadStandoffPV[03] ... OK! 
+Checking overlaps for volume quadStandoffPV[04] ... OK! 
+Checking overlaps for volume quadStandoffPV[06] ... OK! 
+Checking overlaps for volume quadStandoffPV[07] ... OK! 
+Checking overlaps for volume quadStandoffPV[09] ... OK! 
+Checking overlaps for volume quadStandoffPV[10] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][0] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][1] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][2] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][3] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][4] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][5] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][6] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][7] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][0] ... OK! 
+Checking overlaps for volume strawModuleNumber[0][0] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][1] ... OK! 
+Checking overlaps for volume strawModuleNumber[0][1] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][2] ... OK! 
+Checking overlaps for volume strawModuleNumber[0][2] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][3] ... OK! 
+Checking overlaps for volume strawModuleNumber[0][3] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][4] ... OK! 
+Checking overlaps for volume strawModuleNumber[0][4] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][5] ... OK! 
+Checking overlaps for volume strawModuleNumber[0][5] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][6] ... OK! 
+Checking overlaps for volume strawModuleNumber[0][6] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][7] ... OK! 
+Checking overlaps for volume strawModuleNumber[0][7] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[12][0] ... OK! 
+Checking overlaps for volume strawModuleNumber[12][0] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[12][1] ... OK! 
+Checking overlaps for volume strawModuleNumber[12][1] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[12][2] ... OK! 
+Checking overlaps for volume strawModuleNumber[12][2] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[12][3] ... OK! 
+Checking overlaps for volume strawModuleNumber[12][3] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[12][4] ... OK! 
+Checking overlaps for volume strawModuleNumber[12][4] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[12][5] ... OK! 
+Checking overlaps for volume strawModuleNumber[12][5] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[12][6] ... OK! 
+Checking overlaps for volume strawModuleNumber[12][6] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[12][7] ... OK! 
+Checking overlaps for volume strawModuleNumber[12][7] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[18][0] ... OK! 
+Checking overlaps for volume strawModuleNumber[18][0] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[18][1] ... OK! 
+Checking overlaps for volume strawModuleNumber[18][1] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[18][2] ... OK! 
+Checking overlaps for volume strawModuleNumber[18][2] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[18][3] ... OK! 
+Checking overlaps for volume strawModuleNumber[18][3] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[18][4] ... OK! 
+Checking overlaps for volume strawModuleNumber[18][4] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[18][5] ... OK! 
+Checking overlaps for volume strawModuleNumber[18][5] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[18][6] ... OK! 
+Checking overlaps for volume strawModuleNumber[18][6] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[18][7] ... OK! 
+Checking overlaps for volume strawModuleNumber[18][7] ... OK! 
+Checking overlaps for volume bellowsRailPV[00] ... OK! 
+Checking overlaps for volume trolleyRailPV[00] ... OK! 
+Checking overlaps for volume bellowsRailPV[01] ... OK! 
+Checking overlaps for volume trolleyRailPV[01] ... OK! 
+Checking overlaps for volume bellowsRailPV[02] ... OK! 
+Checking overlaps for volume bellowsRailPV[03] ... OK! 
+Checking overlaps for volume bellowsRailPV[04] ... OK! 
+Checking overlaps for volume trolleyRailPV[04] ... OK! 
+Checking overlaps for volume bellowsRailPV[05] ... OK! 
+Checking overlaps for volume trolleyRailPV[05] ... OK! 
+Checking overlaps for volume bellowsRailPV[06] ... OK! 
+Checking overlaps for volume trolleyRailPV[06] ... 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomVol1002
+      issued by : G4PVPlacement::CheckOverlaps()
+Overlap with volume already placed !
+          Overlap is detected for volume trolleyRailPV[06]
+          with quadStandoffPV[06] volume's
+          local point (6195.57,3331.66,-1.42249), overlapping by at least: 103.442 nm 
+NOTE: Reached maximum fixed number -1- of overlaps reports for this volume !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+Checking overlaps for volume bellowsRailPV[07] ... OK! 
+Checking overlaps for volume trolleyRailPV[07] ... OK! 
+Checking overlaps for volume bellowsRailPV[08] ... OK! 
+Checking overlaps for volume trolleyRailPV[08] ... OK! 
+Checking overlaps for volume bellowsRailPV[09] ... OK! 
+Checking overlaps for volume trolleyRailPV[09] ... OK! 
+Checking overlaps for volume bellowsRailPV[10] ... OK! 
+Checking overlaps for volume trolleyRailPV[10] ... OK! 
+Checking overlaps for volume bellowsRailPV[11] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[00] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[01] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[02] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[03] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[04] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[05] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[06] ... 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomVol1002
+      issued by : G4PVPlacement::CheckOverlaps()
+Overlap with volume already placed !
+          Overlap is detected for volume VacuumChamberCadMeshWallPV[06]
+          with strawModuleNumber[12][4] volume's
+          local point (-35.9332,-14.1282,68.5061), overlapping by at least: 243.871 um 
+NOTE: Reached maximum fixed number -1- of overlaps reports for this volume !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+Checking overlaps for volume VacuumChamberCadMeshWallPV[07] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[08] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[09] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[10] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[11] ... OK! 
+
+*************************************************************
+ Geant4 version Name: geant4-10-03-patch-03    (20-October-2017)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+ creating G4RunManagerKernel 0x3b7b1e90
+world is registered to the default region.
+  gm2GeaneRunManagerHelper::InitializePhysics 
+
+
+gm2GeanePhysicsList has been constructed.
+
+List of instantiated particles ============================================
+e+ e- gamma geantino mu+ mu- pi+ pi- proton 
+Current application state is PreInit
+Warning : Geant4 kernel is not Init state : Assuming Init state.
+physicsList->Construct() start.
+ G4Transportation constructor> set fShortStepOptimisation to false
+0x3bd59d50artg4/gm2Geane/gm2GeanePhysicsList:: particle process manager e+ = 0x3bd58ea0
+0x3bd59c00artg4/gm2Geane/gm2GeanePhysicsList:: particle process manager e- = 0x3bd5c910
+0x3bd59ab0artg4/gm2Geane/gm2GeanePhysicsList:: particle process manager gamma = 0x3bd5c980
+0x3bd5a880artg4/gm2Geane/gm2GeanePhysicsList:: particle process manager geantino = 0x3bd5c9f0
+0x3bd59ea0artg4/gm2Geane/gm2GeanePhysicsList:: particle process manager mu+ = 0x3bd5ca60
+0x3bd5a0a0artg4/gm2Geane/gm2GeanePhysicsList:: particle process manager mu- = 0x3bd5cad0
+0x3bd5a2a0artg4/gm2Geane/gm2GeanePhysicsList:: particle process manager pi+ = 0x3bd5cb40
+0x3bd5a4e0artg4/gm2Geane/gm2GeanePhysicsList:: particle process manager pi- = 0x3bd5cbb0
+0x3bd5a720artg4/gm2Geane/gm2GeanePhysicsList:: particle process manager proton = 0x3bd5cc20
+gm2GeaneEnergyLoss is created.
+gm2GeaneLossForExtrapolator is created.
+physicsList->CheckParticleList() start.
+physicsList->setCut() start.
+
+conv:   for  gamma    SubType= 14  BuildTable= 1
+      Lambda table from 1.022 MeV to 100 TeV, 18 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        BetheHeitler :  Emin=        0 eV    Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=      100 TeV
+
+compt:   for  gamma    SubType= 13  BuildTable= 1
+      Lambda table from 100 eV  to 1 MeV, 7 bins per decade, spline: 1
+      LambdaPrime table from 1 MeV to 100 TeV in 56 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina :  Emin=        0 eV    Emax=      100 TeV
+
+phot:   for  gamma    SubType= 12  BuildTable= 0
+      LambdaPrime table from 200 keV to 100 TeV in 61 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       PhotoElectric :  Emin=        0 eV    Emax=      100 TeV   AngularGenSauterGavrila
+
+Region <DefaultRegionForTheWorld> --  -- appears in <world> world volume
+ This region is in the mass world.
+ Root logical volume(s) : world 
+ Pointers : G4VUserRegionInformation[0], G4UserLimits[0], G4FastSimulationManager[0], G4UserSteppingAction[0]
+ Materials : G4_AIR Vacuum G4_Cu G4_Al G4_MYLAR MacorCeramic CarbonFiber StrawWalls ArgonEthane 
+ Production cuts :   gamma 10000 km      e- 10000 km      e+ 10000 km  proton 10000 km 
+
+Region <DefaultRegionForParallelWorld> --  -- is not associated to any world.
+ Root logical volume(s) : 
+ Pointers : G4VUserRegionInformation[0], G4UserLimits[0], G4FastSimulationManager[0], G4UserSteppingAction[0]
+ Materials : 
+ Production cuts :   gamma 10000 km      e- 10000 km      e+ 10000 km  proton 10000 km 
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  10000 km     e-  10000 km     e+  10000 km  proton 10000 km 
+ Energy thresholds :  gamma  10 GeV    e-  10 GeV    e+  10 GeV proton 1 PeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : Vacuum
+ Range cuts        :  gamma  10000 km     e-  10000 km     e+  10000 km  proton 10000 km 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 1 PeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 2     used in the geometry : Yes
+ Material : G4_Cu
+ Range cuts        :  gamma  10000 km     e-  10000 km     e+  10000 km  proton 10000 km 
+ Energy thresholds :  gamma  10 GeV    e-  10 GeV    e+  10 GeV proton 1 PeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 3     used in the geometry : Yes
+ Material : G4_Al
+ Range cuts        :  gamma  10000 km     e-  10000 km     e+  10000 km  proton 10000 km 
+ Energy thresholds :  gamma  10 GeV    e-  10 GeV    e+  10 GeV proton 1 PeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 4     used in the geometry : Yes
+ Material : G4_MYLAR
+ Range cuts        :  gamma  10000 km     e-  10000 km     e+  10000 km  proton 10000 km 
+ Energy thresholds :  gamma  10 GeV    e-  10 GeV    e+  10 GeV proton 1 PeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 5     used in the geometry : Yes
+ Material : MacorCeramic
+ Range cuts        :  gamma  10000 km     e-  10000 km     e+  10000 km  proton 10000 km 
+ Energy thresholds :  gamma  10 GeV    e-  10 GeV    e+  10 GeV proton 1 PeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 6     used in the geometry : Yes
+ Material : CarbonFiber
+ Range cuts        :  gamma  10000 km     e-  10000 km     e+  10000 km  proton 10000 km 
+ Energy thresholds :  gamma  10 GeV    e-  10 GeV    e+  10 GeV proton 1 PeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 7     used in the geometry : Yes
+ Material : StrawWalls
+ Range cuts        :  gamma  10000 km     e-  10000 km     e+  10000 km  proton 10000 km 
+ Energy thresholds :  gamma  10 GeV    e-  10 GeV    e+  10 GeV proton 1 PeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 8     used in the geometry : Yes
+ Material : ArgonEthane
+ Range cuts        :  gamma  10000 km     e-  10000 km     e+  10000 km  proton 10000 km 
+ Energy thresholds :  gamma  10 GeV    e-  10 GeV    e+  10 GeV proton 1 PeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+Start closing geometry.
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt0001
+      issued by : G4UTubs::Extent()
+Inconsistency in bounding boxes for solid: Q1LongOuterFoil !
+BBox min: wrapper = (6978.32,-1611.08,-22) solid = (-7161.9, -7161.9, -22)
+BBox max: wrapper = (7161.9,1611.08,22) solid = (7161.9, 7161.9, 22)
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4GeometryManager::ReportVoxelStats -- Voxel Statistics
+
+    Total memory consumed for geometry optimisation:   2591 kByte
+    Total CPU time elapsed for geometry optimisation: 35 seconds
+
+    Voxelisation: top CPU users:
+    Percent   Total CPU    System CPU       Memory  Volume
+    -------   ----------   ----------     --------  ----------
+      99.25        34.54         0.00           75k ArcSection[00]
+       0.06         0.02         0.00          105k StrawModuleLV - 0 ~ 0
+       0.03         0.01         0.00          105k StrawModuleLV - 18 ~ 7
+       0.03         0.01         0.00          105k StrawModuleLV - 18 ~ 5
+       0.03         0.01         0.00          105k StrawModuleLV - 18 ~ 3
+       0.03         0.01         0.00          105k StrawModuleLV - 18 ~ 2
+       0.03         0.01         0.00          105k StrawModuleLV - 18 ~ 1
+       0.03         0.01         0.00          105k StrawModuleLV - 18 ~ 0
+       0.03         0.01         0.00          105k StrawModuleLV - 12 ~ 7
+       0.03         0.01         0.00          105k StrawModuleLV - 12 ~ 6
+
+    Voxelisation: top memory users:
+    Percent     Memory      Heads    Nodes   Pointers    Total CPU    Volume
+    -------   --------     ------   ------   --------   ----------    ----------
+       4.05        104k       204     1428       3017         0.01    StrawModuleLV - 12 ~ 3
+       4.05        104k       204     1428       3017         0.00    StrawModuleLV - 18 ~ 6
+       4.05        104k       204     1428       3017         0.00    StrawModuleLV - 18 ~ 4
+       4.05        104k       204     1428       3017         0.01    StrawModuleLV - 0 ~ 1
+       4.05        104k       204     1428       3017         0.01    StrawModuleLV - 0 ~ 2
+       4.05        104k       204     1428       3017         0.01    StrawModuleLV - 0 ~ 3
+       4.05        104k       204     1428       3017         0.01    StrawModuleLV - 0 ~ 4
+       4.05        104k       204     1428       3017         0.01    StrawModuleLV - 0 ~ 5
+       4.05        104k       204     1428       3017         0.01    StrawModuleLV - 0 ~ 6
+       4.05        104k       204     1428       3017         0.01    StrawModuleLV - 0 ~ 7
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : IllegalState
+      issued by : artg4/gm2Geane/gm2GeanePropagatorManager::InitGeant4e()
+Illegal GEANT4e State= artg4/gm2Geane/G4ErrorState_Init
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+Begin processing the 1st record. run: 15921 subRun: 313 event: 1 at 04-Aug-2020 11:57:13 CDT
+04-Aug-2020 11:57:13 CDT  Opened output file with pattern "gm2tracker_reco.root"
+### gm2GeaneLossForExtrapolator::BuildTables for 24 materials Nbins= 70 Emin(MeV)= 1  Emax(MeV)= 10000000
+gm2GeaneTablesForExtrapolator::ComputeElectronDEDX for e-
+gm2GeaneTablesForExtrapolator::ComputeElectronDEDX for e+
+gm2GeaneTablesForExtrapolator::ComputeMuonDEDX for mu+
+gm2GeaneTablesForExtrapolator::ComputeProtonDEDX for proton
+gm2GeaneTablesForExtrapolator::ComputeProtonDEDX for e-
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomField1001
+      issued by : G4MagInt_Driver::AccurateAdvance()
+Proposed step is zero; hstep = 0 !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GEANT4e-Notification
+      issued by : artg4/gm2Geane/gm2GeanePropagator::MakeOneStep()
+Error returned: 3
+Geant4 tracking will be stopped !
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+Number of times FSQ is called in mainFitEnhanced:	0
+Number of times FSQ is called in mainFitEnhanced:	0
+Number of times FSQ is called in mainFitEnhanced:	186
+Number of times FSQ is called in mainFitEnhanced:	64
+Number of times FSQ is called in mainFitEnhanced:	55
+Number of times FSQ is called in mainFitEnhanced:	55
+Number of times FSQ is called in mainFitEnhanced:	54
+Number of times FSQ is called in mainFitEnhanced:	54
+Number of times FSQ is called in mainFitEnhanced:	54
+Number of times FSQ is called in mainFitEnhanced:	54
+Number of times FSQ is called in mainFitEnhanced:	52
+Number of times FSQ is called in mainFitEnhanced:	52
+Number of times FSQ is called in mainFitEnhanced:	52
+Number of times FSQ is called in mainFitEnhanced:	49
+Number of times FSQ is called in mainFitEnhanced:	46
+Number of times FSQ is called in mainFitEnhanced:	45
+Number of times FSQ is called in mainFitEnhanced:	42
+Number of times FSQ is called in mainFitEnhanced:	42
+Number of times FSQ is called in mainFitEnhanced:	40
+Number of times FSQ is called in mainFitEnhanced:	39
+Number of times FSQ is called in mainFitEnhanced:	39
+Number of times FSQ is called in mainFitEnhanced:	38
+Number of times FSQ is called in mainFitEnhanced:	37
+Number of times FSQ is called in mainFitEnhanced:	37
+Number of times FSQ is called in mainFitEnhanced:	36
+Number of times FSQ is called in mainFitEnhanced:	36
+Number of times FSQ is called in mainFitEnhanced:	36
+Number of times FSQ is called in mainFitEnhanced:	36
+Number of times FSQ is called in mainFitEnhanced:	36
+Number of times FSQ is called in mainFitEnhanced:	36
+Number of times FSQ is called in mainFitEnhanced:	35
+Number of times FSQ is called in mainFitEnhanced:	34
+Number of times FSQ is called in mainFitEnhanced:	33
+Number of times FSQ is called in mainFitEnhanced:	32
+Number of times FSQ is called in mainFitEnhanced:	31
+Number of times FSQ is called in mainFitEnhanced:	30
+Number of times FSQ is called in mainFitEnhanced:	28
+*** Run = 15921	Events = 1	Tracks = 25
+*** Run = 15921	Events = 1	Tracks = 46
+*** Run = 15921	Events = 1	Tracks = 47
+*** Run = 15921	Events = 1	Tracks = 33
+*** Run = 15921	Events = 1	Tracks = 31
+*** Run = 15921	Events = 1	Tracks = 31
+*** Run = 15921	Events = 1	Tracks = 31
+*** Run = 15921	Events = 1	Tracks = 31
+*** Run = 15921	Events = 1	Tracks = 31
+*** Run = 15921	Events = 1	Tracks = 31
+*** Run = 15921	Events = 1	Tracks = 31
+*** Run = 15921	Events = 1	Tracks = 31
+*** Run = 15921	Events = 1	Tracks = 31
+*** Run = 15921	Events = 1	Tracks = 31
+*** Run = 15921	Events = 1	Tracks = 31
+*** Run = 15921	Events = 1	Tracks = 31
+*** Run = 15921	Events = 1	Tracks = 31
+*** Run = 15921	Events = 1	Tracks = 31
+*** Run = 15921	Events = 1	Tracks = 30
+*** Run = 15921	Events = 1	Tracks = 30
+*** Run = 15921	Events = 1	Tracks = 30
+*** Run = 15921	Events = 1	Tracks = 30
+*** Run = 15921	Events = 1	Tracks = 29
+*** Run = 15921	Events = 1	Tracks = 29
+*** Run = 15921	Events = 1	Tracks = 29
+*** Run = 15921	Events = 1	Tracks = 29
+*** Run = 15921	Events = 1	Tracks = 29
+*** Run = 15921	Events = 1	Tracks = 29
+*** Run = 15921	Events = 1	Tracks = 29
+*** Run = 15921	Events = 1	Tracks = 29
+*** Run = 15921	Events = 1	Tracks = 29
+*** Run = 15921	Events = 1	Tracks = 29
+*** Run = 15921	Events = 1	Tracks = 29
+*** Run = 15921	Events = 1	Tracks = 29
+*** Run = 15921	Events = 1	Tracks = 29
+*** Run = 15921	Events = 1	Tracks = 28
+*** Run = 15921	Events = 1	Tracks = 27
+04-Aug-2020 12:02:49 CDT  Closed output file "gm2tracker_reco.root"
+04-Aug-2020 12:02:49 CDT  Closed input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+%MSG-i summary:  ImposeDeadTime:deadTime@EndJob 04-Aug-2020 12:02:49 CDT  ModuleEndJob
+
+--------- Tracker Impose Dead Time Report ---------
+  Total num digits killed = 931 (of 8421, 11.0557%)
+  Total num digits kept = 7490 (of 8421, 88.9443%)
+------------------------------------------------
+
+%MSG
+%MSG-i summary:  KillStraws:killStraws@EndJob 04-Aug-2020 12:02:49 CDT  ModuleEndJob
+
+--------- Tracker Kill Straws Report ---------
+  Num straws to kill = 0
+  Total num digits killed = 0 (of 8421, 0%)
+  Total num digits kept = 8421 (of 8421, 100%)
+----------------------------------------------
+
+%MSG
+%MSG-i summary:  RemoveFlash:removeFlash@EndJob 04-Aug-2020 12:02:49 CDT  ModuleEndJob
+
+--------- Tracker Remove Flash Report ---------
+  Total num digits removed = 0 (of 8421, 0%)
+  Total num digits kept = 8421 (of 8421, 100%)
+----------------------------------------------
+
+%MSG
+
+====================================================================================================================================
+TimeTracker printout (sec)                            Min           Avg           Max         Median          RMS         nEvts   
+====================================================================================================================================
+Full event                                         0.0385333      111.181       333.405      0.0988473      157.136         3     
+------------------------------------------------------------------------------------------------------------------------------------
+source:RootInput(read)                            0.000554994   0.00822036     0.0150266    0.00907946    0.00593916        3     
+trackPath:TrackFilter:TrackerFillTypeFilter        0.0164011     0.0430108     0.089375      0.0232562     0.0329037        3     
+trackPath:TriggerResults:TriggerResultInserter    2.0108e-05    4.90193e-05   8.6428e-05    4.0522e-05    2.77337e-05       3     
+end_path:out:RootOutput                           1.5275e-05    2.4401e-05    4.0528e-05     1.74e-05     1.14365e-05       3     
+end_path:mainFit:LowDCAsPlots                      4.283e-06     0.0588882      0.17665      9.875e-06     0.0832704        3     
+end_path:FSQ:LowDCAsPlots                          2.147e-06     0.0117277     0.0351786     2.444e-06     0.0165822        3     
+end_path:A:LowDCAsPlots                            1.996e-06     0.0117216     0.0351603     2.558e-06     0.0165736        3     
+end_path:B:LowDCAsPlots                            2.398e-06     0.0228055     0.068411      3.191e-06     0.0322479        3     
+end_path:C:LowDCAsPlots                            2.095e-06    0.00996804     0.0298994     2.672e-06     0.0140936        3     
+end_path:D:LowDCAsPlots                            1.988e-06    0.00950382     0.0285071     2.423e-06     0.0134373        3     
+end_path:E:LowDCAsPlots                            2.051e-06    0.00929409     0.0278777     2.57e-06      0.0131406        3     
+end_path:F:LowDCAsPlots                            1.821e-06     0.0090458     0.0271332     2.367e-06     0.0127897        3     
+end_path:G:LowDCAsPlots                            2.391e-06    0.00918711     0.0275563     2.645e-06     0.012989         3     
+end_path:H:LowDCAsPlots                            1.842e-06     0.0091825     0.0275435     2.148e-06     0.0129832        3     
+end_path:I:LowDCAsPlots                            1.77e-06     0.00953976     0.0286148     2.68e-06      0.0134881        3     
+end_path:J:LowDCAsPlots                            1.824e-06     0.0103516     0.0310505     2.522e-06     0.0146363        3     
+end_path:K:LowDCAsPlots                            1.739e-06    0.00950022     0.0284966     2.367e-06     0.0134324        3     
+end_path:L:LowDCAsPlots                            2.171e-06    0.00956533     0.0286897     4.124e-06     0.013523         3     
+end_path:M:LowDCAsPlots                            1.876e-06    0.00917097     0.0275089     2.129e-06     0.0129669        3     
+end_path:N:LowDCAsPlots                            1.902e-06    0.00907652     0.0272256     2.053e-06     0.0128333        3     
+end_path:O:LowDCAsPlots                            2.125e-06    0.00901809     0.0270261    2.6009e-05     0.0127336        3     
+end_path:P:LowDCAsPlots                            1.948e-06    0.00887252     0.0266134     2.187e-06     0.0125447        3     
+end_path:Q:LowDCAsPlots                            2.009e-06    0.00874643     0.0262346     2.655e-06     0.012366         3     
+end_path:R:LowDCAsPlots                            1.754e-06     0.0087095     0.0261249     1.829e-06     0.0123146        3     
+end_path:S:LowDCAsPlots                            1.866e-06    0.00863817     0.0259107     1.971e-06     0.0122135        3     
+end_path:T:LowDCAsPlots                            1.959e-06    0.00868021     0.0260366     2.057e-06     0.0122728        3     
+end_path:U:LowDCAsPlots                            1.982e-06    0.00874363     0.0262266     2.289e-06     0.0123623        3     
+end_path:V:LowDCAsPlots                            1.77e-06     0.00860713     0.0258176     1.973e-06     0.0121697        3     
+end_path:X:LowDCAsPlots                            1.848e-06    0.00857893     0.025733      1.971e-06     0.0121297        3     
+end_path:Y:LowDCAsPlots                            1.891e-06    0.00857215     0.0257122     2.357e-06     0.0121198        3     
+end_path:Z:LowDCAsPlots                            1.904e-06    0.00857383     0.0257175     2.058e-06     0.0121224        3     
+end_path:AA:LowDCAsPlots                           1.802e-06    0.00854231     0.0256232     1.931e-06     0.012078         3     
+end_path:AB:LowDCAsPlots                           1.922e-06    0.00861449     0.0258379     3.626e-06     0.0121788        3     
+end_path:AC:LowDCAsPlots                           1.963e-06    0.00848411     0.0254483     2.108e-06     0.0119955        3     
+end_path:AD:LowDCAsPlots                           1.965e-06    0.00852114     0.0255593     2.12e-06      0.0120478        3     
+end_path:AE:LowDCAsPlots                           1.844e-06    0.00875971     0.0262753     2.014e-06     0.0123854        3     
+end_path:AF:LowDCAsPlots                           1.962e-06    0.00888092     0.0266386     2.18e-06      0.0125566        3     
+end_path:AG:LowDCAsPlots                           1.919e-06    0.00912808      0.02738      2.291e-06     0.0129061        3     
+end_path:AH:LowDCAsPlots                           1.899e-06    0.00899311     0.0269746     2.877e-06     0.0127148        3     
+end_path:AI:LowDCAsPlots                           1.759e-06     0.023727      0.0711769     2.176e-06     0.0335522        3     
+end_path:AJ:LowDCAsPlots                           1.87e-06     0.00916408     0.0274878     2.522e-06     0.0129569        3     
+end_path:out:RootOutput(write)                     2.388e-06      4.05441       12.1632     1.7985e-05      5.73378         3     
+trackPath:artg4:BuildCoordSystems                  2.281e-06     2.281e-06     2.281e-06     2.281e-06         0            1     
+trackPath:removeFlash:RemoveFlash                  0.0480817     0.0480817     0.0480817     0.0480817         0            1     
+trackPath:killStraws:KillStraws                    0.0027393     0.0027393     0.0027393     0.0027393         0            1     
+trackPath:digitTimeSync:DigitTimeSyncer           0.00296511    0.00296511    0.00296511    0.00296511         0            1     
+trackPath:deadTime:ImposeDeadTime                 0.00969172    0.00969172    0.00969172    0.00969172         0            1     
+trackPath:timeIslands:TimeIsland                  0.00215768    0.00215768    0.00215768    0.00215768         0            1     
+trackPath:clustering:ClusterFormation              0.0157233     0.0157233     0.0157233     0.0157233         0            1     
+trackPath:seeds:SeedFormation                      0.0399102     0.0399102     0.0399102     0.0399102         0            1     
+trackPath:trackCandidates:TrackFinding             0.081785      0.081785      0.081785      0.081785          0            1     
+trackPath:candidateCleaner:CandidateCleaner       0.00406894    0.00406894    0.00406894    0.00406894         0            1     
+trackPath:t0Finder:T0Finder                        0.0009401     0.0009401     0.0009401     0.0009401         0            1     
+trackPath:driftDistReco:DriftDistanceCal          0.00520507    0.00520507    0.00520507    0.00520507         0            1     
+trackPath:tracksMainFit:GeaneReco                   5.93638       5.93638       5.93638       5.93638          0            1     
+trackPath:tracksFSQ:GeaneReco                       15.6426       15.6426       15.6426       15.6426          0            1     
+trackPath:tracksA:GeaneReco                         17.5286       17.5286       17.5286       17.5286          0            1     
+trackPath:tracksB:GeaneReco                         9.43747       9.43747       9.43747       9.43747          0            1     
+trackPath:tracksC:GeaneReco                         8.97003       8.97003       8.97003       8.97003          0            1     
+trackPath:tracksD:GeaneReco                         8.90836       8.90836       8.90836       8.90836          0            1     
+trackPath:tracksE:GeaneReco                         8.82628       8.82628       8.82628       8.82628          0            1     
+trackPath:tracksF:GeaneReco                         8.83361       8.83361       8.83361       8.83361          0            1     
+trackPath:tracksG:GeaneReco                         8.93276       8.93276       8.93276       8.93276          0            1     
+trackPath:tracksH:GeaneReco                         8.9232        8.9232        8.9232        8.9232           0            1     
+trackPath:tracksI:GeaneReco                         8.81357       8.81357       8.81357       8.81357          0            1     
+trackPath:tracksJ:GeaneReco                         8.80972       8.80972       8.80972       8.80972          0            1     
+trackPath:tracksK:GeaneReco                         8.64786       8.64786       8.64786       8.64786          0            1     
+trackPath:tracksL:GeaneReco                         8.64072       8.64072       8.64072       8.64072          0            1     
+trackPath:tracksM:GeaneReco                         8.49443       8.49443       8.49443       8.49443          0            1     
+trackPath:tracksN:GeaneReco                         8.53475       8.53475       8.53475       8.53475          0            1     
+trackPath:tracksO:GeaneReco                         8.27651       8.27651       8.27651       8.27651          0            1     
+trackPath:tracksP:GeaneReco                         8.60718       8.60718       8.60718       8.60718          0            1     
+trackPath:tracksQ:GeaneReco                         8.30151       8.30151       8.30151       8.30151          0            1     
+trackPath:tracksR:GeaneReco                         8.17463       8.17463       8.17463       8.17463          0            1     
+trackPath:tracksS:GeaneReco                         8.26882       8.26882       8.26882       8.26882          0            1     
+trackPath:tracksT:GeaneReco                         8.18473       8.18473       8.18473       8.18473          0            1     
+trackPath:tracksU:GeaneReco                         8.0206        8.0206        8.0206        8.0206           0            1     
+trackPath:tracksV:GeaneReco                         8.2155        8.2155        8.2155        8.2155           0            1     
+trackPath:tracksX:GeaneReco                         8.09353       8.09353       8.09353       8.09353          0            1     
+trackPath:tracksY:GeaneReco                         8.11817       8.11817       8.11817       8.11817          0            1     
+trackPath:tracksZ:GeaneReco                         7.9487        7.9487        7.9487        7.9487           0            1     
+trackPath:tracksAA:GeaneReco                        7.97551       7.97551       7.97551       7.97551          0            1     
+trackPath:tracksAB:GeaneReco                        7.67067       7.67067       7.67067       7.67067          0            1     
+trackPath:tracksAC:GeaneReco                        7.71962       7.71962       7.71962       7.71962          0            1     
+trackPath:tracksAD:GeaneReco                        7.76302       7.76302       7.76302       7.76302          0            1     
+trackPath:tracksAE:GeaneReco                        7.72032       7.72032       7.72032       7.72032          0            1     
+trackPath:tracksAF:GeaneReco                        7.69808       7.69808       7.69808       7.69808          0            1     
+trackPath:tracksAG:GeaneReco                        7.49558       7.49558       7.49558       7.49558          0            1     
+trackPath:tracksAH:GeaneReco                        7.27989       7.27989       7.27989       7.27989          0            1     
+trackPath:tracksAI:GeaneReco                        7.17584       7.17584       7.17584       7.17584          0            1     
+trackPath:tracksAJ:GeaneReco                        7.16545       7.16545       7.16545       7.16545          0            1     
+====================================================================================================================================
+
+TrigReport ---------- Event  Summary ------------
+TrigReport Events total = 3 passed = 1 failed = 2
+
+TrigReport ------ Modules in End-Path: end_path ------------
+TrigReport  Trig Bit#        Run    Success      Error Name
+TrigReport     0    0          1          1          0 out
+TrigReport     0    0          1          1          0 mainFit
+TrigReport     0    0          1          1          0 FSQ
+TrigReport     0    0          1          1          0 A
+TrigReport     0    0          1          1          0 B
+TrigReport     0    0          1          1          0 C
+TrigReport     0    0          1          1          0 D
+TrigReport     0    0          1          1          0 E
+TrigReport     0    0          1          1          0 F
+TrigReport     0    0          1          1          0 G
+TrigReport     0    0          1          1          0 H
+TrigReport     0    0          1          1          0 I
+TrigReport     0    0          1          1          0 J
+TrigReport     0    0          1          1          0 K
+TrigReport     0    0          1          1          0 L
+TrigReport     0    0          1          1          0 M
+TrigReport     0    0          1          1          0 N
+TrigReport     0    0          1          1          0 O
+TrigReport     0    0          1          1          0 P
+TrigReport     0    0          1          1          0 Q
+TrigReport     0    0          1          1          0 R
+TrigReport     0    0          1          1          0 S
+TrigReport     0    0          1          1          0 T
+TrigReport     0    0          1          1          0 U
+TrigReport     0    0          1          1          0 V
+TrigReport     0    0          1          1          0 X
+TrigReport     0    0          1          1          0 Y
+TrigReport     0    0          1          1          0 Z
+TrigReport     0    0          1          1          0 AA
+TrigReport     0    0          1          1          0 AB
+TrigReport     0    0          1          1          0 AC
+TrigReport     0    0          1          1          0 AD
+TrigReport     0    0          1          1          0 AE
+TrigReport     0    0          1          1          0 AF
+TrigReport     0    0          1          1          0 AG
+TrigReport     0    0          1          1          0 AH
+TrigReport     0    0          1          1          0 AI
+TrigReport     0    0          1          1          0 AJ
+
+TimeReport ---------- Time  Summary ---[sec]----
+TimeReport CPU = 452.471214 Real = 454.245135
+
+MemReport  ---------- Memory  Summary ---[base-10 MB]----
+MemReport  VmPeak = 4567.97 VmHWM = 3607.81
+
+Art has completed and will exit with status 0.
+WARNING - Attempt to delete the region store while geometry closed !
+WARNING - Attempt to delete the physical volume store while geometry closed !
+WARNING - Attempt to delete the logical volume store while geometry closed !
+WARNING - Attempt to delete the solid store while geometry closed !

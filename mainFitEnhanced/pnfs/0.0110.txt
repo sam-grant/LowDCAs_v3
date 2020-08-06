@@ -1,0 +1,1205 @@
+strawSD is not found in /
+06-Aug-2020 00:18:15 UTC  Initiating request to open input file "root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+06-Aug-2020 00:18:17 UTC  Opened input file "root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 1.16415e-09
+P0 = (6745.36,1895.27,-38.1659)
+P1 = (6745.36,1895.27,-38.1659)
+P2 = (6745.36,1895.27,-34.7345)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43143
+Side3 length (P2->P0) = 3.43142
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6745.36,1895.27,-38.1659)
+P[1]      = (6745.36,1895.27,-38.1659)
+P[2]      = (6745.36,1895.27,-34.7345)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 2.32831e-10
+P0 = (6745.36,1895.27,-38.6708)
+P1 = (6745.36,1895.27,-38.6708)
+P2 = (6745.36,1895.27,-42.1005)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.4297
+Side3 length (P2->P0) = 3.42969
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6745.36,1895.27,-38.6708)
+P[1]      = (6745.36,1895.27,-38.6708)
+P[2]      = (6745.36,1895.27,-42.1005)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 4.65661e-10
+P0 = (6744.77,1897.35,-38.1642)
+P1 = (6744.77,1897.35,-38.1642)
+P2 = (6744.77,1897.35,-34.7345)
+Side1 length (P0->P1) = 7.62939e-06
+Side2 length (P1->P2) = 3.4297
+Side3 length (P2->P0) = 3.42969
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6744.77,1897.35,-38.1642)
+P[1]      = (6744.77,1897.35,-38.1642)
+P[2]      = (6744.77,1897.35,-34.7345)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 6.98492e-10
+P0 = (6745.5,1894.78,-38.669)
+P1 = (6745.5,1894.78,-38.669)
+P2 = (6745.5,1894.78,-42.1005)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43151
+Side3 length (P2->P0) = 3.43151
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6745.5,1894.78,-38.669)
+P[1]      = (6745.5,1894.78,-38.669)
+P[2]      = (6745.5,1894.78,-42.1005)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 1.16415e-09
+P0 = (6745.36,1895.27,-38.1659)
+P1 = (6745.36,1895.27,-38.1659)
+P2 = (6745.36,1895.27,-34.7345)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43143
+Side3 length (P2->P0) = 3.43142
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6745.36,1895.27,-38.1659)
+P[1]      = (6745.36,1895.27,-38.1659)
+P[2]      = (6745.36,1895.27,-34.7345)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 2.32831e-10
+P0 = (6745.36,1895.27,-38.6708)
+P1 = (6745.36,1895.27,-38.6708)
+P2 = (6745.36,1895.27,-42.1005)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.4297
+Side3 length (P2->P0) = 3.42969
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6745.36,1895.27,-38.6708)
+P[1]      = (6745.36,1895.27,-38.6708)
+P[2]      = (6745.36,1895.27,-42.1005)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 4.65661e-10
+P0 = (6744.77,1897.35,-38.1642)
+P1 = (6744.77,1897.35,-38.1642)
+P2 = (6744.77,1897.35,-34.7345)
+Side1 length (P0->P1) = 7.62939e-06
+Side2 length (P1->P2) = 3.4297
+Side3 length (P2->P0) = 3.42969
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6744.77,1897.35,-38.1642)
+P[1]      = (6744.77,1897.35,-38.1642)
+P[2]      = (6744.77,1897.35,-34.7345)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 6.98492e-10
+P0 = (6745.5,1894.78,-38.669)
+P1 = (6745.5,1894.78,-38.669)
+P2 = (6745.5,1894.78,-42.1005)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43151
+Side3 length (P2->P0) = 3.43151
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6745.5,1894.78,-38.669)
+P[1]      = (6745.5,1894.78,-38.669)
+P[2]      = (6745.5,1894.78,-42.1005)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 1.10595e-09
+P0 = (6953.16,326.999,-38.1659)
+P1 = (6953.16,326.999,-38.1659)
+P2 = (6953.16,326.998,-34.7345)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43143
+Side3 length (P2->P0) = 3.43142
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6953.16,326.999,-38.1659)
+P[1]      = (6953.16,326.999,-38.1659)
+P[2]      = (6953.16,326.998,-34.7345)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 1.10595e-09
+P0 = (6953.05,329.154,-38.6691)
+P1 = (6953.05,329.154,-38.6691)
+P2 = (6953.05,329.155,-42.1005)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43143
+Side3 length (P2->P0) = 3.43142
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6953.05,329.154,-38.6691)
+P[1]      = (6953.05,329.154,-38.6691)
+P[2]      = (6953.05,329.155,-42.1005)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 1.10595e-09
+P0 = (6953.16,326.999,-38.1659)
+P1 = (6953.16,326.999,-38.1659)
+P2 = (6953.16,326.998,-34.7345)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43143
+Side3 length (P2->P0) = 3.43142
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6953.16,326.999,-38.1659)
+P[1]      = (6953.16,326.999,-38.1659)
+P[2]      = (6953.16,326.998,-34.7345)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 1.10595e-09
+P0 = (6953.05,329.154,-38.6691)
+P1 = (6953.05,329.154,-38.6691)
+P2 = (6953.05,329.155,-42.1005)
+Side1 length (P0->P1) = 3.8147e-06
+Side2 length (P1->P2) = 3.43143
+Side3 length (P2->P0) = 3.43142
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6953.05,329.154,-38.6691)
+P[1]      = (6953.05,329.154,-38.6691)
+P[2]      = (6953.05,329.155,-42.1005)
+*********************************************************************
+RingSD is not found in /
+buildMylarWindow_: 0
+buildMylarWindow_: 0
+buildMylarWindow_: 0
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6918.61,359.301,24.5252)
+P1 = (6823.05,356.348,21.6281)
+P2 = (6823.05,356.348,21.6281)
+Side1 length (P0->P1) = 95.6427
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 95.6427
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6918.61,359.301,24.5252)
+P[1]      = (6823.05,356.348,21.6281)
+P[2]      = (6823.05,356.348,21.6281)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6823.05,356.39,21.6281)
+P1 = (6823.05,356.348,21.6281)
+P2 = (6823.05,356.348,21.6281)
+Side1 length (P0->P1) = 0.0422815
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 0.0422815
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6823.05,356.39,21.6281)
+P[1]      = (6823.05,356.348,21.6281)
+P[2]      = (6823.05,356.348,21.6281)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6442.25,2091.24,24.5508)
+P1 = (6498.34,2110.15,21.6281)
+P2 = (6498.34,2110.15,21.6281)
+Side1 length (P0->P1) = 59.2658
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 59.2658
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6442.25,2091.24,24.5508)
+P[1]      = (6498.34,2110.15,21.6281)
+P[2]      = (6498.34,2110.15,21.6281)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6498.33,2110.19,21.6281)
+P1 = (6498.34,2110.15,21.6281)
+P2 = (6498.34,2110.15,21.6281)
+Side1 length (P0->P1) = 0.0422363
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 0.0422363
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6498.33,2110.19,21.6281)
+P[1]      = (6498.34,2110.15,21.6281)
+P[2]      = (6498.34,2110.15,21.6281)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6763.98,352.597,24.5508)
+P1 = (6823.05,356.348,21.6281)
+P2 = (6823.05,356.348,21.6281)
+Side1 length (P0->P1) = 59.2658
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 59.2658
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6763.98,352.597,24.5508)
+P[1]      = (6823.05,356.348,21.6281)
+P[2]      = (6823.05,356.348,21.6281)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6823.05,356.39,21.6281)
+P1 = (6823.05,356.348,21.6281)
+P2 = (6823.05,356.348,21.6281)
+Side1 length (P0->P1) = 0.0422815
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 0.0422815
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6823.05,356.39,21.6281)
+P[1]      = (6823.05,356.348,21.6281)
+P[2]      = (6823.05,356.348,21.6281)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6442.25,2091.24,24.5508)
+P1 = (6498.34,2110.15,21.6281)
+P2 = (6498.34,2110.15,21.6281)
+Side1 length (P0->P1) = 59.2658
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 59.2658
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6442.25,2091.24,24.5508)
+P[1]      = (6498.34,2110.15,21.6281)
+P[2]      = (6498.34,2110.15,21.6281)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6498.33,2110.19,21.6281)
+P1 = (6498.34,2110.15,21.6281)
+P2 = (6498.34,2110.15,21.6281)
+Side1 length (P0->P1) = 0.0422363
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 0.0422363
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6498.33,2110.19,21.6281)
+P[1]      = (6498.34,2110.15,21.6281)
+P[2]      = (6498.34,2110.15,21.6281)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6442.25,2091.24,24.5508)
+P1 = (6498.34,2110.15,21.6281)
+P2 = (6498.34,2110.15,21.6281)
+Side1 length (P0->P1) = 59.2658
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 59.2658
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6442.25,2091.24,24.5508)
+P[1]      = (6498.34,2110.15,21.6281)
+P[2]      = (6498.34,2110.15,21.6281)
+*********************************************************************
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1001
+      issued by : G4TriangularFacet::G4TriangularFacet()
+Facet is too small or too narrow.
+Triangle area = 0
+P0 = (6498.33,2110.19,21.6281)
+P1 = (6498.34,2110.15,21.6281)
+P2 = (6498.34,2110.15,21.6281)
+Side1 length (P0->P1) = 0.0422363
+Side2 length (P1->P2) = 0
+Side3 length (P2->P0) = 0.0422363
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomSolids1002
+      issued by : G4TessellatedSolid::AddFacet()
+Attempt to add facet not properly defined.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+*********************************************************************
+FACET TYPE       = G4TriangularFacet
+ABSOLUTE VECTORS = 
+P[0]      = (6498.33,2110.19,21.6281)
+P[1]      = (6498.34,2110.15,21.6281)
+P[2]      = (6498.34,2110.15,21.6281)
+*********************************************************************
+Checking overlaps for volume quadFieldPV[00] ... OK! 
+Checking overlaps for volume quadFieldPV[01] ... OK! 
+Checking overlaps for volume quadFieldPV[03] ... OK! 
+Checking overlaps for volume quadFieldPV[04] ... OK! 
+Checking overlaps for volume quadFieldPV[06] ... OK! 
+Checking overlaps for volume quadFieldPV[07] ... OK! 
+Checking overlaps for volume quadFieldPV[09] ... OK! 
+Checking overlaps for volume quadFieldPV[10] ... OK! 
+Checking overlaps for volume quadPlatePV[00] ... OK! 
+Checking overlaps for volume quadPlatePV[01] ... OK! 
+Checking overlaps for volume quadPlatePV[03] ... OK! 
+Checking overlaps for volume quadPlatePV[04] ... OK! 
+Checking overlaps for volume quadPlatePV[06] ... OK! 
+Checking overlaps for volume quadPlatePV[07] ... OK! 
+Checking overlaps for volume quadPlatePV[09] ... OK! 
+Checking overlaps for volume quadPlatePV[10] ... OK! 
+Checking overlaps for volume Q1LongOuterFoil ... OK! 
+Checking overlaps for volume Q0ShortOuterFoil ... OK! 
+Checking overlaps for volume quadStandoffPV[00] ... OK! 
+Checking overlaps for volume quadStandoffPV[01] ... 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomVol1002
+      issued by : G4PVPlacement::CheckOverlaps()
+Overlap with volume already placed !
+          Overlap is detected for volume quadStandoffPV[01]
+          with quadPlatePV[01] volume's
+          local point (7064.24,1182.59,-18.2094), overlapping by at least: 53.0089 nm 
+NOTE: Reached maximum fixed number -1- of overlaps reports for this volume !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+Checking overlaps for volume quadStandoffPV[03] ... OK! 
+Checking overlaps for volume quadStandoffPV[04] ... OK! 
+Checking overlaps for volume quadStandoffPV[06] ... OK! 
+Checking overlaps for volume quadStandoffPV[07] ... OK! 
+Checking overlaps for volume quadStandoffPV[09] ... OK! 
+Checking overlaps for volume quadStandoffPV[10] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][0] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][1] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][2] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][3] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][4] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][5] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][6] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][7] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][0] ... OK! 
+Checking overlaps for volume strawModuleNumber[0][0] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][1] ... OK! 
+Checking overlaps for volume strawModuleNumber[0][1] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][2] ... OK! 
+Checking overlaps for volume strawModuleNumber[0][2] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][3] ... OK! 
+Checking overlaps for volume strawModuleNumber[0][3] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][4] ... OK! 
+Checking overlaps for volume strawModuleNumber[0][4] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][5] ... OK! 
+Checking overlaps for volume strawModuleNumber[0][5] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][6] ... OK! 
+Checking overlaps for volume strawModuleNumber[0][6] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[0][7] ... OK! 
+Checking overlaps for volume strawModuleNumber[0][7] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[12][0] ... OK! 
+Checking overlaps for volume strawModuleNumber[12][0] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[12][1] ... OK! 
+Checking overlaps for volume strawModuleNumber[12][1] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[12][2] ... OK! 
+Checking overlaps for volume strawModuleNumber[12][2] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[12][3] ... OK! 
+Checking overlaps for volume strawModuleNumber[12][3] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[12][4] ... OK! 
+Checking overlaps for volume strawModuleNumber[12][4] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[12][5] ... OK! 
+Checking overlaps for volume strawModuleNumber[12][5] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[12][6] ... OK! 
+Checking overlaps for volume strawModuleNumber[12][6] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[12][7] ... OK! 
+Checking overlaps for volume strawModuleNumber[12][7] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[18][0] ... OK! 
+Checking overlaps for volume strawModuleNumber[18][0] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[18][1] ... OK! 
+Checking overlaps for volume strawModuleNumber[18][1] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[18][2] ... OK! 
+Checking overlaps for volume strawModuleNumber[18][2] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[18][3] ... OK! 
+Checking overlaps for volume strawModuleNumber[18][3] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[18][4] ... OK! 
+Checking overlaps for volume strawModuleNumber[18][4] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[18][5] ... OK! 
+Checking overlaps for volume strawModuleNumber[18][5] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[18][6] ... OK! 
+Checking overlaps for volume strawModuleNumber[18][6] ... OK! 
+Checking overlaps for volume strawModuleFaceNumber[18][7] ... OK! 
+Checking overlaps for volume strawModuleNumber[18][7] ... OK! 
+Checking overlaps for volume bellowsRailPV[00] ... OK! 
+Checking overlaps for volume trolleyRailPV[00] ... OK! 
+Checking overlaps for volume bellowsRailPV[01] ... OK! 
+Checking overlaps for volume trolleyRailPV[01] ... OK! 
+Checking overlaps for volume bellowsRailPV[02] ... OK! 
+Checking overlaps for volume bellowsRailPV[03] ... OK! 
+Checking overlaps for volume bellowsRailPV[04] ... OK! 
+Checking overlaps for volume trolleyRailPV[04] ... 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomVol1002
+      issued by : G4PVPlacement::CheckOverlaps()
+Overlap with volume already placed !
+          Overlap is detected for volume trolleyRailPV[04]
+          with quadStandoffPV[04] volume's
+          local point (6937.72,1163.2,1.45493), overlapping by at least: 11.5141 nm 
+NOTE: Reached maximum fixed number -1- of overlaps reports for this volume !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+Checking overlaps for volume bellowsRailPV[05] ... OK! 
+Checking overlaps for volume trolleyRailPV[05] ... OK! 
+Checking overlaps for volume bellowsRailPV[06] ... OK! 
+Checking overlaps for volume trolleyRailPV[06] ... OK! 
+Checking overlaps for volume bellowsRailPV[07] ... OK! 
+Checking overlaps for volume trolleyRailPV[07] ... OK! 
+Checking overlaps for volume bellowsRailPV[08] ... OK! 
+Checking overlaps for volume trolleyRailPV[08] ... OK! 
+Checking overlaps for volume bellowsRailPV[09] ... OK! 
+Checking overlaps for volume trolleyRailPV[09] ... OK! 
+Checking overlaps for volume bellowsRailPV[10] ... OK! 
+Checking overlaps for volume trolleyRailPV[10] ... 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomVol1002
+      issued by : G4PVPlacement::CheckOverlaps()
+Overlap with volume already placed !
+          Overlap is detected for volume trolleyRailPV[10]
+          with quadStandoffPV[10] volume's
+          local point (6499.25,2691.61,4.27628), overlapping by at least: 84.0835 nm 
+NOTE: Reached maximum fixed number -1- of overlaps reports for this volume !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+Checking overlaps for volume bellowsRailPV[11] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[00] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[01] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[02] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[03] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[04] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[05] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[06] ... 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+
+*** ExceptionHandler is not defined ***
+*** G4Exception : GeomVol1002
+      issued by : G4PVPlacement::CheckOverlaps()
+Overlap with volume already placed !
+          Overlap is detected for volume VacuumChamberCadMeshWallPV[06]
+          with strawModuleNumber[12][0] volume's
+          local point (36.7292,22.8864,68.4957), overlapping by at least: 254.253 um 
+NOTE: Reached maximum fixed number -1- of overlaps reports for this volume !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+Checking overlaps for volume VacuumChamberCadMeshWallPV[07] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[08] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[09] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[10] ... OK! 
+Checking overlaps for volume VacuumChamberCadMeshWallPV[11] ... OK! 
+
+*************************************************************
+ Geant4 version Name: geant4-10-03-patch-03    (20-October-2017)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+ creating G4RunManagerKernel 0x386c9a50
+world is registered to the default region.
+  gm2GeaneRunManagerHelper::InitializePhysics 
+
+
+gm2GeanePhysicsList has been constructed.
+
+List of instantiated particles ============================================
+e+ e- gamma geantino mu+ mu- pi+ pi- proton 
+Current application state is PreInit
+Warning : Geant4 kernel is not Init state : Assuming Init state.
+physicsList->Construct() start.
+ G4Transportation constructor> set fShortStepOptimisation to false
+0x3baee050artg4/gm2Geane/gm2GeanePhysicsList:: particle process manager e+ = 0x3baf0450
+0x3baedf00artg4/gm2Geane/gm2GeanePhysicsList:: particle process manager e- = 0x3baf1880
+0x3baeddb0artg4/gm2Geane/gm2GeanePhysicsList:: particle process manager gamma = 0x3baf1b20
+0x3baef180artg4/gm2Geane/gm2GeanePhysicsList:: particle process manager geantino = 0x3baf1b90
+0x3baee1f0artg4/gm2Geane/gm2GeanePhysicsList:: particle process manager mu+ = 0x3baf1c00
+0x3baee540artg4/gm2Geane/gm2GeanePhysicsList:: particle process manager mu- = 0x3baf1c70
+0x3baee890artg4/gm2Geane/gm2GeanePhysicsList:: particle process manager pi+ = 0x3baf1ce0
+0x3baeebf0artg4/gm2Geane/gm2GeanePhysicsList:: particle process manager pi- = 0x3baf1d50
+0x3baeef50artg4/gm2Geane/gm2GeanePhysicsList:: particle process manager proton = 0x3baf1dc0
+gm2GeaneEnergyLoss is created.
+gm2GeaneLossForExtrapolator is created.
+physicsList->CheckParticleList() start.
+physicsList->setCut() start.
+
+conv:   for  gamma    SubType= 14  BuildTable= 1
+      Lambda table from 1.022 MeV to 100 TeV, 18 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        BetheHeitler :  Emin=        0 eV    Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=      100 TeV
+
+compt:   for  gamma    SubType= 13  BuildTable= 1
+      Lambda table from 100 eV  to 1 MeV, 7 bins per decade, spline: 1
+      LambdaPrime table from 1 MeV to 100 TeV in 56 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina :  Emin=        0 eV    Emax=      100 TeV
+
+phot:   for  gamma    SubType= 12  BuildTable= 0
+      LambdaPrime table from 200 keV to 100 TeV in 61 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       PhotoElectric :  Emin=        0 eV    Emax=      100 TeV   AngularGenSauterGavrila
+
+Region <DefaultRegionForTheWorld> --  -- appears in <world> world volume
+ This region is in the mass world.
+ Root logical volume(s) : world 
+ Pointers : G4VUserRegionInformation[0], G4UserLimits[0], G4FastSimulationManager[0], G4UserSteppingAction[0]
+ Materials : G4_AIR Vacuum G4_Cu G4_Al G4_MYLAR MacorCeramic CarbonFiber StrawWalls ArgonEthane 
+ Production cuts :   gamma 10000 km      e- 10000 km      e+ 10000 km  proton 10000 km 
+
+Region <DefaultRegionForParallelWorld> --  -- is not associated to any world.
+ Root logical volume(s) : 
+ Pointers : G4VUserRegionInformation[0], G4UserLimits[0], G4FastSimulationManager[0], G4UserSteppingAction[0]
+ Materials : 
+ Production cuts :   gamma 10000 km      e- 10000 km      e+ 10000 km  proton 10000 km 
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  10000 km     e-  10000 km     e+  10000 km  proton 10000 km 
+ Energy thresholds :  gamma  10 GeV    e-  10 GeV    e+  10 GeV proton 1 PeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : Vacuum
+ Range cuts        :  gamma  10000 km     e-  10000 km     e+  10000 km  proton 10000 km 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 1 PeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 2     used in the geometry : Yes
+ Material : G4_Cu
+ Range cuts        :  gamma  10000 km     e-  10000 km     e+  10000 km  proton 10000 km 
+ Energy thresholds :  gamma  10 GeV    e-  10 GeV    e+  10 GeV proton 1 PeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 3     used in the geometry : Yes
+ Material : G4_Al
+ Range cuts        :  gamma  10000 km     e-  10000 km     e+  10000 km  proton 10000 km 
+ Energy thresholds :  gamma  10 GeV    e-  10 GeV    e+  10 GeV proton 1 PeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 4     used in the geometry : Yes
+ Material : G4_MYLAR
+ Range cuts        :  gamma  10000 km     e-  10000 km     e+  10000 km  proton 10000 km 
+ Energy thresholds :  gamma  10 GeV    e-  10 GeV    e+  10 GeV proton 1 PeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 5     used in the geometry : Yes
+ Material : MacorCeramic
+ Range cuts        :  gamma  10000 km     e-  10000 km     e+  10000 km  proton 10000 km 
+ Energy thresholds :  gamma  10 GeV    e-  10 GeV    e+  10 GeV proton 1 PeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 6     used in the geometry : Yes
+ Material : CarbonFiber
+ Range cuts        :  gamma  10000 km     e-  10000 km     e+  10000 km  proton 10000 km 
+ Energy thresholds :  gamma  10 GeV    e-  10 GeV    e+  10 GeV proton 1 PeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 7     used in the geometry : Yes
+ Material : StrawWalls
+ Range cuts        :  gamma  10000 km     e-  10000 km     e+  10000 km  proton 10000 km 
+ Energy thresholds :  gamma  10 GeV    e-  10 GeV    e+  10 GeV proton 1 PeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 8     used in the geometry : Yes
+ Material : ArgonEthane
+ Range cuts        :  gamma  10000 km     e-  10000 km     e+  10000 km  proton 10000 km 
+ Energy thresholds :  gamma  10 GeV    e-  10 GeV    e+  10 GeV proton 1 PeV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+Start closing geometry.
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt0001
+      issued by : G4UTubs::Extent()
+Inconsistency in bounding boxes for solid: Q1LongOuterFoil !
+BBox min: wrapper = (6978.32,-1611.08,-22) solid = (-7161.9, -7161.9, -22)
+BBox max: wrapper = (7161.9,1611.08,22) solid = (7161.9, 7161.9, 22)
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+G4GeometryManager::ReportVoxelStats -- Voxel Statistics
+
+    Total memory consumed for geometry optimisation:   2597 kByte
+    Total CPU time elapsed for geometry optimisation: 73 seconds
+
+    Voxelisation: top CPU users:
+    Percent   Total CPU    System CPU       Memory  Volume
+    -------   ----------   ----------     --------  ----------
+      99.13        72.04         0.21           81k ArcSection[00]
+       0.06         0.04         0.01          105k StrawModuleLV - 0 ~ 6
+       0.04         0.03         0.00          105k StrawModuleLV - 12 ~ 3
+       0.04         0.03         0.00          105k StrawModuleLV - 18 ~ 7
+       0.04         0.03         0.00          105k StrawModuleLV - 18 ~ 5
+       0.04         0.03         0.00          105k StrawModuleLV - 18 ~ 3
+       0.04         0.03         0.00          105k StrawModuleLV - 18 ~ 1
+       0.04         0.03         0.00          105k StrawModuleLV - 18 ~ 0
+       0.04         0.03         0.00          105k StrawModuleLV - 12 ~ 6
+       0.04         0.03         0.00          105k StrawModuleLV - 12 ~ 4
+
+    Voxelisation: top memory users:
+    Percent     Memory      Heads    Nodes   Pointers    Total CPU    Volume
+    -------   --------     ------   ------   --------   ----------    ----------
+       4.04        104k       204     1428       3017         0.03    StrawModuleLV - 0 ~ 2
+       4.04        104k       204     1428       3017         0.02    StrawModuleLV - 0 ~ 0
+       4.04        104k       204     1428       3017         0.02    StrawModuleLV - 18 ~ 6
+       4.04        104k       204     1428       3017         0.02    StrawModuleLV - 0 ~ 1
+       4.04        104k       204     1428       3017         0.02    StrawModuleLV - 18 ~ 4
+       4.04        104k       204     1428       3017         0.02    StrawModuleLV - 18 ~ 2
+       4.04        104k       204     1428       3017         0.02    StrawModuleLV - 0 ~ 3
+       4.04        104k       204     1428       3017         0.02    StrawModuleLV - 12 ~ 7
+       4.04        104k       204     1428       3017         0.02    StrawModuleLV - 0 ~ 5
+       4.04        104k       204     1428       3017         0.02    StrawModuleLV - 12 ~ 5
+Begin processing the 1st record. run: 15921 subRun: 313 event: 1 at 06-Aug-2020 00:21:31 UTC
+*** Run = 15921	Events = 0	Tracks = 0
+06-Aug-2020 00:21:44 UTC  Closed input file "root://fndca1.fnal.gov:1094/pnfs/fnal.gov/usr/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+%MSG-i summary:  ImposeDeadTime:deadTime@EndJob 06-Aug-2020 00:21:44 UTC  ModuleEndJob
+
+--------- Tracker Impose Dead Time Report ---------
+  Total num digits killed = 931 (of 8421, 11.0557%)
+  Total num digits kept = 7490 (of 8421, 88.9443%)
+------------------------------------------------
+
+%MSG
+%MSG-i summary:  KillStraws:killStraws@EndJob 06-Aug-2020 00:21:44 UTC  ModuleEndJob
+
+--------- Tracker Kill Straws Report ---------
+  Num straws to kill = 0
+  Total num digits killed = 0 (of 8421, 0%)
+  Total num digits kept = 8421 (of 8421, 100%)
+----------------------------------------------
+
+%MSG
+%MSG-i summary:  RemoveFlash:removeFlash@EndJob 06-Aug-2020 00:21:44 UTC  ModuleEndJob
+
+--------- Tracker Remove Flash Report ---------
+  Total num digits removed = 0 (of 8421, 0%)
+  Total num digits kept = 8421 (of 8421, 100%)
+----------------------------------------------
+
+%MSG
+
+====================================================================================================================================
+TimeTracker printout (sec)                            Min           Avg           Max         Median          RMS         nEvts   
+====================================================================================================================================
+Full event                                        0.000956299    0.0244006     0.047845      0.0244006     0.0234443        2     
+------------------------------------------------------------------------------------------------------------------------------------
+source:RootInput(read)                            0.000956299    0.0111302     0.021304      0.0111302     0.0101739        2     
+trackPath:TrackFilter:TrackerFillTypeFilter        0.0261057     0.0285077     0.0309098     0.0285077    0.00240207        2     
+trackPath:TriggerResults:TriggerResultInserter    0.000184003   0.000184003   0.000184003   0.000184003        0            1     
+end_path:plots:LowDCAsPlots                        8.008e-05     8.008e-05     8.008e-05     8.008e-05         0            1     
+trackPath:artg4:BuildCoordSystems                  3.372e-06     3.372e-06     3.372e-06     3.372e-06         0            1     
+trackPath:removeFlash:RemoveFlash                  0.0571563     0.0571563     0.0571563     0.0571563         0            1     
+trackPath:killStraws:KillStraws                   0.00788891    0.00788891    0.00788891    0.00788891         0            1     
+trackPath:digitTimeSync:DigitTimeSyncer            0.0152264     0.0152264     0.0152264     0.0152264         0            1     
+trackPath:deadTime:ImposeDeadTime                  0.0216124     0.0216124     0.0216124     0.0216124         0            1     
+trackPath:timeIslands:TimeIsland                  0.00488841    0.00488841    0.00488841    0.00488841         0            1     
+trackPath:clustering:ClusterFormation              0.0323989     0.0323989     0.0323989     0.0323989         0            1     
+trackPath:seeds:SeedFormation                       0.10106       0.10106       0.10106       0.10106          0            1     
+trackPath:trackCandidates:TrackFinding             0.219303      0.219303      0.219303      0.219303          0            1     
+trackPath:candidateCleaner:CandidateCleaner        0.0088771     0.0088771     0.0088771     0.0088771         0            1     
+trackPath:t0Finder:T0Finder                         13.0223       13.0223       13.0223       13.0223          0            1     
+trackPath:driftDistReco:DriftDistanceCal           0.0137376     0.0137376     0.0137376     0.0137376         0            1     
+====================================================================================================================================
+
+TrigReport ---------- Event  Summary ------------
+TrigReport Events total = 2 passed = 0 failed = 2
+
+TrigReport ------ Modules in End-Path: end_path ------------
+TrigReport  Trig Bit#        Run    Success      Error Name
+TrigReport     0    0          0          0          0 plots
+
+TimeReport ---------- Time  Summary ---[sec]----
+TimeReport CPU = 134.788718 Real = 135.515257
+
+MemReport  ---------- Memory  Summary ---[base-10 MB]----
+MemReport  VmPeak = 2765.95 VmHWM = 1598.37
+
+%MSG-s ArtException:  PostEndJob 06-Aug-2020 00:21:45 UTC ModuleEndJob
+cet::exception caught in art
+---- OtherArt BEGIN
+  ---- EventProcessorFailure BEGIN
+    EventProcessor: an exception occurred during current event processing
+    ---- ScheduleExecutionFailure BEGIN
+      Path: ProcessingStopped.
+      ---- GeaneReco BEGIN
+        Bad fit mode: mainFitEnhanced
+        cet::exception going through module GeaneReco/tracks run: 15921 subRun: 313 event: 2
+      ---- GeaneReco END
+      Exception going through path trackPath
+    ---- ScheduleExecutionFailure END
+  ---- EventProcessorFailure END
+---- OtherArt END
+%MSG
+Art has completed and will exit with status 1.
+WARNING - Attempt to delete the region store while geometry closed !
+WARNING - Attempt to delete the physical volume store while geometry closed !
+WARNING - Attempt to delete the logical volume store while geometry closed !
+WARNING - Attempt to delete the solid store while geometry closed !
