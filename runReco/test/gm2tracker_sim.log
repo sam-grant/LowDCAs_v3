@@ -1,54 +1,82 @@
-30-Jul-2020 16:04:51 CDT  Initiating request to open input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
-30-Jul-2020 16:04:52 CDT  Opened input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
-Begin processing the 1st record. run: 15921 subRun: 313 event: 1 at 30-Jul-2020 16:06:46 CDT
-30-Jul-2020 16:06:46 CDT  Opened output file with pattern "gm2tracker_reco.root"
-Begin processing the 101st record. run: 15921 subRun: 313 event: 101 at 30-Jul-2020 17:51:24 CDT
-30-Jul-2020 18:48:16 CDT  Closed output file "gm2tracker_reco.root"
-30-Jul-2020 18:48:16 CDT  Closed input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
-%MSG-i summary:  ImposeDeadTime:deadTime@EndJob 30-Jul-2020 18:48:16 CDT  ModuleEndJob
+07-Aug-2020 11:04:00 CDT  Initiating request to open input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+07-Aug-2020 11:04:01 CDT  Opened input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+Begin processing the 1st record. run: 15921 subRun: 313 event: 1 at 07-Aug-2020 11:05:41 CDT
+07-Aug-2020 11:07:03 CDT  Closed input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+%MSG-i summary:  ImposeDeadTime:deadTime@EndJob 07-Aug-2020 11:07:03 CDT  ModuleEndJob
 
 --------- Tracker Impose Dead Time Report ---------
-  Total num digits killed = 65607 (of 589355, 11.132%)
-  Total num digits kept = 523748 (of 589355, 88.868%)
+  Total num digits killed = 931 (of 8421, 11.0557%)
+  Total num digits kept = 7490 (of 8421, 88.9443%)
 ------------------------------------------------
 
 %MSG
-%MSG-i summary:  KillStraws:killStraws@EndJob 30-Jul-2020 18:48:16 CDT  ModuleEndJob
+%MSG-i summary:  KillStraws:killStraws@EndJob 07-Aug-2020 11:07:03 CDT  ModuleEndJob
 
 --------- Tracker Kill Straws Report ---------
   Num straws to kill = 0
-  Total num digits killed = 0 (of 589355, 0%)
-  Total num digits kept = 589355 (of 589355, 100%)
+  Total num digits killed = 0 (of 8421, 0%)
+  Total num digits kept = 8421 (of 8421, 100%)
 ----------------------------------------------
 
 %MSG
-%MSG-i summary:  RemoveFlash:removeFlash@EndJob 30-Jul-2020 18:48:16 CDT  ModuleEndJob
+%MSG-i summary:  RemoveFlash:removeFlash@EndJob 07-Aug-2020 11:07:03 CDT  ModuleEndJob
 
 --------- Tracker Remove Flash Report ---------
-  Total num digits removed = 0 (of 589355, 0%)
-  Total num digits kept = 589355 (of 589355, 100%)
+  Total num digits removed = 0 (of 8421, 0%)
+  Total num digits kept = 8421 (of 8421, 100%)
 ----------------------------------------------
 
 %MSG
 
+======================================================================================================================================
+TimeTracker printout (sec)                              Min           Avg           Max         Median          RMS         nEvts   
+======================================================================================================================================
+Full event                                          0.00256193      27.3863       82.1338      0.0224673      38.7123         3     
+--------------------------------------------------------------------------------------------------------------------------------------
+source:RootInput(read)                              0.00051648    0.00332438    0.00864927    0.000807391   0.00376714        3     
+trackPath:TrackFilter:TrackerFillTypeFilter         0.00165146    0.00622124     0.0135699    0.00344232     0.0052475        3     
+trackPath:TriggerResults:TriggerResultInserter      2.7857e-05    4.88603e-05   8.3058e-05    3.5666e-05    2.43906e-05       3     
+end_path:trackPlotsMainFit12Planes:LowDCAsPlots      9.027e-06     0.0166981     0.0500374    4.7955e-05     0.0235744        3     
+end_path:trackPlotsMainFit100Planes:LowDCAsPlots     2.693e-06    0.00898121     0.0269373     3.656e-06     0.0126969        3     
+end_path:trackPlotsFullSeqFit1:LowDCAsPlots          1.947e-06     0.0126136     0.0378355     3.434e-06     0.0178346        3     
+end_path:trackPlotsFullSeqFit2:LowDCAsPlots          1.901e-06     0.012306      0.0369131     2.914e-06     0.0173999        3     
+end_path:trackPlotsFullSeqFit3:LowDCAsPlots          2.084e-06     0.0123997     0.0371946     2.363e-06     0.0175326        3     
+end_path:trackPlotsFullSeqFit4:LowDCAsPlots          1.805e-06     0.0124176     0.037249      2.011e-06     0.0175585        3     
+trackPath:artg4:BuildCoordSystems                    2.388e-06     2.388e-06     2.388e-06     2.388e-06         0            1     
+trackPath:removeFlash:RemoveFlash                    0.0182686     0.0182686     0.0182686     0.0182686         0            1     
+trackPath:killStraws:KillStraws                     0.00579748    0.00579748    0.00579748    0.00579748         0            1     
+trackPath:digitTimeSync:DigitTimeSyncer             0.00250713    0.00250713    0.00250713    0.00250713         0            1     
+trackPath:deadTime:ImposeDeadTime                    0.0102961     0.0102961     0.0102961     0.0102961         0            1     
+trackPath:timeIslands:TimeIsland                    0.00223438    0.00223438    0.00223438    0.00223438         0            1     
+trackPath:clustering:ClusterFormation                0.0148553     0.0148553     0.0148553     0.0148553         0            1     
+trackPath:seeds:SeedFormation                        0.0432385     0.0432385     0.0432385     0.0432385         0            1     
+trackPath:trackCandidates:TrackFinding               0.0830521     0.0830521     0.0830521     0.0830521         0            1     
+trackPath:candidateCleaner:CandidateCleaner         0.00424019    0.00424019    0.00424019    0.00424019         0            1     
+trackPath:t0Finder:T0Finder                           7.3307        7.3307        7.3307        7.3307           0            1     
+trackPath:driftDistReco:DriftDistanceCal            0.00663591    0.00663591    0.00663591    0.00663591         0            1     
+trackPath:tracksMainFit100Planes:GeaneReco            6.02669       6.02669       6.02669       6.02669          0            1     
+trackPath:tracksMainFit12Planes:GeaneReco             5.94152       5.94152       5.94152       5.94152          0            1     
+trackPath:tracksFullSeqFit1:GeaneReco                 13.7145       13.7145       13.7145       13.7145          0            1     
+trackPath:tracksFullSeqFit2:GeaneReco                 15.552        15.552        15.552        15.552           0            1     
+trackPath:tracksFullSeqFit3:GeaneReco                 16.312        16.312        16.312        16.312           0            1     
+trackPath:tracksFullSeqFit4:GeaneReco                 16.8346       16.8346       16.8346       16.8346          0            1     
+======================================================================================================================================
+
 TrigReport ---------- Event  Summary ------------
-TrigReport Events total = 155 passed = 73 failed = 82
+TrigReport Events total = 3 passed = 1 failed = 2
 
 TrigReport ------ Modules in End-Path: end_path ------------
 TrigReport  Trig Bit#        Run    Success      Error Name
-TrigReport     0    0         73         73          0 out
-TrigReport     0    0         73         73          0 trackPlotsMainFit
-TrigReport     0    0         73         73          0 trackPlotsMainFitEnhanced
-TrigReport     0    0         73         73          0 trackPlotsFlipLR
-TrigReport     0    0         73         73          0 trackPlotsFullSeqFit
-TrigReport     0    0         73         73          0 extrapPlotsMainFit
-TrigReport     0    0         73         73          0 extrapPlotsMainFitEnhanced
-TrigReport     0    0         73         73          0 extrapPlotsFlipLR
-TrigReport     0    0         73         73          0 extrapPlotsFullSeqFit
+TrigReport     0    0          1          1          0 trackPlotsMainFit12Planes
+TrigReport     0    0          1          1          0 trackPlotsMainFit100Planes
+TrigReport     0    0          1          1          0 trackPlotsFullSeqFit1
+TrigReport     0    0          1          1          0 trackPlotsFullSeqFit2
+TrigReport     0    0          1          1          0 trackPlotsFullSeqFit3
+TrigReport     0    0          1          1          0 trackPlotsFullSeqFit4
 
 TimeReport ---------- Time  Summary ---[sec]----
-TimeReport CPU = 9744.449619 Real = 9768.610530
+TimeReport CPU = 145.094942 Real = 145.245484
 
 MemReport  ---------- Memory  Summary ---[base-10 MB]----
-MemReport  VmPeak = 4220.01 VmHWM = 3212.4
+MemReport  VmPeak = 2650.24 VmHWM = 1724.51
 

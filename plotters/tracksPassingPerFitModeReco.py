@@ -42,6 +42,7 @@ tracksPassing.append(2984)
 # tgr = DefineScat([1,2,3,4], tracksPassing) 
 tgr = DefineScat([1,2,3], tracksPassing) 
 
+
 tgr.GetXaxis().SetBinLabel(tgr.GetXaxis().FindBin(0 + 1.),"Main")
 tgr.GetXaxis().SetBinLabel(tgr.GetXaxis().FindBin(1 + 1.),"Main+FSQ")
 tgr.GetXaxis().SetBinLabel(tgr.GetXaxis().FindBin(2 + 1.),"FSQ")

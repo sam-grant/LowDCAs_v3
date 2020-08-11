@@ -1,14 +1,13 @@
 void EffvspVal()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Thu Aug  6 01:27:21 2020) by ROOT version 6.12/04
+//=========  (Thu Aug  6 02:47:30 2020) by ROOT version 6.12/04
    TCanvas *c = new TCanvas("c", "c",0,0,800,600);
    c->SetHighLightColor(2);
    c->Range(-0.0061875,0.8823904,0.0556875,1.658384);
    c->SetFillColor(0);
    c->SetBorderMode(0);
    c->SetBorderSize(2);
-   c->SetFrameBorderMode(0);
    c->SetFrameBorderMode(0);
    
    Double_t Graph0_fx1003[35] = {
@@ -191,6 +190,11 @@ void EffvspVal()
    gre->SetHistogram(Graph_Graph1003);
    
    gre->Draw("ap");
+   TLine *line = new TLine(0,1.502548,0.0495,1.502548);
+   line->SetLineColor(2);
+   line->SetLineStyle(2);
+   line->SetLineWidth(3);
+   line->Draw();
    c->Modified();
    c->cd();
    c->SetSelected(c);

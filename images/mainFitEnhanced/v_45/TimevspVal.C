@@ -1,14 +1,13 @@
 void TimevspVal()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Thu Aug  6 01:27:21 2020) by ROOT version 6.12/04
+//=========  (Thu Aug  6 02:47:30 2020) by ROOT version 6.12/04
    TCanvas *c = new TCanvas("c", "c",0,0,800,600);
    c->SetHighLightColor(2);
-   c->Range(-0.0061875,3.674112,0.0556875,22.72098);
+   c->Range(-0.0061875,4,0.0556875,24);
    c->SetFillColor(0);
    c->SetBorderMode(0);
    c->SetBorderSize(2);
-   c->SetFrameBorderMode(0);
    c->SetFrameBorderMode(0);
    
    Double_t Graph0_fx1004[35] = {
@@ -162,8 +161,8 @@ void TimevspVal()
    gre->SetMarkerStyle(20);
    
    TH1F *Graph_Graph1004 = new TH1F("Graph_Graph1004","",100,0,0.0495);
-   Graph_Graph1004->SetMinimum(5.578799);
-   Graph_Graph1004->SetMaximum(20.81629);
+   Graph_Graph1004->SetMinimum(6);
+   Graph_Graph1004->SetMaximum(22);
    Graph_Graph1004->SetDirectory(0);
    Graph_Graph1004->SetStats(0);
 
@@ -191,6 +190,16 @@ void TimevspVal()
    gre->SetHistogram(Graph_Graph1004);
    
    gre->Draw("ap");
+   TLine *line = new TLine(0,17.485,0.0495,17.485);
+   line->SetLineColor(2);
+   line->SetLineStyle(2);
+   line->SetLineWidth(3);
+   line->Draw();
+   line = new TLine(0,6.39788,0.0495,6.39788);
+   line->SetLineColor(2);
+   line->SetLineStyle(2);
+   line->SetLineWidth(3);
+   line->Draw();
    c->Modified();
    c->cd();
    c->SetSelected(c);

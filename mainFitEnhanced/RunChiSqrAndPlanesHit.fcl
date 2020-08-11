@@ -1,0 +1,312 @@
+#include "messageParams.fcl"
+#include "trackingConfig.fcl"
+#include "conDBParams.fcl"
+
+process_name : reco
+
+// Input some unpacked data
+source : {
+  module_type : RootInput
+  maxEvents   : -1
+} 
+
+outputs : {
+  out : { 
+    module_type  : RootOutput
+    fileName     : "gm2tracker_reco.root"
+
+    dataTier     : "full"
+    outputCommands : [ "keep *",
+                      "drop *::*_*_*_unpacking",
+                      "drop gm2common::*_*_*_*",
+                      "drop gm2calo::*_*_*_*",
+                      "drop gm2aux::*_*_*_*",
+                      "drop gm2reconeast::*_*_*_*",
+                      "drop gm2midastoart::*_*_*_*",
+                      "drop gm2ccc::*_*_*_*",
+                      @sequence::trackingChain.outputDrops
+                    ]
+
+     SelectEvents : ["trackPath"]
+     //FCMDPlugins  : [ { plugin_type : Metadata
+     //                   fhicl_name  : "gm2tracker_particle_gun_full.fcl"
+     //                   requestid   : "1"
+     //                   run_config  : "commission" }]
+
+  } // out
+} // end of outputs block
+
+
+// Services block
+services : {
+  FileCatalogMetadata : {
+    applicationFamily  : "tracker"
+    applicationVersion : "v9_49_00"
+    fileType           : "offline"
+  }
+
+  message : {
+    debugModules : []
+    suppressInfo : []
+
+    destinations : {
+      LogToConsole : {
+        type       : "cout"
+        threshold  : "INFO"
+        categories : @local::message_categories
+      }
+      LogToFile : {
+        type      : "file"
+        filename  : "gm2tracker_sim.log"
+        append    :  false
+        threshold : "INFO"
+        categories : @local::message_categories
+      }
+    }
+  }
+
+  // the coordinate system data is used throughout the tracking code
+  // for now, the tracking uses GEANT for the coordinates
+  // to build the coordinates requires dependent on artg4
+
+  DetectorHolder    : {}
+  ActionHolder      : {}
+  CoordSystemsStore : {}
+  Gm2Constants      : {}
+  RandomNumberGenerator : {}
+
+  Geometry : { strawtracker : @local::strawtracker_geom }
+  StrawTrackerGeometry : {}
+  StrawTrackerGeometryConstants : { DatabaseURL : @local::condb_prod_params }
+
+  @table::trackingChain.reducedGeometry
+  @table::trackingChain.field
+
+  TrackQuality : {} // default is off
+  TimeTracker : {}
+
+   TFileService: {
+      fileName: "recoPlots.root"
+   }
+
+} // end of services block
+
+physics : {
+
+  filters : {
+
+    TrackFilter : 
+    {
+      module_type : TrackerFillTypeFilter
+      fillType    : 1
+      throwOnEmptyHeaderCollection : false
+    }
+  }
+
+  producers : {
+
+    @table::trackingChain.producers
+
+    tracksChi112 : @local::geanefit_params
+    tracksChi212 : @local::geanefit_params
+    tracksChi312 : @local::geanefit_params
+    tracksChi412 : @local::geanefit_params
+
+    tracksChi10 : @local::geanefit_params
+    tracksChi20 : @local::geanefit_params
+    tracksChi30 : @local::geanefit_params
+    tracksChi40 : @local::geanefit_params
+
+
+   } 
+
+  analyzers : {
+
+    plotsTracksChi112 : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksChi112"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      dirName : "plotsTracksChi112"
+      applyTrackQuality : true
+
+    }
+
+    plotsTracksChi212 : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksChi212"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      dirName : "plotsTracksChi212"
+      applyTrackQuality : true
+
+    }
+
+    plotsTracksChi312 : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksChi312"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      dirName : "plotsTracksChi312"
+      applyTrackQuality : true
+
+    }
+
+    plotsTracksChi412 : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksChi412"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      dirName : "plotsTracksChi412"
+      applyTrackQuality : true
+
+    }
+
+    plotsTracksChi10 : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksChi10"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      dirName : "plotsTracksChi10"
+      applyTrackQuality : true
+
+    }
+
+    plotsTracksChi20 : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksChi20"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      dirName : "plotsTracksChi20"
+      applyTrackQuality : true
+
+    }
+
+    plotsTracksChi30 : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksChi30"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      dirName : "plotsTracksChi30"
+      applyTrackQuality : true
+
+    }
+
+    plotsTracksChi40 : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksChi40"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      dirName : "plotsTracksChi40"
+      applyTrackQuality : true
+
+    }
+
+
+  }
+
+  // My path, reconstructing tracks with different lockLowDCA values
+  trackPath : [ TrackFilter,
+     artg4,
+     removeFlash,
+     killStraws,
+     digitTimeSync,
+     deadTime,
+     timeIslands,
+     clustering,
+     seeds,
+     trackCandidates,
+     candidateCleaner,
+     t0Finder,
+     driftDistReco,
+     tracksChi112,
+     tracksChi212,
+     tracksChi312,
+     tracksChi412,
+     tracksChi10,
+     tracksChi20,
+     tracksChi30,
+     tracksChi40
+
+     ] 
+
+    plotPath      : [ plotsTracksChi112, plotsTracksChi212, plotsTracksChi312, plotsTracksChi412, plotsTracksChi10, plotsTracksChi20, plotsTracksChi30, plotsTracksChi40]
+
+    trigger_paths : [ trackPath ]
+    end_paths     : [ plotPath ] 
+
+}
+
+physics.producers.t0Finder.meanTimeOffset : 34 // 36.5 is for 1550V, 34 for 1625V. Different for Sim
+
+// Number of times chi squared is called
+physics.producers.tracksChi112.nBestChiSqr : 1 
+physics.producers.tracksChi212.nBestChiSqr : 2 
+physics.producers.tracksChi312.nBestChiSqr : 3 
+physics.producers.tracksChi412.nBestChiSqr : 4 
+physics.producers.tracksChi10.nBestChiSqr : 1 
+physics.producers.tracksChi20.nBestChiSqr : 2 
+physics.producers.tracksChi30.nBestChiSqr : 3 
+physics.producers.tracksChi40.nBestChiSqr : 4 
+
+// Planes hit
+physics.producers.tracksChi112.planesHitCut : 12
+physics.producers.tracksChi212.planesHitCut : 12
+physics.producers.tracksChi312.planesHitCut : 12
+physics.producers.tracksChi412.planesHitCut : 12
+physics.producers.tracksChi10.planesHitCut : 0
+physics.producers.tracksChi20.planesHitCut : 0
+physics.producers.tracksChi30.planesHitCut : 0
+physics.producers.tracksChi40.planesHitCut : 0
+
+// Set p-value low cut
+physics.producers.tracksChi112.pValueCutLo : 0.0005
+physics.producers.tracksChi212.pValueCutLo : 0.0005
+physics.producers.tracksChi312.pValueCutLo : 0.0005
+physics.producers.tracksChi412.pValueCutLo : 0.0005
+physics.producers.tracksChi10.pValueCutLo : 0.0005
+physics.producers.tracksChi20.pValueCutLo : 0.0005
+physics.producers.tracksChi30.pValueCutLo : 0.0005
+physics.producers.tracksChi40.pValueCutLo : 0.0005
+
+// Set different fit modes
+physics.producers.tracksChi112.fitMode : "mainFitEnhanced"
+physics.producers.tracksChi212.fitMode : "mainFitEnhanced"
+physics.producers.tracksChi312.fitMode : "mainFitEnhanced"
+physics.producers.tracksChi412.fitMode : "mainFitEnhanced"
+
+physics.producers.tracksChi10.fitMode : "mainFitEnhanced"
+physics.producers.tracksChi20.fitMode : "mainFitEnhanced"
+physics.producers.tracksChi30.fitMode : "mainFitEnhanced"
+physics.producers.tracksChi40.fitMode : "mainFitEnhanced"
+
+// Save detailed art records for everything (may be needed for truth plot
+physics.producers.tracksChi112.keepTrackDetailArtRecord : true
+physics.producers.tracksChi212.keepTrackDetailArtRecord : true
+physics.producers.tracksChi312.keepTrackDetailArtRecord : true
+physics.producers.tracksChi412.keepTrackDetailArtRecord : true
+
+physics.producers.tracksChi10.keepTrackDetailArtRecord : true
+physics.producers.tracksChi20.keepTrackDetailArtRecord : true
+physics.producers.tracksChi30.keepTrackDetailArtRecord : true
+physics.producers.tracksChi40.keepTrackDetailArtRecord : true
+
+
+
+

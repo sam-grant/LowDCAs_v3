@@ -1,9 +1,9 @@
-05-Aug-2020 16:29:34 CDT  Initiating request to open input file "gm2offline_full_17632340_15921.00313.root"
-05-Aug-2020 16:29:35 CDT  Opened input file "gm2offline_full_17632340_15921.00313.root"
-Begin processing the 1st record. run: 15921 subRun: 313 event: 1 at 05-Aug-2020 16:32:35 CDT
-Begin processing the 101st record. run: 15921 subRun: 313 event: 101 at 05-Aug-2020 21:30:44 CDT
-06-Aug-2020 00:18:13 CDT  Closed input file "gm2offline_full_17632340_15921.00313.root"
-%MSG-i summary:  ImposeDeadTime:deadTime@EndJob 06-Aug-2020 00:18:13 CDT  ModuleEndJob
+10-Aug-2020 20:38:26 CDT  Initiating request to open input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+10-Aug-2020 20:38:26 CDT  Opened input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+Begin processing the 1st record. run: 15921 subRun: 313 event: 1 at 10-Aug-2020 20:40:40 CDT
+Begin processing the 101st record. run: 15921 subRun: 313 event: 101 at 11-Aug-2020 01:17:39 CDT
+11-Aug-2020 04:33:07 CDT  Closed input file "/pnfs/GM2/daq/run1/offline/gm2_5037A/runs_15000/15921/gm2offline_full_17632340_15921.00313.root"
+%MSG-i summary:  ImposeDeadTime:deadTime@EndJob 11-Aug-2020 04:33:07 CDT  ModuleEndJob
 
 --------- Tracker Impose Dead Time Report ---------
   Total num digits killed = 65607 (of 589355, 11.132%)
@@ -11,7 +11,7 @@ Begin processing the 101st record. run: 15921 subRun: 313 event: 101 at 05-Aug-2
 ------------------------------------------------
 
 %MSG
-%MSG-i summary:  KillStraws:killStraws@EndJob 06-Aug-2020 00:18:13 CDT  ModuleEndJob
+%MSG-i summary:  KillStraws:killStraws@EndJob 11-Aug-2020 04:33:08 CDT  ModuleEndJob
 
 --------- Tracker Kill Straws Report ---------
   Num straws to kill = 0
@@ -20,7 +20,7 @@ Begin processing the 101st record. run: 15921 subRun: 313 event: 101 at 05-Aug-2
 ----------------------------------------------
 
 %MSG
-%MSG-i summary:  RemoveFlash:removeFlash@EndJob 06-Aug-2020 00:18:13 CDT  ModuleEndJob
+%MSG-i summary:  RemoveFlash:removeFlash@EndJob 11-Aug-2020 04:33:08 CDT  ModuleEndJob
 
 --------- Tracker Remove Flash Report ---------
   Total num digits removed = 0 (of 589355, 0%)
@@ -32,97 +32,97 @@ Begin processing the 101st record. run: 15921 subRun: 313 event: 101 at 05-Aug-2
 ====================================================================================================================================
 TimeTracker printout (sec)                            Min           Avg           Max         Median          RMS         nEvts   
 ====================================================================================================================================
-Full event                                        0.00379846      180.079       498.388      0.0980894      193.791        155    
+Full event                                        0.00128724      214.465       597.758      0.0920978      230.728        155    
 ------------------------------------------------------------------------------------------------------------------------------------
-source:RootInput(read)                            0.000405919   0.00580055     0.0256632    0.000729633   0.00728368       155    
-trackPath:TrackFilter:TrackerFillTypeFilter       0.00314307     0.0395625     0.135808      0.0386802     0.0222024       155    
-trackPath:TriggerResults:TriggerResultInserter     2.214e-05    4.63247e-05   0.00186644    3.6457e-05     0.0001471       155    
-end_path:mainFit:LowDCAsPlots                      5.098e-06     0.0349516     0.191679     1.5086e-05     0.0418815       155    
-end_path:FSQ:LowDCAsPlots                          2.375e-06     0.0270331     0.109154      3.841e-06     0.0299849       155    
-end_path:A:LowDCAsPlots                            2.235e-06     0.0264517     0.105402      4.819e-06     0.0293119       155    
-end_path:B:LowDCAsPlots                            2.305e-06     0.0229676     0.0840147     3.981e-06     0.0254227       155    
-end_path:C:LowDCAsPlots                            2.165e-06     0.0226562     0.081687      3.911e-06     0.0250984       155    
-end_path:D:LowDCAsPlots                            2.095e-06     0.0223303     0.0809839     3.841e-06     0.0247746       155    
-end_path:E:LowDCAsPlots                            2.095e-06     0.0221492     0.0801949     3.981e-06     0.0245788       155    
-end_path:F:LowDCAsPlots                            2.095e-06     0.0219682     0.0796304     4.05e-06      0.0244077       155    
-end_path:G:LowDCAsPlots                            2.095e-06     0.0218676     0.0787976     4.191e-06      0.02423        155    
-end_path:H:LowDCAsPlots                            2.305e-06     0.0216694     0.0795394      4.4e-06      0.0240852       155    
-end_path:I:LowDCAsPlots                            2.165e-06     0.0215706     0.078335      3.701e-06     0.0239768       155    
-end_path:J:LowDCAsPlots                            2.025e-06     0.0214703     0.0780853     3.981e-06     0.0238806       155    
-end_path:K:LowDCAsPlots                            2.165e-06     0.021382      0.0769571     3.562e-06     0.0237872       155    
-end_path:L:LowDCAsPlots                            2.096e-06     0.021114      0.0759952     3.562e-06     0.0234905       155    
-end_path:M:LowDCAsPlots                            2.096e-06     0.0209533     0.0756771     4.051e-06     0.0233276       155    
-end_path:N:LowDCAsPlots                            2.095e-06     0.0207375     0.0747962     4.051e-06     0.0230961       155    
-end_path:O:LowDCAsPlots                            2.025e-06     0.0206543     0.0744101     3.842e-06     0.0230369       155    
-end_path:P:LowDCAsPlots                            2.235e-06     0.0205017     0.0744254     3.631e-06     0.0228013       155    
-end_path:Q:LowDCAsPlots                            2.165e-06     0.0203947     0.0733124     3.841e-06     0.022693        155    
-end_path:R:LowDCAsPlots                            2.165e-06     0.0202751     0.0734502     3.632e-06     0.0225675       155    
-end_path:S:LowDCAsPlots                            2.095e-06     0.0201979     0.074365      3.772e-06     0.0224968       155    
-end_path:T:LowDCAsPlots                            2.095e-06     0.0200709     0.0734212     3.981e-06     0.0223475       155    
-end_path:U:LowDCAsPlots                            2.025e-06     0.0199905     0.0743665     3.911e-06     0.0222705       155    
-end_path:V:LowDCAsPlots                            2.026e-06     0.0198548     0.0733194     3.771e-06     0.022087        155    
-end_path:X:LowDCAsPlots                            2.095e-06     0.0198348     0.0733055     3.771e-06     0.0220776       155    
-end_path:Y:LowDCAsPlots                            2.235e-06     0.0197251     0.0733695     3.981e-06     0.0219639       155    
-end_path:Z:LowDCAsPlots                            2.165e-06     0.0196059     0.0725445     3.772e-06     0.0218438       155    
-end_path:AA:LowDCAsPlots                           2.165e-06     0.0194983     0.0730696     3.702e-06     0.0217267       155    
-end_path:AB:LowDCAsPlots                           2.165e-06     0.0194626     0.0724116     3.772e-06     0.021679        155    
-end_path:AC:LowDCAsPlots                           2.026e-06     0.0194308     0.0731961     4.191e-06     0.0216461       155    
-end_path:AD:LowDCAsPlots                           2.165e-06     0.0194375     0.0732545     4.121e-06     0.0216793       155    
-end_path:AE:LowDCAsPlots                           2.096e-06      0.01939      0.0728711     3.771e-06     0.0216192       155    
-end_path:AF:LowDCAsPlots                           2.165e-06     0.0191357     0.0729648     3.701e-06     0.0213643       155    
-end_path:AG:LowDCAsPlots                           2.165e-06     0.0189746     0.0728929     4.33e-06      0.0211883       155    
-end_path:AH:LowDCAsPlots                           2.235e-06     0.0188045     0.0738256     3.842e-06     0.0210363       155    
-end_path:AI:LowDCAsPlots                           2.165e-06     0.0186376     0.0726946     3.632e-06     0.0208892       155    
-end_path:AJ:LowDCAsPlots                           2.095e-06     0.0184408     0.0717207     3.701e-06     0.0206661       155    
-trackPath:artg4:BuildCoordSystems                  2.374e-06    2.99936e-06    6.146e-06     2.864e-06    5.87425e-07      73     
-trackPath:removeFlash:RemoveFlash                  0.0096356     0.031212      0.0560787     0.032615      0.0128044       73     
-trackPath:killStraws:KillStraws                   0.00106494    0.00144589    0.00307693    0.00148986    0.00029222       73     
-trackPath:digitTimeSync:DigitTimeSyncer           0.000757011   0.00104537    0.00283591    0.00102625    0.000246019      73     
-trackPath:deadTime:ImposeDeadTime                 0.00786777     0.0101242      0.0137       0.0102666    0.00107842       73     
-trackPath:timeIslands:TimeIsland                  0.00209943    0.00317866    0.00420634    0.00324937    0.00044937       73     
-trackPath:clustering:ClusterFormation              0.0125932     0.0191958     0.0243922     0.019596     0.00256295       73     
-trackPath:seeds:SeedFormation                      0.036221      0.0556025     0.088218      0.0555736    0.00895039       73     
-trackPath:trackCandidates:TrackFinding             0.0707008     0.108589      0.146359      0.109161      0.0178831       73     
-trackPath:candidateCleaner:CandidateCleaner       0.00340812    0.00538031    0.00789878    0.00541404    0.00103168       73     
-trackPath:t0Finder:T0Finder                         5.72865       7.54956       9.36758       7.56641      0.830557        73     
-trackPath:driftDistReco:DriftDistanceCal          0.00520758    0.00739469     0.010936      0.0074136    0.00120226       73     
-trackPath:tracksMainFit:GeaneReco                   5.1135        6.99056       8.66884       6.99427      0.797429        73     
-trackPath:tracksFSQ:GeaneReco                       14.3623       19.8845       24.2214       19.8494       2.31838        73     
-trackPath:tracksA:GeaneReco                         15.1814       20.7402       25.8675       20.6104       2.62573        73     
-trackPath:tracksB:GeaneReco                         8.44373       11.4155       14.8614       11.4754       1.53935        73     
-trackPath:tracksC:GeaneReco                         8.28001       11.1607       14.6825       11.2652       1.51884        73     
-trackPath:tracksD:GeaneReco                         8.22723       11.0293       14.4811       11.1394       1.5105         73     
-trackPath:tracksE:GeaneReco                         7.84226       10.9219       14.5379       11.0481       1.50244        73     
-trackPath:tracksF:GeaneReco                         7.79988       10.8073       14.2458       11.0127       1.49407        73     
-trackPath:tracksG:GeaneReco                         7.69219       10.7371       14.2611       10.9546       1.47656        73     
-trackPath:tracksH:GeaneReco                         7.67342       10.6498       13.8366       10.8747       1.45402        73     
-trackPath:tracksI:GeaneReco                         7.66555       10.5964       13.7589       10.8168       1.44707        73     
-trackPath:tracksJ:GeaneReco                         7.62007       10.5531       13.5524       10.6533       1.42969        73     
-trackPath:tracksK:GeaneReco                         7.5768        10.5049       13.6113       10.677        1.43449        73     
-trackPath:tracksL:GeaneReco                         7.37338       10.159        13.2278       10.2476       1.36961        73     
-trackPath:tracksM:GeaneReco                         7.25026       9.97268       12.9344       10.0821       1.34399        73     
-trackPath:tracksN:GeaneReco                         6.93676       9.82068       12.7397       9.91994       1.33456        73     
-trackPath:tracksO:GeaneReco                         6.94394       9.71427       12.7263       9.79894       1.31958        73     
-trackPath:tracksP:GeaneReco                         6.93542       9.60603       12.581        9.69513       1.30117        73     
-trackPath:tracksQ:GeaneReco                         6.92365       9.50612       12.5887       9.57774       1.30345        73     
-trackPath:tracksR:GeaneReco                         6.85668       9.41228       12.5735       9.47594       1.29984        73     
-trackPath:tracksS:GeaneReco                         6.83329       9.33302       12.5719       9.41357       1.27778        73     
-trackPath:tracksT:GeaneReco                         6.56323       9.25323       12.4708       9.36834       1.27296        73     
-trackPath:tracksU:GeaneReco                         6.55363       9.19895       12.4233       9.30664       1.26758        73     
-trackPath:tracksV:GeaneReco                         6.34674       9.1317        12.3629       9.20434       1.27206        73     
-trackPath:tracksX:GeaneReco                         6.34285       9.04378       12.3819       9.14879        1.277         73     
-trackPath:tracksY:GeaneReco                         6.34726       8.99708       12.123        9.08536       1.26876        73     
-trackPath:tracksZ:GeaneReco                         6.34157       8.94089       12.109        9.03043       1.2654         73     
-trackPath:tracksAA:GeaneReco                        6.33258       8.86722       12.0209       8.99437       1.25293        73     
-trackPath:tracksAB:GeaneReco                        6.2703        8.82325       11.8591       8.94848       1.23806        73     
-trackPath:tracksAC:GeaneReco                        6.26509       8.78853       11.7954       8.89737       1.21724        73     
-trackPath:tracksAD:GeaneReco                        6.10818       8.72384       11.5633       8.82264       1.20137        73     
-trackPath:tracksAE:GeaneReco                        6.10828       8.67444       11.5517       8.78457       1.18039        73     
-trackPath:tracksAF:GeaneReco                        6.05082       8.47661       11.1569       8.62126       1.12069        73     
-trackPath:tracksAG:GeaneReco                        5.87131       8.30552       11.1373       8.35179       1.08231        73     
-trackPath:tracksAH:GeaneReco                        5.71786       8.14428       11.1683       8.16461       1.08345        73     
-trackPath:tracksAI:GeaneReco                        5.57256       8.0243        10.9388       8.01303       1.06312        73     
-trackPath:tracksAJ:GeaneReco                        5.56462       7.89461       10.9254       7.77501       1.04297        73     
+source:RootInput(read)                            0.000428778   0.00823963     0.0482796    0.00092722     0.0112711       155    
+trackPath:TrackFilter:TrackerFillTypeFilter       0.000484071    0.0310143     0.241356      0.0281658     0.0270719       155    
+trackPath:TriggerResults:TriggerResultInserter    2.9032e-05    0.000166306   0.000523624   0.00017002    0.000100305      155    
+end_path:mainFit:LowDCAsPlots                      6.102e-06     0.0564832     0.404253     7.5411e-05     0.0674823       155    
+end_path:FSQ:LowDCAsPlots                          2.477e-06     0.0380894     0.130726      5.132e-06     0.0421411       155    
+end_path:A:LowDCAsPlots                            2.215e-06     0.0369486      0.13181      4.654e-06     0.0413249       155    
+end_path:B:LowDCAsPlots                            2.37e-06      0.0310687     0.126856      4.173e-06     0.0347053       155    
+end_path:C:LowDCAsPlots                            2.228e-06     0.030327      0.113231      4.476e-06     0.0340175       155    
+end_path:D:LowDCAsPlots                            2.345e-06     0.029523      0.106823      4.014e-06     0.0327323       155    
+end_path:E:LowDCAsPlots                            2.214e-06     0.0301699     0.114687      4.529e-06     0.033744        155    
+end_path:F:LowDCAsPlots                             2.3e-06      0.0292602     0.130331      3.881e-06     0.0333098       155    
+end_path:G:LowDCAsPlots                            2.138e-06     0.0287284     0.112164      4.573e-06     0.0320974       155    
+end_path:H:LowDCAsPlots                            2.17e-06      0.0287527     0.111854      3.874e-06     0.0322758       155    
+end_path:I:LowDCAsPlots                            2.342e-06     0.0286674      0.1157       4.342e-06     0.032773        155    
+end_path:J:LowDCAsPlots                            2.112e-06     0.0285431     0.114946      4.871e-06     0.032214        155    
+end_path:K:LowDCAsPlots                            2.347e-06     0.0284035     0.115227     1.8931e-05     0.0315993       155    
+end_path:L:LowDCAsPlots                            2.203e-06     0.0277823     0.108266      4.748e-06     0.0308936       155    
+end_path:M:LowDCAsPlots                            2.383e-06     0.0277113     0.105708      4.65e-06      0.030893        155    
+end_path:N:LowDCAsPlots                            2.141e-06     0.0284312     0.270944      4.237e-06     0.0358707       155    
+end_path:O:LowDCAsPlots                            2.194e-06     0.0271524     0.109214      4.409e-06     0.0303828       155    
+end_path:P:LowDCAsPlots                            2.12e-06      0.0271331     0.109458      4.899e-06     0.030404        155    
+end_path:Q:LowDCAsPlots                            2.355e-06     0.0278563     0.208616      4.246e-06     0.0330993       155    
+end_path:R:LowDCAsPlots                            2.292e-06     0.0268597     0.107605      4.639e-06     0.030105        155    
+end_path:S:LowDCAsPlots                            2.222e-06     0.027277       0.13713      5.114e-06     0.0311231       155    
+end_path:T:LowDCAsPlots                            2.231e-06     0.0266086     0.107769      4.804e-06     0.0296894       155    
+end_path:U:LowDCAsPlots                            2.16e-06      0.0266814     0.108503      4.218e-06     0.0300369       155    
+end_path:V:LowDCAsPlots                            2.24e-06      0.0262528     0.105463      4.847e-06     0.0292668       155    
+end_path:X:LowDCAsPlots                            2.171e-06     0.0263485     0.103588      4.112e-06     0.0295214       155    
+end_path:Y:LowDCAsPlots                            2.284e-06     0.0261488     0.105589      4.537e-06     0.0291047       155    
+end_path:Z:LowDCAsPlots                            2.336e-06     0.0258236     0.102553      3.716e-06     0.0288073       155    
+end_path:AA:LowDCAsPlots                           2.34e-06      0.0258175     0.106907      4.401e-06     0.028779        155    
+end_path:AB:LowDCAsPlots                           2.212e-06     0.0256179     0.106023      3.958e-06     0.028505        155    
+end_path:AC:LowDCAsPlots                           2.216e-06     0.025242      0.109558      4.291e-06     0.0281803       155    
+end_path:AD:LowDCAsPlots                           2.23e-06      0.0254929     0.102932      3.651e-06     0.0286442       155    
+end_path:AE:LowDCAsPlots                           2.302e-06     0.0253796     0.101416      4.136e-06     0.0285193       155    
+end_path:AF:LowDCAsPlots                           2.302e-06     0.0249996     0.0975017     4.255e-06     0.0280011       155    
+end_path:AG:LowDCAsPlots                           2.164e-06     0.0250933     0.106713      4.823e-06     0.0284437       155    
+end_path:AH:LowDCAsPlots                           2.238e-06     0.0246495     0.0997709     4.443e-06     0.0278571       155    
+end_path:AI:LowDCAsPlots                           2.286e-06     0.0239038     0.100081      4.151e-06     0.0271553       155    
+end_path:AJ:LowDCAsPlots                           2.188e-06     0.0227849     0.102771      4.133e-06     0.0258227       155    
+trackPath:artg4:BuildCoordSystems                  2.312e-06    4.13035e-05   0.000254265   1.5961e-05    4.32745e-05      73     
+trackPath:removeFlash:RemoveFlash                  0.0122754     0.0299678     0.0837314     0.0247205     0.0153102       73     
+trackPath:killStraws:KillStraws                    0.0012609     0.003015      0.0694505    0.00190501    0.00786069       73     
+trackPath:digitTimeSync:DigitTimeSyncer            0.0010528    0.00187254    0.00588484    0.00165847    0.000734558      73     
+trackPath:deadTime:ImposeDeadTime                 0.00830223     0.0116159     0.0175671     0.0114004    0.00168779       73     
+trackPath:timeIslands:TimeIsland                   0.0026326    0.00398095    0.00762825    0.00385917    0.000892007      73     
+trackPath:clustering:ClusterFormation              0.016883      0.0238829     0.0382732     0.0240076    0.00349771       73     
+trackPath:seeds:SeedFormation                      0.0466644     0.0689402     0.110312      0.0690153     0.0122481       73     
+trackPath:trackCandidates:TrackFinding             0.0922595     0.143025      0.226872      0.145518      0.0246581       73     
+trackPath:candidateCleaner:CandidateCleaner       0.00404118     0.0067228    0.00970771    0.00650208    0.00119064       73     
+trackPath:t0Finder:T0Finder                         6.70366       8.98022       13.1728       9.01538       1.22399        73     
+trackPath:driftDistReco:DriftDistanceCal          0.00817904     0.0148683     0.0299497     0.0140089    0.00502666       73     
+trackPath:tracksMainFit:GeaneReco                   6.63978       8.81707       10.9922       8.75493       1.03309        73     
+trackPath:tracksFSQ:GeaneReco                       17.1757       24.1552       30.9188       24.159        2.76228        73     
+trackPath:tracksA:GeaneReco                         17.8365       25.1656       32.0936       25.3532       3.19853        73     
+trackPath:tracksB:GeaneReco                         10.3989       13.8076       17.7756       13.8129       1.84246        73     
+trackPath:tracksC:GeaneReco                         10.0223       13.4638       17.3808       13.6206       1.81035        73     
+trackPath:tracksD:GeaneReco                         9.73713       13.2579       16.7513       13.354        1.78432        73     
+trackPath:tracksE:GeaneReco                         9.50996       13.0531       16.575        13.2545       1.70274        73     
+trackPath:tracksF:GeaneReco                         9.45293       12.9142       16.6854       13.1435       1.73067        73     
+trackPath:tracksG:GeaneReco                         9.15533       12.8316       16.2456       13.1208       1.70612        73     
+trackPath:tracksH:GeaneReco                         9.15743       12.7581       16.0385       13.1465       1.67078        73     
+trackPath:tracksI:GeaneReco                         9.20488       12.6496       15.9371       12.9255       1.65457        73     
+trackPath:tracksJ:GeaneReco                         9.14649       12.5293       15.7679       12.6645       1.62661        73     
+trackPath:tracksK:GeaneReco                          8.894        12.4992       16.2241       12.5323       1.66369        73     
+trackPath:tracksL:GeaneReco                         8.62617       12.0826       15.9072       12.4179       1.62211        73     
+trackPath:tracksM:GeaneReco                         8.42353       11.8074       15.4896       12.0246       1.56546        73     
+trackPath:tracksN:GeaneReco                         8.50762       11.6702       15.0403       11.9889       1.55744        73     
+trackPath:tracksO:GeaneReco                         8.54194       11.4955       15.0122       11.7999       1.53324        73     
+trackPath:tracksP:GeaneReco                         8.27136       11.3272       14.8778       11.4656       1.48959        73     
+trackPath:tracksQ:GeaneReco                         7.92647       11.2305       14.5007       11.4953       1.55482        73     
+trackPath:tracksR:GeaneReco                         8.09613       11.1666       15.4123       11.2978       1.58699        73     
+trackPath:tracksS:GeaneReco                         7.9342        11.0107       14.8968       11.2087       1.54352        73     
+trackPath:tracksT:GeaneReco                         7.82362       10.9493       14.6983       11.189        1.52471        73     
+trackPath:tracksU:GeaneReco                         7.88694       10.8564       14.4423       11.1374       1.45614        73     
+trackPath:tracksV:GeaneReco                         7.4604        10.7637       14.5691       10.9722       1.48498        73     
+trackPath:tracksX:GeaneReco                         7.35261       10.7108       14.639        11.0056       1.53046        73     
+trackPath:tracksY:GeaneReco                         7.16386       10.6349       14.679        10.9053       1.47546        73     
+trackPath:tracksZ:GeaneReco                         7.31136       10.5266       14.7181       10.8371       1.49967        73     
+trackPath:tracksAA:GeaneReco                        7.17744       10.4641       14.7311       10.7485       1.47566        73     
+trackPath:tracksAB:GeaneReco                        7.13913       10.3737       14.0739       10.6354       1.40702        73     
+trackPath:tracksAC:GeaneReco                        7.10572       10.3218       14.1871       10.5689       1.41948        73     
+trackPath:tracksAD:GeaneReco                        6.93429       10.2871       14.8593       10.4651       1.45019        73     
+trackPath:tracksAE:GeaneReco                        6.9762        10.1771       13.6108       10.481        1.36604        73     
+trackPath:tracksAF:GeaneReco                        6.81764       9.95306       13.4478       10.0979       1.29286        73     
+trackPath:tracksAG:GeaneReco                        6.7959        9.74104       12.9666       9.98156        1.248         73     
+trackPath:tracksAH:GeaneReco                        6.73576       9.60641       13.4076       9.74628       1.30133        73     
+trackPath:tracksAI:GeaneReco                        6.31664       9.44493       13.3076       9.49605       1.26428        73     
+trackPath:tracksAJ:GeaneReco                        6.30616       9.2492        13.2407       9.29856       1.21388        73     
 ====================================================================================================================================
 
 TrigReport ---------- Event  Summary ------------
@@ -169,8 +169,8 @@ TrigReport     0    0         73         73          0 AI
 TrigReport     0    0         73         73          0 AJ
 
 TimeReport ---------- Time  Summary ---[sec]----
-TimeReport CPU = 28054.311097 Real = 28083.528772
+TimeReport CPU = 33307.259528 Real = 33437.056645
 
 MemReport  ---------- Memory  Summary ---[base-10 MB]----
-MemReport  VmPeak = 3537.72 VmHWM = 2540.94
+MemReport  VmPeak = 3552.74 VmHWM = 2531.14
 

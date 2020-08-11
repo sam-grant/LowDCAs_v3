@@ -1,7 +1,7 @@
 void EffvsF()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Thu Aug  6 01:27:20 2020) by ROOT version 6.12/04
+//=========  (Thu Aug  6 02:47:30 2020) by ROOT version 6.12/04
    TCanvas *c = new TCanvas("c", "c",0,0,800,600);
    c->SetHighLightColor(2);
    c->Range(-0.103077,0.8823904,0.927693,1.658384);

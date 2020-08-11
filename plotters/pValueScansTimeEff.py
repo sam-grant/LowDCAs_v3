@@ -4,6 +4,7 @@
 # Efficiency vs. pValue window
 # Time / event vs. pValue window
 # Effiency vs CPU time
+# Efficiency vs time / t_m
 
 from ROOT import TFile, TH1, TGraphErrors, TF1, gStyle, gPad, TPaveText
 from plotFunc import LoadPlotFunc, DefineScat, DrawScat, DrawScatXLine, DrawScat2XLine, DrawScatYLine, DrawScatXYYLine
@@ -13,9 +14,10 @@ import pandas as pd
 LoadPlotFunc()
 
 version="49"
-file = "../mainFitEnhanced/txt/pValueScans_v"+version+".csv"
+file = "../mainFitEnhanced/txt/pValueScansFinal_v"+version+".csv"
+# file = "../mainFitEnhanced/txt/ChiSqrAndPlanes_v"+version+".csv"
 data = pd.read_csv(file) 
-print(data)
+
 
 # Some constants
 nEvents = 73
@@ -29,6 +31,8 @@ trk_f = data.iloc[1]['Tracks over Q']
 data['F'] = (data['Time/event [s]']-t_m)/t_f
 data['Eff'] = data['Tracks over Q']/trk_m
 data['NFSQPerEvent'] = data[' Times FSQ is called']/nEvents
+
+print(data)
 
 F_f = data.iloc[1]['F']
 eff_f = data.iloc[1]['Eff']
@@ -51,15 +55,17 @@ NFSQPerEvent = data['NFSQPerEvent'].tolist()
 # Efficiency vs. F, with a line at FSQ
 DrawScatYLine(DefineScat(F,eff),";(t_{m+f} #minus t_{m})/t_{f};Track efficiency","../images/mainFitEnhanced/v_"+version+"/EffvsF",F_f)
 # Time / event vs. F, with a line at FSQ
-DrawScatYLine(DefineScat(F,tPerEvent),";(t_{m+f} #minus t_{m})/t_{f};CPU time / event","../images/mainFitEnhanced/v_"+version+"/TimevsF",F_f)
+DrawScatYLine(DefineScat(F,tPerEvent/t_m),";(t_{m+f} #minus t_{m})/t_{f};CPU time / event (normalised to mainFit)","../images/mainFitEnhanced/v_"+version+"/TimevsF",F_f)
 # Efficiency vs. pValue window, with a line at FSQ
 DrawScatXLine(DefineScat(pValueCutLo,eff),";p-value low cut;Track efficiency","../images/mainFitEnhanced/v_"+version+"/EffvspVal", eff_f)
 # Time / event vs. pValue window, with a line at mainFit
-gr4 = DefineScat(pValueCutLo,tPerEvent)
-gr4.GetYaxis().SetRangeUser(6,22)
-DrawScat2XLine(gr4,";p-value low cut;CPU time / event","../images/mainFitEnhanced/v_"+version+"/TimevspVal", t_f, t_m)
+gr4 = DefineScat(pValueCutLo,tPerEvent/t_m)
+# gr4.GetYaxis().SetRangeUser(6,22)
+DrawScatXLine(gr4,";p-value low cut;CPU time / event (normalised to mainFit)","../images/mainFitEnhanced/v_"+version+"/TimevspVal", t_f/t_m)
 # Effiency vs CPU time, with two lines at FSQ, one line at mainFit
-DrawScatXYYLine(DefineScat(tPerEvent,eff),";CPU time / event;Track efficiency","../images/mainFitEnhanced/v_"+version+"/EffvsTime", t_f, eff_f, t_m)
+# DrawScatXYYLine(DefineScat(tPerEvent,eff),";CPU time / event (normalised to mainFit);Track efficiency","../images/mainFitEnhanced/v_"+version+"/EffvsTime", t_f, eff_f, t_m)
+DrawScatXYYLine(DefineScat(tPerEvent/t_m,eff),";CPU time / event (normalised to mainFit);Track efficiency","../images/mainFitEnhanced/v_"+version+"/EffvsTimeNorm", t_f/t_m, eff_f, t_m/t_m)
+# DrawScat(DefineScat(tPerEvent/t_m,eff),";CPU time / event (normalised to mainFit);Track efficiency","../images/mainFitEnhanced/v_"+version+"/EffvsTimeNorm")
 
 # DrawScat(DefineScat(eff,tPerEvent),";CPU time / event;Track efficiency","../images/mainFitEnhanced/v_"+version+"/EffvsTime")
 # # Effiency vs CPU time, with two lines at FSQ

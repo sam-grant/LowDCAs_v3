@@ -1,0 +1,260 @@
+#include "messageParams.fcl"
+#include "trackingConfig.fcl"
+#include "conDBParams.fcl"
+
+process_name : reco
+
+// Input some unpacked data
+source : {
+  module_type : RootInput
+  maxEvents   : -1
+} 
+
+outputs : {
+  out : { 
+    module_type  : RootOutput
+    fileName     : "gm2tracker_reco.root"
+
+    dataTier     : "full"
+    outputCommands : [ "keep *",
+                      "drop *::*_*_*_unpacking",
+                      "drop gm2common::*_*_*_*",
+                      "drop gm2calo::*_*_*_*",
+                      "drop gm2aux::*_*_*_*",
+                      "drop gm2reconeast::*_*_*_*",
+                      "drop gm2midastoart::*_*_*_*",
+                      "drop gm2ccc::*_*_*_*",
+                      @sequence::trackingChain.outputDrops
+                    ]
+
+     SelectEvents : ["trackPath"]
+     //FCMDPlugins  : [ { plugin_type : Metadata
+     //                   fhicl_name  : "gm2tracker_particle_gun_full.fcl"
+     //                   requestid   : "1"
+     //                   run_config  : "commission" }]
+
+  } // out
+} // end of outputs block
+
+
+// Services block
+services : {
+  FileCatalogMetadata : {
+    applicationFamily  : "tracker"
+    applicationVersion : "v9_49_00"
+    fileType           : "offline"
+  }
+
+  message : {
+    debugModules : []
+    suppressInfo : []
+
+    destinations : {
+      LogToConsole : {
+        type       : "cout"
+        threshold  : "INFO"
+        categories : @local::message_categories
+      }
+      LogToFile : {
+        type      : "file"
+        filename  : "gm2tracker_sim.log"
+        append    :  false
+        threshold : "INFO"
+        categories : @local::message_categories
+      }
+    }
+  }
+
+  // the coordinate system data is used throughout the tracking code
+  // for now, the tracking uses GEANT for the coordinates
+  // to build the coordinates requires dependent on artg4
+
+  DetectorHolder    : {}
+  ActionHolder      : {}
+  CoordSystemsStore : {}
+  Gm2Constants      : {}
+  RandomNumberGenerator : {}
+
+  Geometry : { strawtracker : @local::strawtracker_geom }
+  StrawTrackerGeometry : {}
+  StrawTrackerGeometryConstants : { DatabaseURL : @local::condb_prod_params }
+
+  @table::trackingChain.reducedGeometry
+  @table::trackingChain.field
+
+  TrackQuality : {} // default is off
+  TimeTracker : {}
+
+   TFileService: {
+      fileName: "recoPlots.root"
+   }
+
+} // end of services block
+
+physics : {
+
+  filters : {
+
+    TrackFilter : 
+    {
+      module_type : TrackerFillTypeFilter
+      fillType    : 1
+      throwOnEmptyHeaderCollection : false
+    }
+  }
+
+  producers : {
+
+    @table::trackingChain.producers
+
+    tracksMainFit0Planes : @local::geanefit_params
+    tracksMainFit12Planes : @local::geanefit_params
+    
+    tracksFullSeqFit0Planes : @local::geanefit_params
+    tracksFullSeqFit12Planes : @local::geanefit_params
+
+    tracksMainFitEnhanced0Planes : @local::geanefit_params
+    tracksMainFitEnhanced12Planes : @local::geanefit_params
+
+    // tracksMainFitEnhanced : @local::geanefit_params 
+    // tracksMainFit : @local::geanefit_params
+    // tracksFullSeqFit : @local::geanefit_params
+
+   } 
+
+  analyzers : {
+
+
+    trackPlotsMainFit0Planes : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksMainFit0Planes"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      dirName : "trackPlotsMainFit0Planes"
+      applyTrackQuality : true
+
+    }
+
+    trackPlotsMainFit12Planes : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksMainFit12Planes"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      dirName : "trackPlotsMainFit12Planes"
+      applyTrackQuality : true
+
+    }
+
+
+    trackPlotsFullSeqFit0Planes : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksFullSeqFit0Planes"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      dirName : "trackPlotsFullSeqFit0Planes"
+      applyTrackQuality : true
+
+    }
+
+   trackPlotsFullSeqFit12Planes : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksFullSeqFit12Planes"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      dirName : "trackPlotsFullSeqFit12Planes"
+      applyTrackQuality : true
+
+    }
+
+    trackPlotsMainFitEnhanced0Planes : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksMainFitEnhanced0Planes"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      dirName : "trackPlotsMainFitEnhanced0Planes"
+      applyTrackQuality : true
+
+    }
+
+   trackPlotsMainFitEnhanced12Planes : {
+ 
+      module_type :  LowDCAsPlots
+ 
+      TrackModuleLabel : "tracksMainFitEnhanced12Planes"
+      TrackInstanceName : "straws"
+      SelectEvents :["trackPath"]
+      dirName : "trackPlotsMainFitEnhanced12Planes"
+      applyTrackQuality : true
+
+    }
+
+  }
+
+  // My path, reconstructing tracks with different lockLowDCA values
+  trackPath : [ TrackFilter,
+     artg4,
+     removeFlash,
+     killStraws,
+     digitTimeSync,
+     deadTime,
+     timeIslands,
+     clustering,
+     seeds,
+     trackCandidates,
+     candidateCleaner,
+     t0Finder,
+     driftDistReco,
+     tracksMainFit0Planes,
+     tracksMainFit12Planes,
+     tracksFullSeqFit0Planes,
+     tracksFullSeqFit12Planes,
+     tracksMainFitEnhanced0Planes,
+     tracksMainFitEnhanced12Planes
+     ] 
+
+    plotPath      : [ trackPlotsMainFit0Planes, trackPlotsMainFit12Planes, trackPlotsFullSeqFit0Planes, trackPlotsFullSeqFit12Planes, trackPlotsMainFitEnhanced0Planes, trackPlotsMainFitEnhanced12Planes ]
+
+    trigger_paths : [ trackPath ]
+    end_paths     : [ plotPath ] 
+
+}
+
+physics.producers.t0Finder.meanTimeOffset : 34 // 36.5 is for 1550V, 34 for 1625V. Different for Sim
+
+
+physics.producers.tracksMainFit0Planes.planesHitCut : 0
+physics.producers.tracksFullSeqFit0Planes.planesHitCut : 0
+physics.producers.tracksMainFitEnhanced0Planes.planesHitCut : 0
+
+physics.producers.tracksMainFit12Planes.planesHitCut : 12
+physics.producers.tracksFullSeqFit12Planes.planesHitCut : 12
+physics.producers.tracksMainFitEnhanced12Planes.planesHitCut : 12
+
+
+// Set different fit modes
+physics.producers.tracksMainFit0Planes.fitMode : "mainFit"
+physics.producers.tracksFullSeqFit0Planes.fitMode : "fullSeqFit"
+physics.producers.tracksMainFitEnhanced0Planes.fitMode : "mainFitEnhanced"
+
+physics.producers.tracksMainFit12Planes.fitMode : "mainFit"
+physics.producers.tracksFullSeqFit12Planes.fitMode : "fullSeqFit"
+physics.producers.tracksMainFitEnhanced12Planes.fitMode : "mainFitEnhanced"
+
+// Save detailed art records for everything 
+physics.producers.tracksMainFit0Planes.keepTrackDetailArtRecord : true 
+physics.producers.tracksFullSeqFit0Planes.keepTrackDetailArtRecord : true 
+physics.producers.tracksMainFitEnhanced0Planes.keepTrackDetailArtRecord : true 
+
+physics.producers.tracksMainFit12Planes.keepTrackDetailArtRecord : true 
+physics.producers.tracksFullSeqFit12Planes.keepTrackDetailArtRecord : true 
+physics.producers.tracksMainFitEnhanced12Planes.keepTrackDetailArtRecord : true 

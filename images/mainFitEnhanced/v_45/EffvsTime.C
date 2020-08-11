@@ -1,53 +1,16 @@
 void EffvsTime()
 {
 //=========Macro generated from canvas: c/c
-//=========  (Thu Aug  6 01:27:21 2020) by ROOT version 6.12/04
+//=========  (Thu Aug  6 02:47:30 2020) by ROOT version 6.12/04
    TCanvas *c = new TCanvas("c", "c",0,0,800,600);
    c->SetHighLightColor(2);
-   c->Range(0.8823904,3.674112,1.658384,22.72098);
+   c->Range(3.674112,0.8823904,22.72098,1.658384);
    c->SetFillColor(0);
    c->SetBorderMode(0);
    c->SetBorderSize(2);
    c->SetFrameBorderMode(0);
-   c->SetFrameBorderMode(0);
    
    Double_t Graph0_fx1005[35] = {
-   1.529052,
-   1.250765,
-   1.234964,
-   1.227829,
-   1.221713,
-   1.217125,
-   1.214577,
-   1.211519,
-   1.207951,
-   1.205912,
-   1.203364,
-   1.179918,
-   1.165138,
-   1.154434,
-   1.14526,
-   1.139144,
-   1.133028,
-   1.124363,
-   1.117737,
-   1.11366,
-   1.106014,
-   1.099898,
-   1.094292,
-   1.091743,
-   1.088175,
-   1.084608,
-   1.077982,
-   1.074414,
-   1.071356,
-   1.068807,
-   1.049949,
-   1.038736,
-   1.028033,
-   1.022936,
-   1.011723};
-   Double_t Graph0_fy1005[35] = {
    19.5465,
    9.13571,
    8.9509,
@@ -83,6 +46,42 @@ void EffvsTime()
    6.98993,
    6.93654,
    6.84859};
+   Double_t Graph0_fy1005[35] = {
+   1.529052,
+   1.250765,
+   1.234964,
+   1.227829,
+   1.221713,
+   1.217125,
+   1.214577,
+   1.211519,
+   1.207951,
+   1.205912,
+   1.203364,
+   1.179918,
+   1.165138,
+   1.154434,
+   1.14526,
+   1.139144,
+   1.133028,
+   1.124363,
+   1.117737,
+   1.11366,
+   1.106014,
+   1.099898,
+   1.094292,
+   1.091743,
+   1.088175,
+   1.084608,
+   1.077982,
+   1.074414,
+   1.071356,
+   1.068807,
+   1.049949,
+   1.038736,
+   1.028033,
+   1.022936,
+   1.011723};
    Double_t Graph0_fex1005[35] = {
    0,
    0,
@@ -161,9 +160,9 @@ void EffvsTime()
    gre->SetFillStyle(1000);
    gre->SetMarkerStyle(20);
    
-   TH1F *Graph_Graph1005 = new TH1F("Graph_Graph1005","",100,0.9599898,1.580785);
-   Graph_Graph1005->SetMinimum(5.578799);
-   Graph_Graph1005->SetMaximum(20.81629);
+   TH1F *Graph_Graph1005 = new TH1F("Graph_Graph1005","",100,5.578799,20.81629);
+   Graph_Graph1005->SetMinimum(0.9599898);
+   Graph_Graph1005->SetMaximum(1.580785);
    Graph_Graph1005->SetDirectory(0);
    Graph_Graph1005->SetStats(0);
 
@@ -191,6 +190,16 @@ void EffvsTime()
    gre->SetHistogram(Graph_Graph1005);
    
    gre->Draw("ap");
+   TLine *line = new TLine(17.485,0.9599898,17.485,1.580785);
+   line->SetLineColor(2);
+   line->SetLineStyle(2);
+   line->SetLineWidth(3);
+   line->Draw();
+   line = new TLine(5.578799,1.502548,20.81629,1.502548);
+   line->SetLineColor(2);
+   line->SetLineStyle(2);
+   line->SetLineWidth(3);
+   line->Draw();
    c->Modified();
    c->cd();
    c->SetSelected(c);

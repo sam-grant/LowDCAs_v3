@@ -1,0 +1,5 @@
+/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551301_1567190852.1.root
+/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551302_1567190852.1.root
+/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551303_1567190852.1.root
+/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551304_1567190852.1.root
+/pnfs/GM2/mc/run1_gasgun_1062/runs_1567190000/1567190852/gm2ringsim_muon_gasgun_truth_22551305_1567190852.1.root
